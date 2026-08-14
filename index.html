@@ -827,6 +827,245 @@
             margin-top: 0.35rem;
         }
 
+        /* =============================================================
+           GOAN TERROIR & ARTISANAL CRAFT SECTION (PHASE 6)
+           ============================================================= */
+        section.terroir-section {
+            position: relative;
+            padding: 8.0rem 0 6.5rem;
+            background: radial-gradient(circle at 20% 30%, rgba(217, 119, 6, 0.07) 0%, rgba(3, 5, 8, 0.98) 70%);
+            border-top: 1px solid var(--gold-border-subtle);
+            overflow: hidden;
+        }
+
+        .terroir-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 40px;
+            align-items: center;
+            margin-bottom: var(--space-64);
+        }
+
+        .terroir-visual-cluster {
+            grid-column: 1 / span 7;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-24);
+        }
+
+        .terroir-hero-frame {
+            position: relative;
+            border: 1.5px solid var(--gold-border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-luxury), var(--glow-amber-bottle);
+            background: #070b12;
+        }
+
+        .terroir-hero-img {
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s var(--ease-luxury-out);
+        }
+
+        .terroir-hero-frame:hover .terroir-hero-img {
+            transform: scale(1.04);
+        }
+
+        .terroir-frame-badge {
+            position: absolute;
+            bottom: 20px; left: 20px;
+            background: rgba(3, 5, 8, 0.88);
+            border: 1px solid var(--gold-border-subtle);
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--radius-full);
+            font-size: 0.76rem;
+            font-family: var(--font-royal);
+            font-weight: 700;
+            color: var(--color-champagne-light);
+            letter-spacing: 1px;
+            backdrop-filter: blur(12px);
+        }
+
+        .terroir-secondary-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-24);
+        }
+
+        .terroir-sub-frame {
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 180px;
+            background: #0b111d;
+            position: relative;
+        }
+
+        .terroir-sub-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .terroir-sub-frame:hover .terroir-sub-img {
+            transform: scale(1.08);
+        }
+
+        .terroir-sub-label {
+            position: absolute;
+            bottom: 12px; left: 12px;
+            background: rgba(3, 5, 8, 0.85);
+            padding: 0.35rem 0.8rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.72rem;
+            color: var(--gold-light);
+            font-weight: 600;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Right Column: Editorial Narrative & Sensory Nodes (Cols 8-12) */
+        .terroir-editorial-cluster {
+            grid-column: 8 / span 5;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-24);
+        }
+
+        .terroir-section-eyebrow {
+            font-family: var(--font-sans);
+            font-size: 0.80rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--gold-light);
+            text-transform: uppercase;
+        }
+
+        .terroir-title-display {
+            font-family: var(--font-royal);
+            font-size: clamp(1.8rem, 1.4rem + 1.8vw, 2.8rem);
+            line-height: 1.15;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .terroir-narrative-text {
+            font-family: var(--font-editorial);
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .terroir-narrative-text strong {
+            color: var(--color-champagne-light);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /* 4-Point Sensory Craft Nodes */
+        .terroir-nodes-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-16);
+            margin-top: var(--space-12);
+        }
+
+        .terroir-node-card {
+            background: rgba(11, 17, 29, 0.65);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.2rem 1.4rem;
+            transition: all 0.35s var(--ease-luxury-out);
+            backdrop-filter: blur(12px);
+        }
+
+        .terroir-node-card:hover {
+            border-color: var(--gold-base);
+            background: rgba(197, 160, 89, 0.10);
+            transform: translateX(6px);
+        }
+
+        .terroir-node-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .terroir-node-num {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: var(--gold-light);
+            font-weight: 700;
+        }
+
+        .terroir-node-title {
+            font-family: var(--font-royal);
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .terroir-node-desc {
+            font-size: 0.86rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            padding-left: 1.8rem;
+        }
+
+        /* Transition Strip into Product Atelier */
+        .terroir-transition-strip {
+            margin-top: var(--space-48);
+            padding: var(--space-24) 0;
+            border-top: 1px solid rgba(197, 160, 89, 0.18);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.18);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+
+        .transition-lead-text {
+            font-family: var(--font-royal);
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--color-champagne-light);
+            text-transform: uppercase;
+        }
+
+        .transition-sub-text {
+            font-family: var(--font-sans);
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 1024px) {
+            .terroir-grid { grid-template-columns: 1fr; gap: 40px; }
+            .terroir-visual-cluster { grid-column: 1 / -1; }
+            .terroir-editorial-cluster { grid-column: 1 / -1; }
+            .terroir-hero-img { height: 320px; }
+        }
+
+        @media (max-width: 768px) {
+            section.terroir-section { padding: 5.0rem 0 4.0rem; }
+            .terroir-secondary-row { grid-template-columns: 1fr; }
+            .terroir-hero-img { height: 240px; }
+            .terroir-sub-frame { height: 140px; }
+            .terroir-node-card { padding: 1.0rem 1.1rem; }
+            .terroir-transition-strip { flex-direction: column; text-align: center; }
+        }
+
         /* SECTION BASE STYLES */
         section.content-section {
             padding: 6.5rem 0;
@@ -1458,6 +1697,7 @@
             </div>
         </a>
         <ul class="nav-links">
+            <li><a href="#terroir">Terroir</a></li>
             <li><a href="#about">Disruption</a></li>
             <li><a href="#products">Portfolio</a></li>
             <li><a href="#territories">Territories</a></li>
@@ -1552,6 +1792,87 @@
                 <span>SCROLL TO EXPLORE</span>
                 <span class="scroll-arrow">↓</span>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================
+     SECTION: GOAN TERROIR & ARTISANAL CRAFT STORY (PHASE 6)
+     ============================================================= -->
+<section id="terroir" class="terroir-section" aria-label="Goan Terroir and Craft Story">
+    <div class="container">
+        <div class="terroir-grid">
+            <!-- Left: Asymmetric Visual Cluster (Cols 1-7) -->
+            <div class="terroir-visual-cluster gsap-fade">
+                <div class="terroir-hero-frame">
+                    <img src="assets/goan_copper_distillery.jpg" alt="Artisanal Copper Pot Stills on Goan Coastline" class="terroir-hero-img" loading="lazy">
+                    <div class="terroir-frame-badge">
+                        <span>🏛️ SINGLE-SITE DISTILLERY · PONDA, GOA</span>
+                    </div>
+                </div>
+                
+                <div class="terroir-secondary-row">
+                    <div class="terroir-sub-frame">
+                        <img src="assets/honey_botanicals_macro.jpg" alt="Western Ghats Wild Raw Honeycomb and Botanicals" class="terroir-sub-img" loading="lazy">
+                        <div class="terroir-sub-label">🐝 Western Ghats Raw Honey</div>
+                    </div>
+                    <div class="terroir-sub-frame">
+                        <img src="assets/blender_render_showcase.png" alt="French Oak Micro-Oxygenation" class="terroir-sub-img" style="object-position: center bottom;" loading="lazy">
+                        <div class="terroir-sub-label">🪵 French Oak Cask Finishing</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Editorial Narrative & 4 Sensory Nodes (Cols 8-12) -->
+            <div class="terroir-editorial-cluster gsap-fade">
+                <div class="terroir-section-eyebrow">02 / THE GOAN TERROIR & ARTISANAL CRAFT</div>
+                <h2 class="terroir-title-display">BORN OF GOAN SUNLIGHT, AGED IN COASTAL MIST</h2>
+                
+                <p class="terroir-narrative-text">
+                    In our single-estate distillery overlooking the Arabian Sea, master distillers marry <strong>96.5% Extra Neutral Alcohol (ENA)</strong> with unpasteurized raw honey harvested from <strong>Western Ghats apiaries</strong>, slow copper alembic rectification, and maritime oak maturation.
+                </p>
+
+                <!-- 4-Point Craft & Sensory Ledger -->
+                <div class="terroir-nodes-grid">
+                    <div class="terroir-node-card">
+                        <div class="terroir-node-header">
+                            <span class="terroir-node-num">01.</span>
+                            <span class="terroir-node-title">5-Column ENA 96.5% Rectification</span>
+                        </div>
+                        <p class="terroir-node-desc">Continuous fractional distillation removing all head and tail congeners for pure velvety smoothness.</p>
+                    </div>
+
+                    <div class="terroir-node-card">
+                        <div class="terroir-node-header">
+                            <span class="terroir-node-num">02.</span>
+                            <span class="terroir-node-title">Western Ghats Raw Honey Infusion</span>
+                        </div>
+                        <p class="terroir-node-desc">Unpasteurized wild honey preserves natural pollen enzymes, imparting an exquisite amber viscosity.</p>
+                    </div>
+
+                    <div class="terroir-node-card">
+                        <div class="terroir-node-header">
+                            <span class="terroir-node-num">03.</span>
+                            <span class="terroir-node-title">Charred French Oak Micro-Oxygenation</span>
+                        </div>
+                        <p class="terroir-node-desc">Slow cask breathing yields subtle layers of toasted vanilla, dark caramel, and rich aromatic depth.</p>
+                    </div>
+
+                    <div class="terroir-node-card">
+                        <div class="terroir-node-header">
+                            <span class="terroir-node-num">04.</span>
+                            <span class="terroir-node-title">Maritime Coastal Salt Air Maturation</span>
+                        </div>
+                        <p class="terroir-node-desc">High tropical humidity accelerates wood-liquid interaction, producing an ultra-refined luxury finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transition Strip into Product Atelier -->
+        <div class="terroir-transition-strip gsap-fade">
+            <span class="transition-lead-text">FROM SINGLE-ESTATE COASTAL STILLS ──► TO 6 PROPRIETARY SPIRITS MASTERPIECES</span>
+            <span class="transition-sub-text">DISCOVER THE PROPRIETARY ATELIER BELOW ↓</span>
         </div>
     </div>
 </section>
