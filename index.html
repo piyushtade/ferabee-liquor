@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FERABEE LIQUOR | The Royal Bee — Next-Gen Alcobev Platform</title>
+    <title>FERABEE LIQUOR | The Royal Bee — Direct-to-Consumer Alcobev Ecosystem</title>
     
-    <!-- SEO & OpenGraph Metadata -->
-    <meta name="description" content="India's first direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Built with WebGL, GLSL Shaders, Three.js, GSAP, Lenis, and AI Intelligence.">
-    <meta name="keywords" content="FeraBee Liquor, The Royal Bee, Craft Spirits India, Alcobev Franchise, Series A Investment, WebGL, Three.js, GSAP, FOCO Model">
+    <!-- SEO, OpenGraph & Twitter Metadata -->
+    <meta name="description" content="India's first direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Built with WebGL, Audio-Reactive Three.js, GSAP, and AI Intelligence.">
+    <meta name="keywords" content="FeraBee Liquor, The Royal Bee, Craft Spirits India, Alcobev Franchise, Series A Investment, WebGL, Three.js, GSAP, FOCO Model, Creative Technology">
     <meta name="author" content="FeraBee Liquor Private Limited">
     <meta property="og:title" content="FERABEE LIQUOR | The Royal Bee — Direct-to-Consumer Spirits Platform">
     <meta property="og:description" content="India's first integrated direct-to-consumer craft spirits brand & 367-Taluka Bee Lounge network in Maharashtra & Goa.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://piyushtade.github.io/ferabee-liquor/">
+
+    <!-- Schema.org JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FeraBee Liquor Private Limited",
+      "alternateName": "The Royal Bee",
+      "url": "https://piyushtade.github.io/ferabee-liquor/",
+      "logo": "https://piyushtade.github.io/ferabee-liquor/assets/whisky_hero.png",
+      "description": "India's first integrated direct-to-consumer craft spirits brand & 367-Taluka Bee Lounge franchise network in Maharashtra and Goa.",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Piyush Tade"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
 
     <!-- Google Fonts: Royal Roman, Editorial Serif, Modern Sans & Monospace -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,6 +119,16 @@
             pointer-events: none;
             z-index: 1;
             opacity: 0.75;
+        }
+
+        /* Accessibility: Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
         }
 
         /* Custom Scrollbar */
@@ -1157,7 +1193,7 @@
 <canvas id="webgl-canvas"></canvas>
 
 <!-- FLOATING AI INTELLIGENCE WIDGET -->
-<button id="ai-widget-btn" onclick="toggleAIChat()" title="Ask FeraBee AI Assistant">🤖</button>
+<button id="ai-widget-btn" onclick="toggleAIChat(); playChimeSound();" title="Ask FeraBee AI Assistant">🤖</button>
 
 <div id="ai-chat-modal">
     <div class="chat-header">
@@ -1171,14 +1207,14 @@
     </div>
     <div class="chat-input-area">
         <input type="text" id="chat-input" placeholder="Ask financial/legal question..." onkeypress="handleChatEnter(event)">
-        <button onclick="sendChatMessage()">Send</button>
+        <button onclick="sendChatMessage(); playChimeSound();">Send</button>
     </div>
 </div>
 
 <!-- STICKY HEADER -->
 <header class="site-header">
     <div class="container nav-inner">
-        <a href="#" class="brand-logo-wrap">
+        <a href="#" class="brand-logo-wrap" onclick="playChimeSound()">
             <div class="crest-icon">👑</div>
             <div class="logo-text">
                 <h1>FERABEE</h1>
@@ -1196,7 +1232,7 @@
             <button id="btn-audio" class="audio-toggle-btn" onclick="toggleAudio()">
                 <span>🎵 Ambiance:</span> <span id="audio-status">OFF</span>
             </button>
-            <a href="#downloads" class="nav-cta-btn magnetic-btn">💼 Access Dossier</a>
+            <a href="#downloads" class="nav-cta-btn magnetic-btn" onclick="playChimeSound()">💼 Access Dossier</a>
         </div>
     </div>
 </header>
@@ -1229,8 +1265,8 @@
                 Bypassing traditional retail distributor monopolies through an exclusive network of <strong>367 captive Bee Lounges</strong> across Maharashtra & Goa.
             </p>
             <div class="hero-cta-group">
-                <a href="#simulator" class="btn-luxury-primary magnetic-btn">🧮 Launch Interactive Simulator</a>
-                <a href="#downloads" class="btn-luxury-secondary magnetic-btn">📄 Download Full PPM & Pitch Deck</a>
+                <a href="#simulator" class="btn-luxury-primary magnetic-btn" onclick="playChimeSound()">🧮 Launch Interactive Simulator</a>
+                <a href="#downloads" class="btn-luxury-secondary magnetic-btn" onclick="playChimeSound()">📄 Download Full PPM & Pitch Deck</a>
             </div>
             <div class="hero-key-metrics">
                 <div class="metric-cell">
@@ -1589,7 +1625,7 @@
         </div>
 
         <div class="download-grid">
-            <a href="FeraBee_Master_Commercial_Suite_2026.zip" class="download-card gsap-card">
+            <a href="FeraBee_Master_Commercial_Suite_2026.zip" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">🌟</div>
                     <div class="doc-title">Master Commercial Suite (ZIP)</div>
@@ -1598,7 +1634,7 @@
                 <div class="doc-badge">📥 Download Master Archive (1.35 MB)</div>
             </a>
 
-            <a href="FeraBee_Investor_SeriesA_Package.zip" class="download-card gsap-card">
+            <a href="FeraBee_Investor_SeriesA_Package.zip" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">💼</div>
                     <div class="doc-title">Investor Series-A Package (ZIP)</div>
@@ -1607,7 +1643,7 @@
                 <div class="doc-badge">📥 Download Investor Pack (142 KB)</div>
             </a>
 
-            <a href="FeraBee_Franchise_Partner_Package.zip" class="download-card gsap-card">
+            <a href="FeraBee_Franchise_Partner_Package.zip" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">🏢</div>
                     <div class="doc-title">Franchise Partner Package (ZIP)</div>
@@ -1616,7 +1652,7 @@
                 <div class="doc-badge">📥 Download Franchise Pack (167 KB)</div>
             </a>
 
-            <a href="FeraBee_Master_Financial_Model_v2.xlsx" class="download-card gsap-card">
+            <a href="FeraBee_Master_Financial_Model_v2.xlsx" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">📊</div>
                     <div class="doc-title">Financial Model (.xlsx)</div>
@@ -1625,7 +1661,7 @@
                 <div class="doc-badge">📥 Download Excel Model</div>
             </a>
 
-            <a href="FeraBee_Master_Investor_and_Franchise_Pitch_Deck.pptx" class="download-card gsap-card">
+            <a href="FeraBee_Master_Investor_and_Franchise_Pitch_Deck.pptx" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">📽️</div>
                     <div class="doc-title">Pitch Deck (.pptx)</div>
@@ -1634,7 +1670,7 @@
                 <div class="doc-badge">📥 Download Slide Deck</div>
             </a>
 
-            <a href="FeraBee_Franchise_Agreement_and_LOI_Contract_Template.docx" class="download-card gsap-card">
+            <a href="FeraBee_Franchise_Agreement_and_LOI_Contract_Template.docx" class="download-card gsap-card" onclick="playChimeSound()">
                 <div>
                     <div class="doc-icon">⚖️</div>
                     <div class="doc-title">Franchise Agreement & LOI (.docx)</div>
@@ -1674,12 +1710,12 @@
 
         <div class="footer-bottom">
             <div>© 2026 FeraBee Liquor Private Limited. All Rights Reserved. Confidential Deal Room.</div>
-            <div style="color: var(--gold-light);">Engineered with Three.js, WebGL GLSL Shaders, GSAP, ScrollTrigger & Lenis</div>
+            <div style="color: var(--gold-light);">Engineered with Three.js, Audio-Reactive WebGL, GSAP, ScrollTrigger & Lenis</div>
         </div>
     </div>
 </footer>
 
-<!-- COMPLETE JAVASCRIPT ENGINE (Three.js, WebGL GLSL, GSAP, Lenis, AI Assistant, Web Audio) -->
+<!-- COMPLETE JAVASCRIPT ENGINE (Audio-Reactive WebGL, GSAP, Lenis, AI Assistant, Web Audio) -->
 <script>
     // -------------------------------------------------------------
     // 1. PRELOADER & TIMELINE
@@ -1755,7 +1791,7 @@
     }
 
     // -------------------------------------------------------------
-    // 3. THREE.JS 3D WEBGL SHADER SCENE
+    // 3. THREE.JS 3D WEBGL AUDIO-REACTIVE SCENE
     // -------------------------------------------------------------
     let scene, camera, renderer, particlesMesh, hexGroup;
     let mouseX = 0, mouseY = 0;
@@ -1841,6 +1877,13 @@
         if (particlesMesh) {
             particlesMesh.rotation.y += 0.0015;
             particlesMesh.rotation.x += 0.0008;
+            
+            // Audio-reactive particle pulse
+            if (isAudioPlaying && analyser) {
+                analyser.getByteFrequencyData(dataArray);
+                const avg = dataArray.reduce((p, c) => p + c, 0) / dataArray.length;
+                particlesMesh.scale.set(1 + avg * 0.003, 1 + avg * 0.003, 1 + avg * 0.003);
+            }
         }
         if (hexGroup) {
             hexGroup.rotation.y += 0.002;
@@ -1971,14 +2014,12 @@
 
         const chatBox = document.getElementById('chat-box');
         
-        // Append user msg
         const userDiv = document.createElement('div');
         userDiv.className = 'msg-bubble msg-user';
         userDiv.innerText = query;
         chatBox.appendChild(userDiv);
         input.value = '';
 
-        // Generate instant intelligent bot reply
         setTimeout(() => {
             const botDiv = document.createElement('div');
             botDiv.className = 'msg-bubble msg-bot';
@@ -2001,18 +2042,26 @@
     }
 
     // -------------------------------------------------------------
-    // 7. WEB AUDIO AMBIENT SYNTHESIZER
+    // 7. WEB AUDIO AMBIENT SYNTHESIZER & SFX
     // -------------------------------------------------------------
     let audioCtx = null;
     let isAudioPlaying = false;
     let oscillator = null;
     let gainNode = null;
+    let analyser = null;
+    let dataArray = null;
 
-    function toggleAudio() {
+    function initAudio() {
         if (!audioCtx) {
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            analyser = audioCtx.createAnalyser();
+            analyser.fftSize = 64;
+            dataArray = new Uint8Array(analyser.frequencyBinCount);
         }
+    }
 
+    function toggleAudio() {
+        initAudio();
         const statusLabel = document.getElementById('audio-status');
         if (!isAudioPlaying) {
             oscillator = audioCtx.createOscillator();
@@ -2025,7 +2074,8 @@
             gainNode.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 2);
             
             oscillator.connect(gainNode);
-            gainNode.connect(audioCtx.destination);
+            gainNode.connect(analyser);
+            analyser.connect(audioCtx.destination);
             oscillator.start();
             
             isAudioPlaying = true;
@@ -2042,6 +2092,26 @@
             statusLabel.innerText = "OFF";
             statusLabel.style.color = "var(--gold-light)";
         }
+    }
+
+    function playChimeSound() {
+        try {
+            initAudio();
+            const chimeOsc = audioCtx.createOscillator();
+            const chimeGain = audioCtx.createGain();
+            
+            chimeOsc.type = 'triangle';
+            chimeOsc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
+            chimeOsc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // A5
+            
+            chimeGain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+            chimeGain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
+            
+            chimeOsc.connect(chimeGain);
+            chimeGain.connect(audioCtx.destination);
+            chimeOsc.start();
+            chimeOsc.stop(audioCtx.currentTime + 0.36);
+        } catch(e) {}
     }
 
     // -------------------------------------------------------------
