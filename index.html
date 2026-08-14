@@ -1167,96 +1167,292 @@
             letter-spacing: 0.8px;
         }
 
-        /* HORIZONTAL SCROLL PRODUCT SHOWCASE */
-        .horizontal-section {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .horizontal-scroll-track {
-            display: flex;
-            gap: 2rem;
-            width: max-content;
-            padding: 1rem 0 3rem;
-        }
-
-        .sku-card {
-            width: 380px;
-            flex-shrink: 0;
-            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.45) 0%, rgba(6, 9, 15, 0.98) 100%);
-            border: 1px solid var(--gold-border-subtle);
-            border-radius: var(--radius-lg);
-            padding: 2.2rem;
-            box-shadow: var(--shadow-luxury);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        /* =============================================================
+           6-SKU PROPRIETARY SPIRITS ATELIER STYLES (PHASE 7)
+           ============================================================= */
+        section.atelier-section {
             position: relative;
+            padding: 7.0rem 0 6.0rem;
+            background: #030508;
+            border-top: 1px solid var(--gold-border-subtle);
+            overflow: hidden;
         }
 
-        .sku-card:hover {
-            border-color: var(--gold-base);
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: var(--gold-glow);
-        }
-
-        .sku-title-row {
+        .atelier-header-block {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.9rem;
-        }
-
-        .sku-title {
-            font-family: var(--font-royal);
-            font-size: 1.35rem;
-            color: #ffffff;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .sku-category {
-            font-size: 0.8rem;
-            color: var(--gold-light);
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            margin-top: 0.2rem;
-        }
-
-        .sku-specs {
-            display: flex;
-            gap: 0.5rem;
+            align-items: flex-end;
+            margin-bottom: var(--space-40);
             flex-wrap: wrap;
-            margin: 1.2rem 0;
+            gap: 1.5rem;
         }
 
-        .spec-tag {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 0.4rem 0.85rem;
+        .atelier-title-group {
+            max-width: 700px;
+        }
+
+        .atelier-eyebrow {
+            font-size: 0.80rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            color: var(--gold-light);
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        .atelier-display-title {
+            font-family: var(--font-royal);
+            font-size: clamp(2.0rem, 1.6rem + 1.8vw, 3.0rem);
+            color: #ffffff;
+            font-weight: 800;
+            letter-spacing: 1px;
+            line-height: 1.15;
+            margin-bottom: 0.8rem;
+        }
+
+        .atelier-lead-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Discreet Product Index Quick-Nav */
+        .atelier-nav-index {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .atelier-index-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--gold-border-subtle);
             border-radius: var(--radius-full);
-            font-size: 0.75rem;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.74rem;
             font-family: var(--font-mono);
             color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            backdrop-filter: blur(8px);
         }
 
-        .sku-margin-box {
+        .atelier-index-btn:hover, .atelier-index-btn.active {
+            background: rgba(197, 160, 89, 0.18);
+            border-color: var(--gold-base);
+            color: var(--color-champagne-light);
+            transform: translateY(-2px);
+        }
+
+        /* Pinned Horizontal Track Viewport */
+        .atelier-viewport-wrap {
+            overflow: hidden;
+            width: 100%;
+            padding: 1.5rem 0 2.5rem;
+        }
+
+        .atelier-horizontal-track {
+            display: flex;
+            gap: 2.5rem;
+            width: max-content;
+            padding: 0 1rem;
+        }
+
+        /* Master SKU Exhibition Panel */
+        .atelier-sku-panel {
+            width: 440px;
+            flex-shrink: 0;
+            background: radial-gradient(circle at 50% 20%, rgba(20, 28, 42, 0.65) 0%, rgba(4, 7, 12, 0.98) 100%);
+            border: 1.5px solid var(--gold-border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2.2rem 2.0rem;
+            box-shadow: var(--shadow-luxury);
+            transition: transform 0.4s var(--ease-luxury-out), border-color 0.35s ease, box-shadow 0.35s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .atelier-sku-panel:hover {
+            border-color: var(--gold-base);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.95), var(--gold-glow);
+        }
+
+        .sku-panel-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 1.2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.15);
         }
 
-        .margin-badge {
+        .sku-idx-tag {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--gold-light);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .sku-cat-tag {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* Bottle Stage in Panel */
+        .sku-bottle-stage {
+            width: 100%;
+            height: 310px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 1.4rem;
+            background: radial-gradient(circle at center, rgba(30, 41, 59, 0.25) 0%, rgba(3, 5, 8, 0) 70%);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .sku-bottle-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.95));
+            transition: transform 0.5s var(--ease-luxury-out);
+        }
+
+        .atelier-sku-panel:hover .sku-bottle-img {
+            transform: scale(1.05) translateY(-4px);
+        }
+
+        .sku-panel-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+
+        .sku-panel-title {
+            font-family: var(--font-royal);
+            font-size: 1.42rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            line-height: 1.2;
+        }
+
+        .sku-tasting-lead {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            min-height: 48px;
+        }
+
+        /* Discrete Specs 4-Pill Grid */
+        .sku-specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin: 0.4rem 0;
+        }
+
+        .sku-spec-pill {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            padding: 0.4rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.74rem;
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-secondary);
+        }
+
+        .sku-spec-pill strong {
+            font-family: var(--font-mono);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Discrete Commercial Footer */
+        .sku-commercial-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.1rem;
+            border-top: 1px solid rgba(197, 160, 89, 0.16);
+            margin-top: 0.8rem;
+        }
+
+        .sku-pour-cogs {
+            font-size: 0.74rem;
+            color: var(--text-muted);
+        }
+
+        .sku-pour-price {
+            font-family: var(--font-mono);
+            font-size: 0.94rem;
+            color: #ffffff;
+            font-weight: 700;
+            margin-top: 0.15rem;
+        }
+
+        .sku-margin-badge {
             background: rgba(16, 185, 129, 0.12);
-            border: 1px solid rgba(16, 185, 129, 0.4);
+            border: 1px solid rgba(16, 185, 129, 0.45);
             color: var(--accent-emerald);
-            padding: 0.45rem 1.05rem;
+            padding: 0.45rem 1.0rem;
             border-radius: var(--radius-full);
             font-weight: 700;
             font-family: var(--font-mono);
-            font-size: 0.9rem;
-            box-shadow: 0 0 18px rgba(16, 185, 129, 0.2);
+            font-size: 0.88rem;
+            box-shadow: 0 0 16px rgba(16, 185, 129, 0.18);
+            letter-spacing: 0.5px;
+        }
+
+        /* Atelier Exit Transition Strip */
+        .atelier-exit-strip {
+            margin-top: var(--space-48);
+            padding: var(--space-20) 0;
+            border-top: 1px solid rgba(197, 160, 89, 0.16);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .atelier-exit-text {
+            font-family: var(--font-royal);
+            font-size: 0.88rem;
+            color: var(--color-champagne-light);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 1024px) {
+            .atelier-viewport-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .atelier-horizontal-track { padding-bottom: 1.5rem; }
+            .atelier-sku-panel { width: 360px; padding: 1.8rem 1.5rem; }
+            .sku-bottle-stage { height: 250px; }
+        }
+
+        @media (max-width: 768px) {
+            section.atelier-section { padding: 5.0rem 0 4.0rem; }
+            .atelier-horizontal-track { flex-direction: column; width: 100%; gap: 1.8rem; }
+            .atelier-sku-panel { width: 100%; }
+            .atelier-header-block { flex-direction: column; align-items: flex-start; }
+            .atelier-nav-index { display: none; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .atelier-horizontal-track { transform: none !important; }
+            .atelier-sku-panel { transition: none !important; }
         }
 
         /* REGIONAL EXPANSION MAP EXPLORER */
@@ -1914,154 +2110,223 @@
     </div>
 </section>
 
-<!-- SECTION 2: 6-SKU HORIZONTAL SCROLL PRODUCT SHOWCASE -->
-<section id="products" class="content-section horizontal-section">
+<!-- =============================================================
+     SECTION 2: 6-SKU PROPRIETARY SPIRITS ATELIER (PHASE 7)
+     ============================================================= -->
+<section id="products" class="atelier-section" aria-label="Proprietary 6-SKU Spirits Atelier">
     <div class="container">
-        <div class="section-header-wrap gsap-fade">
-            <span class="section-tag">High-Margin Portfolio (Scroll to Explore)</span>
-            <h2 class="section-title">PROPRIETARY 6-SKU PRODUCT MIX</h2>
-            <p class="section-desc">Distilled in Goa under master supervision with verified gross profit margins between 64% and 85%.</p>
+        <!-- Atelier Header & Quick Index Navigation -->
+        <div class="atelier-header-block gsap-fade">
+            <div class="atelier-title-group">
+                <span class="atelier-eyebrow">03 / PROPRIETARY SPIRITS ATELIER</span>
+                <h2 class="atelier-display-title">THE 6-SKU CAPTIVE COLLECTION</h2>
+                <p class="atelier-lead-desc">Single-estate Goan distillation liquidated 100% through our captive Bee Lounge network with verified gross profit margins ranging from <strong>64.0% to 85.3%</strong>.</p>
+            </div>
+            
+            <nav class="atelier-nav-index" aria-label="Product Atelier Quick Navigation">
+                <a href="#sku-whisky" class="atelier-index-btn" onclick="scrollToSKU(0); playChimeSound();">01 WHISKY</a>
+                <a href="#sku-vodka" class="atelier-index-btn" onclick="scrollToSKU(1); playChimeSound();">02 VODKA</a>
+                <a href="#sku-gin" class="atelier-index-btn" onclick="scrollToSKU(2); playChimeSound();">03 GIN</a>
+                <a href="#sku-rum" class="atelier-index-btn" onclick="scrollToSKU(3); playChimeSound();">04 RUM</a>
+                <a href="#sku-beer" class="atelier-index-btn" onclick="scrollToSKU(4); playChimeSound();">05 BEER</a>
+                <a href="#sku-wine" class="atelier-index-btn" onclick="scrollToSKU(5); playChimeSound();">06 WINE</a>
+            </nav>
         </div>
 
-        <div class="horizontal-scroll-track" id="product-track">
-            <!-- 1. WHISKY -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+        <!-- Pinned Horizontal Exhibition Viewport -->
+        <div class="atelier-viewport-wrap">
+            <div class="atelier-horizontal-track" id="product-track">
+                
+                <!-- 01. WHISKY -->
+                <article class="atelier-sku-panel" id="sku-whisky" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Reserve Whisky">
                     <div>
-                        <div class="sku-title">FeraBee Reserve Whisky</div>
-                        <div class="sku-category">Blended Grain & Malt (42.8% v/v)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 01 / 06</span>
+                            <span class="sku-cat-tag">BLENDED GRAIN & MALT (42.8% v/v)</span>
+                        </div>
+                        <div class="sku-bottle-stage">
+                            <img src="assets/blender_render_showcase.png" alt="FeraBee Reserve Whisky 3D Decanter" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE RESERVE WHISKY</h3>
+                            <p class="sku-tasting-lead">Rich grain and malt single malt finish with distinct raw Goan honey notes, toasted vanilla, and charred oak warmth.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>750ml Fluted</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>42.8% v/v</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹1,350</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹2,200</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Rich grain and malt blend with a distinct Goan honey finish. Warm amber color with vanilla and oak notes.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">750ml Custom Black Glass</span>
-                    <span class="spec-tag">Goa MRP: ₹1,350</span>
-                    <span class="spec-tag">MH MRP: ₹2,200</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹35 / ₹180 (60ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹35 / ₹180 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(60ml Pour)</span></div>
+                        </div>
+                        <div class="sku-margin-badge">80.5% Gross Margin</div>
                     </div>
-                    <div class="margin-badge">80.5% Margin</div>
-                </div>
-            </div>
+                </article>
 
-            <!-- 2. VODKA -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+                <!-- 02. VODKA -->
+                <article class="atelier-sku-panel" id="sku-vodka" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Pure Vodka">
                     <div>
-                        <div class="sku-title">FeraBee Pure Vodka</div>
-                        <div class="sku-category">Triple-Distilled (42.8% v/v)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 02 / 06</span>
+                            <span class="sku-cat-tag">TRIPLE-DISTILLED GRAIN (42.8% v/v)</span>
+                        </div>
+                        <div class="sku-bottle-stage" style="background: radial-gradient(circle at center, rgba(56, 189, 248, 0.15) 0%, rgba(3, 5, 8, 0) 70%);">
+                            <img src="assets/ferabee_vodka_bottle.jpg" alt="FeraBee Pure Vodka Frosted Crystal Decanter" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE PURE VODKA</h3>
+                            <p class="sku-tasting-lead">Charcoal-filtered for crystalline purity and an exceptionally crisp, neutral palate. Essential high-volume cocktail anchor.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>750ml Frosted</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>42.8% v/v</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹1,150</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹1,900</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Charcoal-filtered for absolute clarity and crisp neutral palate. Essential high-volume cocktail anchor.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">750ml Clear Glass</span>
-                    <span class="spec-tag">Goa MRP: ₹1,150</span>
-                    <span class="spec-tag">MH MRP: ₹1,900</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹22 / ₹150 (60ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹22 / ₹150 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(60ml Pour)</span></div>
+                        </div>
+                        <div class="sku-margin-badge">85.3% Gross Margin</div>
                     </div>
-                    <div class="margin-badge">85.3% Margin</div>
-                </div>
-            </div>
+                </article>
 
-            <!-- 3. GIN -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+                <!-- 03. GIN -->
+                <article class="atelier-sku-panel" id="sku-gin" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Botanical Gin">
                     <div>
-                        <div class="sku-title">FeraBee Botanical Gin</div>
-                        <div class="sku-category">Craft Artisanal Gin (42.8% v/v)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 03 / 06</span>
+                            <span class="sku-cat-tag">ARTISANAL VAPOR-INFUSED (42.8% v/v)</span>
+                        </div>
+                        <div class="sku-bottle-stage" style="background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, rgba(3, 5, 8, 0) 70%);">
+                            <img src="assets/ferabee_gin_bottle.jpg" alt="FeraBee Botanical Gin Emerald Bottle" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE BOTANICAL GIN</h3>
+                            <p class="sku-tasting-lead">Vapor-infused with Himalayan juniper, Goan cardamom, coriander seeds, lemon peel, and wild botanical aromatics.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>750ml Emerald</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>42.8% v/v</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹1,450</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹2,400</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Vapor-infused with juniper berries, Goan cardamom, coriander seeds, and lemon peel extracts.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">750ml Clear Glass</span>
-                    <span class="spec-tag">Goa MRP: ₹1,450</span>
-                    <span class="spec-tag">MH MRP: ₹2,400</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹30 / ₹170 (60ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹30 / ₹170 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(60ml Pour)</span></div>
+                        </div>
+                        <div class="sku-margin-badge">82.3% Gross Margin</div>
                     </div>
-                    <div class="margin-badge">82.3% Margin</div>
-                </div>
-            </div>
+                </article>
 
-            <!-- 4. RUM -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+                <!-- 04. DARK RUM -->
+                <article class="atelier-sku-panel" id="sku-rum" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Dark Rum">
                     <div>
-                        <div class="sku-title">FeraBee Dark Rum</div>
-                        <div class="sku-category">Aged Dark Molasses (42.8% v/v)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 04 / 06</span>
+                            <span class="sku-cat-tag">AGED DARK MOLASSES (42.8% v/v)</span>
+                        </div>
+                        <div class="sku-bottle-stage" style="background: radial-gradient(circle at center, rgba(180, 83, 9, 0.20) 0%, rgba(3, 5, 8, 0) 70%);">
+                            <img src="assets/ferabee_rum_bottle.jpg" alt="FeraBee Dark Rum Aged Molasses Bottle" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE DARK RUM</h3>
+                            <p class="sku-tasting-lead">Heavy molasses rum aged with hints of dark caramel, tropical spices, dried fruit, and toasted French oak complexity.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>750ml Heavy Glass</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>42.8% v/v</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹1,050</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹1,700</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Deep molasses rum matured with hints of caramel, tropical spices, and oak sweetness.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">750ml Glass Bottle</span>
-                    <span class="spec-tag">Goa MRP: ₹1,050</span>
-                    <span class="spec-tag">MH MRP: ₹1,700</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹25 / ₹140 (60ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹25 / ₹140 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(60ml Pour)</span></div>
+                        </div>
+                        <div class="sku-margin-badge">82.1% Gross Margin</div>
                     </div>
-                    <div class="margin-badge">82.1% Margin</div>
-                </div>
-            </div>
+                </article>
 
-            <!-- 5. BEER -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+                <!-- 05. CRAFT LAGER -->
+                <article class="atelier-sku-panel" id="sku-beer" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Crisp Lager">
                     <div>
-                        <div class="sku-title">FeraBee Crisp Lager</div>
-                        <div class="sku-category">Craft Lager Beer (5.0% ABV)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 05 / 06</span>
+                            <span class="sku-cat-tag">CRAFT LAGER BEER (5.0% ABV)</span>
+                        </div>
+                        <div class="sku-bottle-stage" style="background: radial-gradient(circle at center, rgba(217, 119, 6, 0.18) 0%, rgba(3, 5, 8, 0) 70%);">
+                            <img src="assets/ferabee_beer_bottle.jpg" alt="FeraBee Crisp Lager Beer Bottle & Glass" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE CRISP LAGER</h3>
+                            <p class="sku-tasting-lead">Crafted from premium 2-row Pilsner malt and Cascade hops. Crisp, thirst-quenching with clean effervescent carbonation.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>650ml Btl / Can</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>5.0% ABV</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹140</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹250</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Premium 2-row Pilsner malt and Cascade hops. Crisp, refreshing with clean carbonation.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">650ml Btl / 500ml Can</span>
-                    <span class="spec-tag">Goa MRP: ₹140</span>
-                    <span class="spec-tag">MH MRP: ₹250</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹55 / ₹180 (500ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹55 / ₹180 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(500ml Serve)</span></div>
+                        </div>
+                        <div class="sku-margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">69.4% Gross Margin</div>
                     </div>
-                    <div class="margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">69.4% Margin</div>
-                </div>
-            </div>
+                </article>
 
-            <!-- 6. WINE -->
-            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
-                <div class="sku-title-row">
+                <!-- 06. SPARKLING WINE -->
+                <article class="atelier-sku-panel" id="sku-wine" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" aria-label="FeraBee Sparkling Wine">
                     <div>
-                        <div class="sku-title">FeraBee Sparkling Wine</div>
-                        <div class="sku-category">Sparkling Brut/Rose (12.0% ABV)</div>
+                        <div class="sku-panel-header">
+                            <span class="sku-idx-tag">CHAPTER 06 / 06</span>
+                            <span class="sku-cat-tag">SPARKLING BRUT / ROSÉ (12.0% ABV)</span>
+                        </div>
+                        <div class="sku-bottle-stage" style="background: radial-gradient(circle at center, rgba(234, 179, 8, 0.15) 0%, rgba(3, 5, 8, 0) 70%);">
+                            <img src="assets/ferabee_wine_bottle.jpg" alt="FeraBee Sparkling Wine Brut Champagne Bottle" class="sku-bottle-img" loading="lazy">
+                        </div>
+                        <div class="sku-panel-body">
+                            <h3 class="sku-panel-title">FERABEE SPARKLING WINE</h3>
+                            <p class="sku-tasting-lead">Crisp effervescence with vibrant notes of green apple, white peach, and citrus blossom. High-margin celebration pour.</p>
+                            <div class="sku-specs-grid">
+                                <div class="sku-spec-pill"><span>Format:</span> <strong>750ml Brut Flute</strong></div>
+                                <div class="sku-spec-pill"><span>ABV:</span> <strong>12.0% ABV</strong></div>
+                                <div class="sku-spec-pill"><span>Goa MRP:</span> <strong>₹850</strong></div>
+                                <div class="sku-spec-pill"><span>MH MRP:</span> <strong>₹1,500</strong></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p style="font-size: 0.88rem; color: var(--text-secondary);">Effervescent with notes of green apple, pear, and citrus. High-margin celebration pour.</p>
-                <div class="sku-specs">
-                    <span class="spec-tag">750ml Glass Bottle</span>
-                    <span class="spec-tag">Goa MRP: ₹850</span>
-                    <span class="spec-tag">MH MRP: ₹1,500</span>
-                </div>
-                <div class="sku-margin-box">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
-                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹90 / ₹250 (150ml)</div>
+                    <div class="sku-commercial-row">
+                        <div>
+                            <div class="sku-pour-cogs">Serving COGS / Bar Price</div>
+                            <div class="sku-pour-price">₹90 / ₹250 <span style="font-size: 0.76rem; color: var(--text-muted); font-weight: normal;">(150ml Flute)</span></div>
+                        </div>
+                        <div class="sku-margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">64.0% Gross Margin</div>
                     </div>
-                    <div class="margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">64.0% Margin</div>
-                </div>
+                </article>
+
             </div>
         </div>
+
+        <!-- Atelier Exit Transition Banner -->
+        <div class="atelier-exit-strip gsap-fade">
+            <span class="atelier-exit-text">PROPRIETARY 6-SKU MONOPOLY ──► CAPTIVE 367-TALUKA LIQUIDATION MODEL</span>
+            <a href="#territories" class="nav-cta-btn magnetic-btn-secondary" style="font-size: 0.78rem; padding: 0.5rem 1.1rem;">Explore Regional Territories →</a>
+        </div>
+    </div>
+</section>
     </div>
 </section>
 
@@ -2668,8 +2933,8 @@
                     ease: "none",
                     scrollTrigger: {
                         trigger: "#products",
-                        start: "top 20%",
-                        end: () => "+=" + track.scrollWidth,
+                        start: "top 12%",
+                        end: () => "+=" + (track.scrollWidth * 1.1),
                         scrub: 1,
                         pin: true,
                         anticipatePin: 1
@@ -2700,6 +2965,25 @@
                 });
             }
         });
+    }
+
+    // Atelier Quick-Nav Scroll Helper
+    function scrollToSKU(index) {
+        const panels = document.querySelectorAll('.atelier-sku-panel');
+        if (panels && panels[index]) {
+            if (window.innerWidth > 992) {
+                const productsSec = document.getElementById('products');
+                if (productsSec) {
+                    const secTop = productsSec.offsetTop;
+                    const track = document.getElementById('product-track');
+                    const scrollDist = track ? (track.scrollWidth * 1.1) : 2000;
+                    const targetScroll = secTop + (index / (panels.length - 1)) * scrollDist;
+                    window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+                }
+            } else {
+                panels[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
     }
 
     // -------------------------------------------------------------
