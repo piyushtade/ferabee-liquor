@@ -1,0 +1,2383 @@
+{
+  "FERABEE data.docx": {
+    "paragraph_count": 85,
+    "paragraphs": [
+      "FERABEE EXECUTION BLUEPRINT\nOPERATIONAL ROADMAP & COMPLIANCE ARCHITECTURE\nCONFIDENTIAL - INTERNAL DISTRIBUTION ONLY",
+      "► PHASE 1: INCORPORATION & GOA MANUFACTURING SETUP (MONTHS 1-2)",
+      "[COMPLETED] FeraBee Liquor Pvt Ltd RoC Company Registration.",
+      "[COMPLETED] Trademark filing for 'FeraBee', 'The Royal Bee', and 'Hexagonal Logo'.",
+      "[CRITICAL] Finalize Third-Party Lease Bottling Agreement in Goa (Verna/Ponda).",
+      "[PENDING] Submit FL-9 Label Registrations for 6 Core SKUs to Goa State Excise.",
+      "[CRITICAL] Procure initial Glassware molds and custom black spray-coated bottles.",
+      "► PHASE 2: MAHARASHTRA IMPORT & LOGISTICS PIPELINE (MONTHS 2-3)",
+      "Establishing the supply chain corridor from Goa bottling plant to Maharashtra State Excise warehouses.",
+      "► PHASE 3: FLAGSHIP LOUNGE LAUNCH (MONTHS 3-4)",
+      "Rollout of the first 3 Company Owned Company Operated (COCO) lounges to prove unit economics.",
+      "[CRITICAL] Lease signing: Pune (FC Road), Thane (Ghodbunder), Panjim (Tiswadi).",
+      "[PENDING] FL-3 Bar License Application & Local Police NOC.",
+      "[PENDING] Interior Fit-out: Hexagonal ceiling, Black Marble, 3D Bee feature wall.",
+      "[PENDING] Procure RFID Wristband POS system and 60ml Electronic Auto-Pourers.",
+      "[PENDING] Hire & Train: 14 Staff Members per outlet (Mixologists, Chefs, Servers).",
+      "► PHASE 4: FRANCHISE EXPANSION (MONTHS 5-36)",
+      "Aggressive scale-up to 367 Taluka Lounges targeting 1 Lounge per Taluka (15km Exclusivity).",
+      "► TECHNOLOGY & SECURITY INFRASTRUCTURE",
+      "Mandatory systems installed in every Franchise Lounge to enforce the 61% Gross Profit standard:",
+      "FERABEE LIQUOR\nTHE ROYAL BEE",
+      "MASTER PROJECT REPORT & BUSINESS MODEL",
+      "Product Concept: FeraBee Small Batch Premium Whisky",
+      "┃  1. Corporate Structure",
+      "FeraBee Liquor Private Limited represents a high-growth corporate model in the Indian spirits and hospitality franchise ecosystem. By securing manufacturing and bottling agreements out of Goa, the company benefits from a 30% to 40% excise tax advantage compared to surrounding states.",
+      "┃  2. Product Portfolio",
+      "The FeraBee product lineup comprises core SKUs across Spirits, Craft Beer, and Wine, formulated at 42.8% v/v IMFL standard strength with custom luxury packaging.",
+      "┃  3. FeraBee Bee Lounge Concept",
+      "Each FeraBee franchise outlet operates as a high-density, social dining destination designed to offer maximum visual appeal and customer throughput. Features include Black Marble flooring, Gold Trim, a Honey Drip Bar Counter, and a 3D Gold Bee Feature Wall.",
+      "┃  4. Franchise Unit Economics",
+      "Based on conservative estimates of 105 guests per day at the Gold Tier and 45 A La Carte guests, the franchise model yields exceptional returns.",
+      "┃  5. Investment Ask & Cap Table",
+      "The capital structure combines founders equity, bank cash credit limits, and an equity raise to fund national expansion.",
+      "Strategic Analysis and 360-Degree Evaluation of the FeraBee Liquor Business Model",
+      "Executive Summary",
+      "The proposed business model for FeraBee Liquor Private Limited represents an exceptionally ambitious attempt to vertically integrate small-batch premium spirits manufacturing with a captive, franchise-led hospitality distribution network. By combining a proprietary six-to-eight product alcoholic beverage portfolio with a planned national rollout of 367 high-capacity \"FeraBee Bee Lounges\" across Maharashtra and Goa, the enterprise seeks to completely bypass traditional retail bottlenecks and state-controlled liquor syndicates. The strategic linchpin of this theoretical model is the implementation of a Company Owned Franchise Operated (COFO) corporate structure, paired with a highly aggressive \"Unlimited Food + Spirits\" consumer offering. Through this architecture, the promoters project exceptional unit-level economics, modeling a 4.7-month franchise payback period, a Year 3 corporate EBITDA of ₹78.0 Crore, and a subsequent Enterprise Valuation of ₹780.0 Crore.",
+      "However, a rigorous 360-degree evaluation of the statutory, operational, and financial frameworks governing the Indian alcoholic beverage and hospitality sectors reveals profound structural vulnerabilities and critical misalignments in the FeraBee proposition. The analysis indicates severe contradictions between the stated capitalization of ₹22.0 Crore and the massive capital expenditure required to deploy 367 COFO lounges. Furthermore, the foundational premise of regulatory arbitrage—leveraging Goa's favorable excise tax regime for direct consumption within Maharashtra—demonstrates a fundamental misinterpretation of inter-state excise laws, import duty mechanisms, and the stringent dictates of the Maharashtra Prohibition Act of 1949. The proposed legal workaround of framing unlimited alcohol sales as a \"Complimentary Tasting\" presents acute licensing and compliance risks that would likely trigger immediate regulatory intervention and license suspension. This comprehensive report deconstructs the FeraBee business model across its corporate structuring, supply chain logistics, product positioning, operational economics, and valuation projections, providing a nuanced assessment of its viability while offering critical strategic recalibrations.",
+      "Corporate Structure and Capitalization Assessment",
+      "The corporate architecture of FeraBee Liquor Private Limited relies on a standard private limited framework with a ₹10.0 Crore authorized capital and a ₹50.0 Lakh paid-up capital, apportioned through a 51:49 promoter shareholding split. The overarching capitalization strategy seeks to secure a total of ₹22.0 Crore to fund the national expansion, structured across the founders' equity, a ₹3.5 Crore bank cash credit facility, and an ₹18.0 Crore external equity raise intended to exchange a 25.0% ownership stake. This capital structure must be evaluated against the operational realities of the chosen franchise deployment strategy.",
+      "The most glaring structural anomaly in the FeraBee business plan is the integration of the Company Owned Franchise Operated (COFO) model against this specific capitalization table. In the Indian franchise ecosystem, the COFO model dictates that the parent brand retains total ownership of the physical assets, real estate leases, infrastructure, interior fit-outs, and inventory, while the franchisee assumes responsibility strictly for localized daily operations and staffing. Because the franchisor assumes the entirety of the capital expenditure, the COFO arrangement is exceedingly rare, representing less than 1% of franchise models currently operating in the Indian market.",
+      "The financial dissonance emerges immediately when attempting to scale this model to the projected 367 outlets. Establishing a premium 100-cover lounge requires substantial initial capital outlays. Contemporary interior fit-out costs for a premium casual dining or lounge space in India range between ₹2,000 to ₹3,500 per square foot. A 100-cover layout necessitates approximately 2,500 to 3,500 square feet of commercial space, implying an interior civil and design expenditure of ₹50.0 Lakh to ₹1.2 Crore per location. The procurement of commercial furniture for a 100-cover space, including bar counters, banquettes, dining sets, and ambient installations like the proposed 3D Gold Bee Feature Wall, adds an estimated ₹6.0 Lakh to ₹15.0 Lakh in capital costs. Furthermore, acquiring the mandatory FL-III permit room license in Maharashtra demands a bank guarantee equivalent to 50% of the annual license fee, which ranges from ₹5.0 Lakh to ₹25.0 Lakh depending heavily on the municipal zone and tier classification.",
+      "Consequently, the total setup cost for a single FeraBee Bee Lounge scales rapidly from a highly conservative ₹60.0 Lakh to well over ₹1.2 Crore in metropolitan catchments. Under the COFO mandate, constructing 367 lounges requires a capital outlay between ₹220.0 Crore and ₹440.0 Crore. The company’s total capitalization of ₹22.0 Crore provides an operational runway sufficient for fewer than 30 total outlets, completely invalidating the 367-outlet COFO expansion premise. To achieve this scale with the current funding apparatus, the company would be entirely reliant on staggering amounts of subsequent dilutive funding, or it must fundamentally pivot to a Franchise Owned Franchise Operated (FOFO) or Franchise Owned Company Operated (FOCO) model, transferring the heavy capital expenditure burden directly to the localized franchise partners.",
+      "Regulatory Framework and Inter-State Excise Dynamics",
+      "The FeraBee Master Project Report posits that securing manufacturing and bottling agreements in Goa provides a \"30% to 40% excise tax advantage compared to surrounding states.\" While Goa does maintain one of the most liberal and lowest-taxed alcoholic beverage environments in India, the strategic assumption that this localized advantage seamlessly translates into retail margins within Maharashtra represents a critical flaw in regulatory comprehension and inter-state commerce law.",
+      "Alcohol is constitutionally classified as a state subject in India under Entry 8 of the State List in the Seventh Schedule, granting each individual state autonomous and exclusive authority to legislate the manufacture, transport, possession, taxation, and sale of intoxicating liquors. There is no single central liquor law governing the nation, and the cross-border transport of duty-paid liquor is heavily restricted and relentlessly policed. The logistical exercise of transporting FeraBee’s bottled spirits from a Goa distillery to a captive franchise lounge in Mumbai or Pune is not a frictionless corporate transfer; it triggers a highly complex sequence of inter-state import protocols governed by the Maharashtra State Excise Department.",
+      "To legally import Indian Made Foreign Liquor into Maharashtra, the wholesaler or brand owner must first obtain a formal No Objection Certificate (NOC) from the Goa Excise Department to permit the export, followed by an explicitly granted Import Permit from Maharashtra. Upon entering Maharashtra, the imported liquor is immediately subjected to Maharashtra's specific excise duty formulas and heavy Value Added Tax structures, entirely neutralizing the initial Goan tax advantage. Maharashtra calculates state excise duty on Indian Made Foreign Liquor based on the original manufacturing cost and the size of the bottle, applying a rigid multiplier—such as Manufacturing Cost multiplied by 4.5 to determine the base for the Maximum Retail Price (MRP). Furthermore, Maharashtra levies a staggering Value Added Tax, which can reach up to 40% on the MRP of the liquor. Historical and current precedents demonstrate that state excise departments also levy specific transport pass fees on imported Extra Neutral Alcohol and finished liquor, alongside localized municipal demands, which continually compress margins for inter-state brands.",
+      "Therefore, a bottle of FeraBee Whisky manufactured in Goa carrying an intended ₹1,350 MRP will not be legally available to a Maharashtra franchisee at that advantageous Goa pricing. The franchisee, operating under a Maharashtra FL-III restaurant and bar license, is legally obligated to purchase all inventory from Maharashtra-registered wholesale distributors, paying the fully loaded Maharashtra excise duty and applicable taxes. Any attempt to circumvent this regulatory barrier by physically transporting Goa-taxed inventory directly into Maharashtra franchise lounges constitutes bootlegging and inter-state smuggling. Such actions are criminal offenses punishable by immediate license cancellation, the confiscation of property and inventory, and severe criminal prosecution under the Maharashtra Prohibition Act. The personal possession limit for transporting foreign spirit into Maharashtra is strictly capped at a mere 6 bottles of 750 ml, making large-scale logistical circumvention entirely impossible.",
+      "Product Portfolio Strategy and Margin Analysis",
+      "The FeraBee product catalog consists of a highly focused lineup covering core categories: Whisky, Vodka, Gin, Rum, and Craft Beer, all formulated at the standard 42.8% volume-by-volume Indian Made Foreign Liquor strength, excluding the beer which sits at a standard 5.0%. The strategic emphasis on custom luxury packaging, such as bespoke black glass for whisky and gold-trimmed hexagonal crests, aligns seamlessly with the premiumization macro-trend currently dominating the Indian spirits market, where affluent consumers are consistently trading up from mass-market brands to premium and craft alternatives.",
+      "The decision to utilize custom luxury packaging heavily impacts the underlying Cost of Goods Sold. Custom glass molds require substantial volume commitments from glass manufacturers, tying up significant amounts of cash in raw material inventory. If the COFO model consumes the bulk of the ₹22.0 Crore capitalization for real estate and infrastructure, funding the working capital necessary for custom packaging inventory across six unique SKUs will severely strain the company's liquidity position. Furthermore, the pricing matrix presented in the business model relies heavily on Goan MRPs. When these products are routed through the mandatory Maharashtra excise framework, the final consumer MRPs will inflate significantly, altering the perceived value proposition of the spirits when sold outside the unlimited lounge packages.",
+      "The Lounge Experience and Legal Vulnerabilities of \"Unlimited\" Packages",
+      "The commercial catalyst driving the projected 105 daily guests per lounge is the tiered \"Unlimited Food + Spirits\" packages, spanning the Silver Hive, Gold Bee, and Platinum tiers. The business model attempts to circumnavigate highly restrictive state liquor promotion laws by legally structuring the offering as an \"Unlimited Food + Complimentary FeraBee Tasting.\" The assumption is that this semantic maneuver offers extreme value to customers while locking in a guaranteed profit margin for franchisees.",
+      "However, a legal audit of this \"complimentary\" loophole reveals that it is fundamentally incompatible with the legislative framework of the Maharashtra Prohibition Act, 1949, and subsequent state excise regulations. The marketing, pricing, and distribution of alcohol in Maharashtra are stringently monitored to secure state revenue, protect public health, and prevent binge drinking. The strategic deduction that a commercial establishment can sell food and offer \"complimentary\" unlimited hard liquor without attracting severe regulatory wrath is dangerously flawed.",
+      "A restaurant serving alcohol for on-premise consumption must hold an FL-III permit room license. This license mandates that all liquor served must be duty-paid and purchased exclusively from authorized state wholesalers. The excise department audits the purchase-to-sale ratio meticulously to ensure tax compliance. Offering \"unlimited\" liquor completely disrupts this standard ratio, leading excise inspectors to immediately suspect that illicit, non-duty-paid liquor—potentially smuggled from the brand's own Goa manufacturing unit—is being utilized to offset the massive volume of complimentary pours. State excise acts across India, including Maharashtra, heavily restrict point-of-sale advertising and explicitly ban promotional inducements designed to encourage excessive alcohol consumption.",
+      "Framing high-volume alcohol consumption as a \"complimentary tasting\" does not shield the franchisee from Section 142 of the Maharashtra Prohibition Act, which explicitly empowers district collectors and excise commissioners to suspend licenses for practices deemed hazardous to public order or indicative of tax evasion. Recent crackdowns by excise enforcement agencies on establishments offering unlicensed or highly promotional liquor services—resulting in immediate First Information Reports (FIRs) and police raids—demonstrate the acute and existential risk of this operating strategy. Even when alcohol is served on a genuinely complimentary basis at private, non-commercial events, Maharashtra law requires a temporary excise permit. A permanent, commercial lounge operating a daily \"complimentary\" model would exist in continuous, blatant violation of retail vending rules.",
+      "Compounding the promotional illegality is the operational bottleneck of age-gating. The FeraBee lounge concept is designed as a high-density, social dining destination focused on maximum customer throughput. However, the legal drinking age in Maharashtra introduces severe operational friction that cannot be ignored. Under current excise regulations, the legal age for consuming mild alcohol such as beer and wine is 21 years, while the legal age for consuming hard liquor and spirits is strictly set at 25 years. In an unlimited, free-flowing buffet-style environment, enforcing this bifurcation is practically impossible without draconian and highly intrusive surveillance over the guests.",
+      "If a table of mixed-age guests purchases the Platinum package featuring unlimited spirits, the lounge staff must ensure that no guest between the ages of 21 and 24 consumes the vodka, gin, or whisky, restricting them solely to the beer offering. State excise departments routinely deploy undercover operatives to verify age compliance; serving a 24-year-old a FeraBee Whisky cocktail in this environment would result in immediate license suspension and severe financial penalties. The sheer volume of security manpower required to constantly monitor glass-sharing at a 100-cover capacity drastically increases operational overhead and inherently degrades the luxury, relaxed customer experience the FeraBee brand attempts to cultivate.",
+      "Unit Economics, OPEX, and Financial Viability",
+      "The FeraBee Master Project Report projects phenomenal franchise unit economics, estimating ₹50.86 Lakh in monthly revenue against a remarkably low ₹6.44 Lakh in monthly operating expenses. This model yields a projected net profit of ₹24.50 Lakh per month—representing an astonishing 48% net margin—and advertises a rapid 4.7-month franchise payback period. A granular reconstruction of standard hospitality operating metrics in Maharashtra indicates that these projections are aggressively optimistic and systematically fail to account for the true cost of operating a licensed permit room in major urban centers.",
+      "For a 100-cover premium lounge occupying approximately 2,500 to 3,500 square feet in a viable commercial catchment in Maharashtra, such as Mumbai, Pune, or Nagpur, the monthly fixed and variable overheads are substantially higher than the projected ₹6.44 Lakh.",
+      "Furthermore, the gross profit margin is stated at a flat 61% across all operational tiers. In the Platinum Tier, priced at ₹1,999, guests receive unlimited premium spirits, expensive seafood, and live barbecue. The fundamental psychology of the \"all-you-can-consume\" model dictates that consumers will aggressively attempt to maximize their perceived value, often drinking and eating far beyond standard a la carte proportions. If a single guest consumes 300ml of premium spirits—equivalent to roughly five standard drinks—and two servings of premium seafood, the blended Cost of Goods Sold for duty-paid alcohol in Maharashtra and high-quality food ingredients will easily breach 45% to 50% of the ticket price, compressing the gross margin from the modeled 61% down to a much more realistic 50% or lower.",
+      "When the realistically adjusted operating expenses of approximately ₹15.0 Lakh are subtracted from the heavily adjusted Gross Profit, the monthly net profit will likely stabilize closer to ₹5.0 Lakh to ₹8.0 Lakh per outlet, rather than the projected ₹24.50 Lakh. Consequently, the franchise payback period will extend from the advertised 4.7 months to a much more realistic 18 to 24 months. While a two-year payback period remains an excellent return for the hospitality sector, it requires highly transparent communication to potential franchisees to prevent localized bankruptcies caused by severe initial undercapitalization.",
+      "Valuation, Exit Strategy, and Market Benchmarking",
+      "The FeraBee financial roadmap culminates in a Year 3 exit projection, wherein the company targets a highly ambitious ₹78.0 Crore EBITDA. Applying a 10.0x EBITDA multiple, the financial model forecasts an Enterprise Valuation of ₹780.0 Crore, intended to deliver an estimated 10.8x return on investment for the 25% equity stakeholders over a 36-month horizon.",
+      "The application of a 10.0x EV/EBITDA multiple is arguably the most analytically sound and defensible component of the entire FeraBee financial model. In the Indian public markets, established alcoholic beverage manufacturers consistently command significantly higher premium multiples due to the immense barriers to entry, strict licensing regimes, and oligopolistic market structures that define the industry. For instance, Radico Khaitan Ltd., a dominant player boasting a vast portfolio of Indian Made Foreign Liquor and highly successful premium craft spirits, trades at a massive forward EV/EBITDA multiple of approximately 55.5x to 60.1x. Allied Blenders and Distillers Ltd., known primarily for its mass-market whisky volumes but currently executing aggressive premiumization efforts, trades at a relatively more conservative, yet still robust, EV/EBITDA multiple of 30.8x to 34.0x. Even smaller industry players like Tilaknagar Industries command healthy valuations. Given these established industry benchmarks, a 10.0x multiple for a private, fast-growing entrant is not just achievable; it is highly conservative. If FeraBee successfully secures consumer mindshare and demonstrates brand equity outside of its captive franchise network, strategic acquirers would likely offer multiples closer to 15.0x to 20.0x for an outright acquisition.",
+      "However, while the multiple itself is grounded in market reality, the underlying EBITDA projection of ₹78.0 Crore by Year 3 is highly precarious, primarily due to the immense execution risk associated with opening 367 licensed venues within that timeframe. Scaling to 367 operational FL-III permit rooms within 36 months requires launching approximately ten new, fully licensed lounges every single month. In India, liquor licensing is entirely a state subject, governed locally by District Excise Officers, police commissioners, and District Collectors.",
+      "The administrative process to secure a single FL-III license involves acquiring multiple prerequisite No Objection Certificates from the local fire department, the municipal corporation, the police department, and the Food Safety and Standards Authority of India. The statutory processing time for these applications is stated to range from 15 to 60 working days, assuming flawless paperwork. In practice, localized bureaucratic delays, zoning objections related to proximity to educational or religious institutions, and the mandatory public notice periods often extend the licensing timeline to four to six months per location. Furthermore, localized \"dry days\" mandate the complete closure of alcohol sales on specific national and state holidays, incrementally capping the maximum revenue-generating days per year. Achieving a ₹78.0 Crore EBITDA requires virtually zero administrative friction across 367 individual bureaucratic touchpoints—a logistical impossibility in the current Indian regulatory landscape. The valuation model must apply a heavy probability discount to the expansion timeline, shifting the ₹78.0 Crore EBITDA realization from Year 3 to Year 5 or Year 6.",
+      "Strategic Reorientation and Recommendations",
+      "To transition the FeraBee Master Project Report from a theoretical and legally vulnerable concept into an executable, highly compliant enterprise, a comprehensive structural pivot is required across multiple operational domains. The underlying vision—pairing proprietary premium spirits with a captive, experiential distribution network—retains immense commercial potential if the legal and financial frameworks are properly aligned with state realities.",
+      "Abandoning the COFO Model for FOCO Architecture",
+      "The ₹22.0 Crore capitalization is wholly insufficient to fund the real estate, infrastructure, and licensing capex for 367 company-owned locations. FeraBee must immediately abandon the COFO structure and adopt a Franchise Owned Company Operated (FOCO) model. Under the FOCO framework, local franchise investors fund the ₹80 Lakh to ₹1.5 Crore capex required for the lounge infrastructure, furniture, and initial licensing. FeraBee Liquor Pvt Ltd assumes total control of the daily operations, supply chain management, and brand quality assurance, retaining a management fee and a significant share of the gross profit. This strategic shift instantly resolves the severe capex deficit while maintaining the stringent operational control required to build a premium alcoholic beverage brand.",
+      "Restructuring the \"Unlimited\" Promotional Mechanism",
+      "Relying on the \"Complimentary Tasting\" loophole to bypass the strict mandates of the Maharashtra Prohibition Act is an existential threat to the entire business. A single high-profile excise raid across the network could result in mass license revocations, criminal charges for the promoters, and immediate brand destruction. FeraBee must transition from dangerous \"Unlimited\" packages to highly profitable \"Pre-Paid Curated Flights\" or \"High-Value Token Systems.\" For example, the ₹1,499 Gold Bee package could be structurally reformatted to offer \"Unlimited Food + 6 Premium FeraBee Beverage Tokens.\" This structurally preserves the high perceived value for the consumer, strictly limits the Cost of Goods Sold, and remains entirely compliant with state excise laws regarding retail vending and the prohibition of unlimited alcohol inducements.",
+      "Localizing Supply Chains and Manufacturing",
+      "The assumption that Goa manufacturing yields a 30% to 40% retail margin advantage for consumption in Maharashtra ignores the crushing reality of inter-state import permits, transport pass fees, and Maharashtra's specific MRP and VAT calculations. To genuinely capture high margins, FeraBee should utilize a portion of the ₹18.0 Crore external equity raise to establish a localized contract bottling agreement, known as a tie-up manufacturing unit, directly within Maharashtra. Procuring Extra Neutral Alcohol locally and blending and bottling within the state eliminates the inter-state import friction entirely. This ensures continuous, uninterrupted supply to the franchise network without the perpetual threat of cross-border logistical disruptions, excessive octroi taxes, or devastating bootlegging accusations.",
+      "Recalibrating OPEX and Phased Geographic Rollout",
+      "The franchisee recruitment pitch must be updated immediately to reflect realistic hospitality operating expenses. Correcting the monthly OPEX projection from the impossible ₹6.44 Lakh to a realistic ₹15.0 Lakh ensures that franchise partners are adequately capitalized for the initial working capital burn phase. Promising a 4.7-month payback in the heavily taxed and highly regulated Maharashtra permit room environment borders on misrepresentation; a revised forecast of 18 to 24 months is highly competitive, credible, and sufficient to attract sophisticated hospitality investors. Furthermore, rather than attempting a scattered rollout of 367 lounges, FeraBee must adopt a hyper-dense, phased geographic expansion. Concentrating the initial 20 FOCO lounges within a specific metropolitan catchment, such as the Mumbai-Thane-Navi Mumbai corridor, concentrates marketing spend, simplifies cold-chain logistics for the premium lager, and allows the company to build deep, resilient relationships with a single district's excise and municipal authorities before attempting wider state or national penetration.",
+      "Here is a 360-degree evaluation of the FeraBee Execution Blueprint based on market and regulatory realities:",
+      "1. Inter-State Import and Logistics (Phases 1 & 2) The blueprint correctly identifies the statutory requirement of obtaining an FL-1 Wholesale License and a bonded warehouse to import liquor into Maharashtra. However, the execution timeline and financial assumptions surrounding this pipeline are fundamentally flawed. To import alcohol from Goa, FeraBee must first secure a No Objection Certificate (NOC) from the Goa Excise Department, followed by an Import Permit from Maharashtra.",
+      "Crucially, routing the inventory through this legal FL-1 wholesale pipeline completely obliterates the assumed 30% to 40% excise advantage. Once Goa-manufactured spirits cross the border legally, they are immediately subjected to Maharashtra's excise duty calculations—which apply a multiplier to the manufacturing cost—alongside a heavy Value Added Tax (VAT) of up to 40% on the Maximum Retail Price (MRP). Additionally, inter-state imports often attract significant transport pass fees and localized municipal taxes, severely compressing margins.",
+      "2. Launch Timelines and Licensing Constraints (Phase 3) The blueprint projects launching three Company Owned Company Operated (COCO) flagship lounges between Months 3 and 4. This timeline drastically underestimates the bureaucratic friction of Indian liquor licensing. To secure an FL-III permit room license in Maharashtra, the company must first obtain multiple prerequisite clearances, including an Eating House License, an FDA license, a Police NOC, and a bank guarantee equal to 50% of the license fee. While the statutory processing time is listed as 15 to 60 working days, on-the-ground realities and mandatory public notice periods routinely extend this timeline to several months. Launching fully compliant, licensed venues in Month 3 is highly unrealistic.",
+      "3. Technology Stack vs. Regulatory Compliance",
+      "The implementation of IoT auto-pourers dispensing exact 60ml pegs and AI CCTV integration is an excellent operational safeguard to prevent bartender theft and protect the projected 61% gross profit margin. However, using Smart POS systems to track time limits on \"Unlimited Packages\" does not cure the underlying legal vulnerabilities.",
+      "State excise acts, including those in Maharashtra, tightly regulate pricing and heavily restrict promotional inducements that encourage excessive drinking. Furthermore, utilizing RFID wristbands for entry tracking may help address the state's bifurcated legal drinking age—which mandates customers be 21 years old for beer and wine, but 25 years old for hard spirits. Despite this technology, preventing mixed-age groups from sharing glasses at their tables in a high-density, 100-cover lounge will require immense physical security oversight, as serving underage patrons carries the risk of immediate license cancellation.",
+      "4. Aggressive Scale-Up (Phase 4) Targeting a rollout of 367 operational FL-III lounges within 36 months requires an expansion rate of approximately 10 new, fully licensed venues every single month. Given that alcohol is heavily regulated at the state level, achieving this scale without localized FOCO (Franchise Owned Company Operated) partners funding the capital expenditure and navigating local municipal politics is structurally and financially improbable under the current ₹22.0 Crore capitalization limit."
+    ],
+    "table_count": 16,
+    "tables": [
+      [
+        [
+          "Action Item",
+          "Regulatory Authority",
+          "Timeline",
+          "Status"
+        ],
+        [
+          "Apply for FL-1 Wholesale License (MH)",
+          "Maharashtra State Excise",
+          "Week 6",
+          "Pending"
+        ],
+        [
+          "Secure Bonded Warehouse (Pune/Thane)",
+          "MH Excise & Fire Dept",
+          "Week 8",
+          "In Progress"
+        ],
+        [
+          "Register Goa Labels for MH Import",
+          "Bhavan Excise Office, Mumbai",
+          "Week 9",
+          "Pending"
+        ],
+        [
+          "Establish Transport Pass (TP) Protocol",
+          "Inter-State Border Checkposts",
+          "Week 10",
+          "Pending"
+        ]
+      ],
+      [
+        [
+          "Milestone",
+          "Cumulative Outlet Count",
+          "Target Gross Revenue Run-Rate"
+        ],
+        [
+          "Month 6: Tier-1 Talukas Live",
+          "25 Lounges",
+          "₹12.7 Crore / Month"
+        ],
+        [
+          "Month 12: Western MH & Goa Complete",
+          "100 Lounges",
+          "₹50.8 Crore / Month"
+        ],
+        [
+          "Month 24: Deep Maharashtra Penetration",
+          "200 Lounges",
+          "₹101.7 Crore / Month"
+        ],
+        [
+          "Month 36: Full State Coverage (Exit Phase)",
+          "367 Lounges",
+          "₹186.6 Crore / Month"
+        ]
+      ],
+      [
+        [
+          "System",
+          "Vendor / Spec",
+          "Operational Purpose"
+        ],
+        [
+          "Smart POS & Billing",
+          "PetPooja / Posist",
+          "Tracks 'Unlimited Package' time limits (Silver/Gold/Plat)"
+        ],
+        [
+          "IoT Auto-Pourers",
+          "Berg / Exacta",
+          "Dispenses exact 60ml pegs; linked to POS to prevent bartender theft"
+        ],
+        [
+          "RFID Wristbands",
+          "Custom NFC Tags",
+          "Customer entry/exit tracking and table assignments"
+        ],
+        [
+          "AI Cloud CCTV",
+          "Hikvision / Wipro",
+          "16-Camera HD tracking Kitchen Pass & Bar counter"
+        ]
+      ],
+      [
+        [
+          "EXECUTIVE SUMMARY"
+        ]
+      ],
+      [
+        [
+          "✦ THE FERABEE VISION ✦ FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra and Goa under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees massive sales volume, eliminating traditional wine shop retail dependency."
+        ]
+      ],
+      [
+        [
+          "Metric / Element",
+          "Details"
+        ],
+        [
+          "Authorised Capital",
+          "₹10,00,00,000 (₹10 Crore)"
+        ],
+        [
+          "Paid-Up Capital",
+          "₹50,00,000 (₹50 Lakh)"
+        ],
+        [
+          "Promoter Shareholding",
+          "51% : 49% Split"
+        ],
+        [
+          "Brand Aesthetics",
+          "Gold on Black / The Royal Bee / Hexagonal Crest"
+        ]
+      ],
+      [
+        [
+          "Category",
+          "Packaging",
+          "Blend Specifications",
+          "Goa MRP"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt, Honey Finish",
+          "₹1,350"
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% v/v Triple-Distilled",
+          "₹1,150"
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% Botanical Blend",
+          "₹1,450"
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% Premium Dark Rum",
+          "₹1,050"
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle / 500ml Can",
+          "5.0% Premium Crisp Lager",
+          "₹140"
+        ]
+      ],
+      [
+        [
+          "THE LOUNGE EXPERIENCE"
+        ]
+      ],
+      [
+        [
+          "✦ THE 'UNLIMITED' ADVANTAGE ✦ The commercial catalyst is the Unlimited Food + Spirits Package. Structured legally as an 'Unlimited Food + Complimentary FeraBee Tasting', it offers extreme value to customers while locking in a guaranteed 61% profit margin for franchisees."
+        ]
+      ],
+      [
+        [
+          "Tier Package",
+          "Offering Details",
+          "Net Profit / Guest"
+        ],
+        [
+          "SILVER HIVE (₹999)",
+          "Lunch: Unlimited Beer + Vodka/Rum + Veg Food",
+          "₹619 (62% Margin)"
+        ],
+        [
+          "GOLD BEE (₹1,499)",
+          "Dinner: Unlimited Spirits + 7 Starters + Main",
+          "₹919 (61% Margin)"
+        ],
+        [
+          "PLATINUM (₹1,999)",
+          "Weekends: All Spirits + Seafood + Live BBQ",
+          "₹1,219 (61% Margin)"
+        ]
+      ],
+      [
+        [
+          "P&L Item Category",
+          "Monthly Amount (₹)"
+        ],
+        [
+          "Total Monthly Revenue",
+          "₹50,86,770"
+        ],
+        [
+          "Gross Profit (61% Margin)",
+          "₹31,00,000"
+        ],
+        [
+          "Less: Monthly Opex",
+          "₹6,44,000"
+        ],
+        [
+          "NET PROFIT (MONTHLY)",
+          "₹24,50,000"
+        ],
+        [
+          "FRANCHISE PAYBACK PERIOD",
+          "4.7 MONTHS"
+        ]
+      ],
+      [
+        [
+          "FINANCIAL PROJECTIONS & EXIT"
+        ]
+      ],
+      [
+        [
+          "Capital Source",
+          "Amount (₹)",
+          "Terms"
+        ],
+        [
+          "Founders Paid-Up Equity",
+          "₹50,00,000",
+          "51% : 49%"
+        ],
+        [
+          "Bank Cash Credit (CC)",
+          "₹3,50,00,000",
+          "Secured Facility"
+        ],
+        [
+          "External Equity Raise",
+          "₹18,00,00,000",
+          "25.0% Stake"
+        ],
+        [
+          "TOTAL CAPITALIZATION",
+          "₹22,00,00,000",
+          "Operational Runway"
+        ]
+      ],
+      [
+        [
+          "✦ YEAR 3 INVESTOR RETURN ✦ At Year 3, based on a conservative 10.0x EBITDA multiple on a projected ₹78.0 Crore EBITDA, FeraBee will achieve an Enterprise Valuation of ₹780.0 Crore. The investor's 25% equity stake will be valued at ₹195.0 Crore, representing an estimated 10.8X Return on Investment over 36 months."
+        ]
+      ],
+      [
+        [
+          "Product Category",
+          "Proposed Packaging Format",
+          "Blend Specifications",
+          "Goan MRP Assumption",
+          "Strategic Assessment and Viability"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt, Honey Finish",
+          "₹1,350",
+          "A honey-finished whisky presents a unique value proposition, bridging the gap between traditional blends and flavored spirits. At ₹1,350, it competes directly with established premium domestic blends. Custom black glass will require high minimum order quantities, straining working capital."
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% Botanical Blend",
+          "₹1,450",
+          "The Indian craft gin market is highly saturated, particularly with brands originating in Goa. Success depends heavily on a highly distinctive botanical bill rather than sheer branding, as consumers in this price tier demand complex flavor profiles."
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% Triple-Distilled",
+          "₹1,150",
+          "Vodka remains a critical volume driver, essential for the \"Unlimited Spirits\" cocktail formulations. Triple distillation is an industry standard; the primary challenge will be achieving a smooth mouthfeel using local grain to minimize adverse hangover effects during high-volume lounge consumption."
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% Premium Dark Rum",
+          "₹1,050",
+          "Competitively priced for the dark rum segment. The focus must remain on the aging process and the quality of the molasses source to compete with established legacy brands."
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle / 500ml Can",
+          "5.0% Premium Crisp Lager",
+          "₹140",
+          "Beer serves as the high-volume, low-margin anchor for the entry-level packages. Maintaining cold-chain logistics from Goa to Maharashtra is capital-intensive and risks rapid product degradation if not managed optimally."
+        ]
+      ],
+      [
+        [
+          "OPEX Line Item",
+          "FeraBee Implicit Projection",
+          "Realistic Market Estimate (Maharashtra)",
+          "Strategic Context and Regulatory Justification"
+        ],
+        [
+          "Real Estate Rent & CAM",
+          "Minimal Allocation",
+          "₹3,00,000 - ₹6,00,000",
+          "Prime, high-visibility locations required for a premium gold and black marble aesthetic command extremely high rentals. Common Area Maintenance (CAM) adds 15-20% in mall formats."
+        ],
+        [
+          "Personnel & Payroll",
+          "₹1,50,000 - ₹2,00,000",
+          "₹4,50,000 - ₹6,50,000",
+          "A 100-cover lounge running both lunch and dinner services requires a minimum of 18-25 staff members across multiple shifts, including specialized chefs, licensed bartenders, servers, security personnel, and management."
+        ],
+        [
+          "FL-III License Amortization",
+          "Unaccounted",
+          "₹40,000 - ₹2,00,000",
+          "The Maharashtra FL-III annual renewal fee costs between ₹5.0 Lakh to ₹25.0 Lakh depending heavily on the city tier. This massive annual cash outflow must be amortized monthly."
+        ],
+        [
+          "Utilities (Power, HVAC, Water)",
+          "Minimal Allocation",
+          "₹1,20,000 - ₹1,80,000",
+          "High-density lounges require massive commercial HVAC tonnage and continuous refrigeration for unlimited beer kegs, premium ice machines, and perishable seafood/meat inventories."
+        ],
+        [
+          "Marketing, Royalty & Technology",
+          "Unaccounted",
+          "₹1,50,000 - ₹2,50,000",
+          "Costs include advanced POS systems, strict inventory management software, local digital marketing, and franchisor royalty payouts which typically range from 5% to 7% of gross sales."
+        ],
+        [
+          "Breakage, Spoilage & Security",
+          "Unaccounted",
+          "₹80,000 - ₹1,20,000",
+          "High-volume \"unlimited\" alcohol consumption drastically increases glassware breakage rates and requires heightened security staff to manage intoxication and ensure age compliance."
+        ],
+        [
+          "Total Estimated Monthly OPEX",
+          "₹6,44,000",
+          "₹11,40,000 - ₹20,00,000",
+          "The FeraBee operating expense model underestimates actual market realities by a factor of approximately 2.0x to 3.0x."
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Comprehensive_Master_Project_Report.docx": {
+    "paragraph_count": 36,
+    "paragraphs": [
+      "FERABEE LIQUOR PRIVATE LIMITED",
+      "MASTER PROJECT REPORT & COMPREHENSIVE RESEARCH BLUEPRINT\nBrand: FERABEE LIQUOR — The Royal Bee | 100% Detailed Execution Plan",
+      "Concept Render: FeraBee Small Batch Whisky",
+      "1. Executive Summary & Corporate Structure",
+      "FeraBee Liquor Private Limited represents a high-growth corporate model in the Indian spirits and hospitality franchise ecosystem. By securing manufacturing and bottling agreements out of Goa, the company benefits from a 30% to 40% excise tax advantage compared to surrounding states.",
+      "Legal Corporate Name: FERABEE LIQUOR PRIVATE LIMITED",
+      "Authorised Capital: ₹10,00,00,000 (₹10 Crore) | Paid-Up: ₹50,00,000 (₹50 Lakh)",
+      "Promoter Shareholding: 51% : 49% split between Founding Promoters",
+      "Final Selected Brand Logo: Option 1 Hive — Round Emblem, Honeycomb Texture, Hexagonal Crest, 3D Gold Bee, Laurel Wreath in Black & Gold Foil",
+      "Official Brand Identity: 'The Royal Bee — Gold on Black / Premium Spirits - Crisp & Refined'",
+      "Core Brand Numerology: FERABEE = 23 = 5 (Signifying rapid expansion, energy & prosperity)",
+      "2. Product Portfolio & Technical Specifications",
+      "The FeraBee product lineup comprises core SKUs across Spirits, Craft Beer, and Wine, formulated at 42.8% v/v IMFL standard strength with custom luxury packaging:",
+      "3. The 100-Cover 'FeraBee Bee Lounge' Concept & Interior Design",
+      "Each FeraBee franchise outlet operates as a high-density, social dining destination designed to offer maximum visual appeal and customer throughput:",
+      "Store Footprint: 2,500 – 3,000 sq. ft. efficient layout (50 ft × 50 ft optimal configuration).",
+      "Seating Capacity: 100 Covers Total (60 Indoor seats with 12 Hexagonal tables + 40 Outdoor Patio covers).",
+      "Interior Aesthetic: Black Marble flooring, Gold Trim, Honey Drip Bar Counter, Gold Hexagonal LED Ceiling, and a 3D Gold Bee Feature Wall.",
+      "Territory Rights: Exclusive territorial protection of 1 Outlet per Taluka (15km radius exclusivity).",
+      "4. Franchise Unit Economics & The Unlimited Package",
+      "The commercial catalyst of the FeraBee Bee Lounge chain is the Unlimited Food + Spirits Package, structured legally as 'Unlimited Food + Complimentary FeraBee Tasting':",
+      "Franchise Outlet Monthly Profit & Loss Statement",
+      "5. High-Yield Taluka Selection & Phase 1 Rollout Strategy",
+      "To maximize initial cash flow and prove unit economics within the first 6 months, FeraBee will execute a targeted rollout focusing on High-Density, High-Disposable-Income Talukas:",
+      "6. State Excise, Inter-State Transit & Legal Compliance",
+      "Inter-state movement of liquor between Goa (Manufacturing base) and Maharashtra (Primary consumption market) requires rigorous compliance with state excise tariffs and transit permit laws:",
+      "7. Manufacturing Lease & Raw Material Supply Chain",
+      "Initial production leverages third-party lease bottling agreements in Goa (Verna/Ponda Industrial Estates) with excess capacity of 25,000 cases/month at a processing cost of ₹45–60 per case:",
+      "8. Store Operations, Technology Stack & Anti-Theft SOPs",
+      "To prevent stock leakage, unauthorized pouring, or food waste, each FeraBee Bee Lounge implements an integrated operational tech stack:",
+      "RFID Wristband POS: Issued at reception upon cover payment. Tracks package entry time, table number, and drinks consumed.",
+      "Optic Auto-Pourers: Hard spirits dispensed via electronic 60ml optic pourers linked via Bluetooth/Wi-Fi directly to POS billing.",
+      "Portion Control SOP: Starters pre-batched and portion-controlled (120g/portion) to maintain exact 61% gross profit margin.",
+      "Cloud CCTV Surveillance: 16-camera HD Cloud AI surveillance covering Bar Counter, Kitchen Pass, and Cashier for 24/7 audit.",
+      "9. Investment Ask, Cap Table, & Investor Term Sheet",
+      "The capital structure combines founders equity, bank cash credit limits, and an equity raise to fund national expansion:"
+    ],
+    "table_count": 9,
+    "tables": [
+      [
+        [
+          "★ EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency."
+        ]
+      ],
+      [
+        [
+          "Product Category",
+          "Packaging / Volume",
+          "Blend / Alcohol Spec",
+          "MH MRP (₹)",
+          "Goa MRP (₹)"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt blend, Honey Finish",
+          "₹1,850",
+          "₹1,350"
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% v/v Triple-Distilled, Charcoal Filtered",
+          "₹1,650",
+          "₹1,150"
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% v/v Artisanal Botanical Blend",
+          "₹1,950",
+          "₹1,450"
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% v/v Premium Dark Molasses Rum",
+          "₹1,550",
+          "₹1,050"
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle & 500ml Can",
+          "5.0% / 4.8% alc/vol Premium Crisp Lager",
+          "₹220",
+          "₹140"
+        ],
+        [
+          "FeraBee Wine",
+          "750ml Glass Bottle",
+          "12.0% alc/vol Sparkling Red & White",
+          "₹1,250",
+          "₹850"
+        ]
+      ],
+      [
+        [
+          "Tier Package",
+          "Timing / Hours",
+          "Inclusions / Offerings",
+          "Unit Cost",
+          "Net Profit / Guest"
+        ],
+        [
+          "SILVER HIVE (₹999)",
+          "Mon-Thu Lunch (12-5pm)",
+          "Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food",
+          "₹380",
+          "₹619 (62% Margin)"
+        ],
+        [
+          "GOLD BEE (₹1,499)",
+          "Daily Dinner (7-11:30pm)",
+          "Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert",
+          "₹580",
+          "₹919 (61% Margin)"
+        ],
+        [
+          "PLATINUM ROYAL (₹1,999)",
+          "Weekends & Peak",
+          "All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ",
+          "₹780",
+          "₹1,219 (61% Margin)"
+        ]
+      ],
+      [
+        [
+          "P&L Item Category",
+          "Monthly Amount (₹)",
+          "Operational Commentary"
+        ],
+        [
+          "Unlimited Package Sales",
+          "₹40,92,270",
+          "105 guests/day @ ₹1,499 x 26 operating days"
+        ],
+        [
+          "A La Carte Food & Drinks",
+          "₹9,94,500",
+          "45 guests/day @ ₹850 x 26 operating days"
+        ],
+        [
+          "TOTAL MONTHLY REVENUE",
+          "₹50,86,770",
+          "Gross Turnover per outlet"
+        ],
+        [
+          "Gross Profit (61% Margin)",
+          "₹31,00,000",
+          "Net margin after food & liquor COGS"
+        ],
+        [
+          "Less: Monthly Opex",
+          "₹6,44,000",
+          "Rent (₹1L), Staff 14 salaries (₹2.2L), Power, Royalty 6%, Mktg 3%"
+        ],
+        [
+          "NET PROFIT PER BAR (MONTHLY)",
+          "₹24,50,000",
+          "Net profit accruing to Franchisee"
+        ],
+        [
+          "NET PROFIT PER BAR (ANNUAL)",
+          "₹2,94,00,000",
+          "Annualized Net Earnings"
+        ],
+        [
+          "FRANCHISE PAYBACK PERIOD",
+          "4.7 MONTHS",
+          "Payback on ₹1.15 Cr Maharashtra Capex"
+        ]
+      ],
+      [
+        [
+          "Target Region",
+          "Key Talukas / Locations Included",
+          "Outlet Count"
+        ],
+        [
+          "Goa State (100% Coverage)",
+          "Tiswadi (Panjim), Bardez (Mapusa/Anjuna/Baga), Salcete (Margao), Mormugao, Ponda, Pernem",
+          "12 Outlets"
+        ],
+        [
+          "Pune District Cluster",
+          "Haveli (Vimannagar/Kharadi), Pune City (FC Rd/JM Rd), Maval (Hinjawadi/Wakad), Mulshi (Baner)",
+          "8 Outlets"
+        ],
+        [
+          "Mumbai & Thane Belt",
+          "Mumbai City, Salsette (Andheri/Bandra/Borivali), Thane (Ghodbunder/Majiwada), Navi Mumbai",
+          "12 Outlets"
+        ],
+        [
+          "Western MH & Konkan",
+          "Nashik (College Rd), Chhatrapati Sambhajinagar, Kolhapur Karveer, Satara, Sangli, Solapur",
+          "10 Outlets"
+        ],
+        [
+          "Vidarbha Region",
+          "Nagpur Urban (Dharampeth/Sadar), Nagpur Rural, Chandrapur, Amravati",
+          "8 Outlets"
+        ]
+      ],
+      [
+        [
+          "Transit Stage",
+          "Statutory Procedure & Regulatory Compliance"
+        ],
+        [
+          "1. Distillery Clearance",
+          "Bottling permit issued via Goa Excise Portal (GEMS). Payment of Goa Export Duty (~₹10-15/case)."
+        ],
+        [
+          "2. Transit Pass (TP)",
+          "Application for Inter-State Transport Pass (Pass-2). GPS-tracked bonded truck dispatch from Goa facility."
+        ],
+        [
+          "3. Maharashtra Border Entry",
+          "Import Pass verification at Maharashtra State Border Checkposts (Banda/Insuli). Duty payment."
+        ],
+        [
+          "4. Bonded Wholesale Storage",
+          "Stock deposited in State-approved FL-1 Wholesale Bonded Warehouse before distribution to FeraBee bars."
+        ]
+      ],
+      [
+        [
+          "Ingredient / Material",
+          "Technical Sourcing Specification"
+        ],
+        [
+          "Grain Neutral Spirit (ENA)",
+          "96.5% Extra Neutral Alcohol derived from grain, sulfur-free (Sourced from MH/Karnataka)"
+        ],
+        [
+          "Scotch Malt Concentrate",
+          "Imported 18-Year Highland Single Malt Concentrate (Imported via Custom Bonded Warehouse)"
+        ],
+        [
+          "Botanical Extracts (Gin)",
+          "Juniper berries, coriander seeds, Goan cardamom, lemon peel extracts via vapor infusion"
+        ],
+        [
+          "Craft Beer Brewing Stock",
+          "Premium 2-row Pilsner malt, Caramel malt, Cascade hops, and ale yeast for Amber Ale"
+        ]
+      ],
+      [
+        [
+          "Capital Source",
+          "Amount (₹)",
+          "Structure & Terms"
+        ],
+        [
+          "Founders Paid-Up Equity",
+          "₹50,00,000",
+          "Equity Shares (51% : 49%)"
+        ],
+        [
+          "Bank Cash Credit (CC) / Loan",
+          "₹3,50,00,000",
+          "Secured Working Capital Facility"
+        ],
+        [
+          "External Investor Equity Raise",
+          "₹18,00,00,000",
+          "Preferred Equity (25.0% Stake)"
+        ],
+        [
+          "TOTAL CAPITALIZATION",
+          "₹22,00,00,000",
+          "Total Operational Runway"
+        ]
+      ],
+      [
+        [
+          "★ INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected ₹78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of ₹780.0 Crore. The investor's 25% equity stake will be valued at ₹195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months."
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Execution_Blueprint.docx": {
+    "paragraph_count": 20,
+    "paragraphs": [
+      "FERABEE EXECUTION BLUEPRINT\nOPERATIONAL ROADMAP & COMPLIANCE ARCHITECTURE\nCONFIDENTIAL - INTERNAL DISTRIBUTION ONLY",
+      "► PHASE 1: INCORPORATION & GOA MANUFACTURING SETUP (MONTHS 1-2)",
+      "[COMPLETED] FeraBee Liquor Pvt Ltd RoC Company Registration.",
+      "[COMPLETED] Trademark filing for 'FeraBee', 'The Royal Bee', and 'Hexagonal Logo'.",
+      "[CRITICAL] Finalize Third-Party Lease Bottling Agreement in Goa (Verna/Ponda).",
+      "[PENDING] Submit FL-9 Label Registrations for 6 Core SKUs to Goa State Excise.",
+      "[CRITICAL] Procure initial Glassware molds and custom black spray-coated bottles.",
+      "► PHASE 2: MAHARASHTRA IMPORT & LOGISTICS PIPELINE (MONTHS 2-3)",
+      "Establishing the supply chain corridor from Goa bottling plant to Maharashtra State Excise warehouses.",
+      "► PHASE 3: FLAGSHIP LOUNGE LAUNCH (MONTHS 3-4)",
+      "Rollout of the first 3 Company Owned Company Operated (COCO) lounges to prove unit economics.",
+      "[CRITICAL] Lease signing: Pune (FC Road), Thane (Ghodbunder), Panjim (Tiswadi).",
+      "[PENDING] FL-3 Bar License Application & Local Police NOC.",
+      "[PENDING] Interior Fit-out: Hexagonal ceiling, Black Marble, 3D Bee feature wall.",
+      "[PENDING] Procure RFID Wristband POS system and 60ml Electronic Auto-Pourers.",
+      "[PENDING] Hire & Train: 14 Staff Members per outlet (Mixologists, Chefs, Servers).",
+      "► PHASE 4: FRANCHISE EXPANSION (MONTHS 5-36)",
+      "Aggressive scale-up to 367 Taluka Lounges targeting 1 Lounge per Taluka (15km Exclusivity).",
+      "► TECHNOLOGY & SECURITY INFRASTRUCTURE",
+      "Mandatory systems installed in every Franchise Lounge to enforce the 61% Gross Profit standard:"
+    ],
+    "table_count": 3,
+    "tables": [
+      [
+        [
+          "Action Item",
+          "Regulatory Authority",
+          "Timeline",
+          "Status"
+        ],
+        [
+          "Apply for FL-1 Wholesale License (MH)",
+          "Maharashtra State Excise",
+          "Week 6",
+          "Pending"
+        ],
+        [
+          "Secure Bonded Warehouse (Pune/Thane)",
+          "MH Excise & Fire Dept",
+          "Week 8",
+          "In Progress"
+        ],
+        [
+          "Register Goa Labels for MH Import",
+          "Bhavan Excise Office, Mumbai",
+          "Week 9",
+          "Pending"
+        ],
+        [
+          "Establish Transport Pass (TP) Protocol",
+          "Inter-State Border Checkposts",
+          "Week 10",
+          "Pending"
+        ]
+      ],
+      [
+        [
+          "Milestone",
+          "Cumulative Outlet Count",
+          "Target Gross Revenue Run-Rate"
+        ],
+        [
+          "Month 6: Tier-1 Talukas Live",
+          "25 Lounges",
+          "₹12.7 Crore / Month"
+        ],
+        [
+          "Month 12: Western MH & Goa Complete",
+          "100 Lounges",
+          "₹50.8 Crore / Month"
+        ],
+        [
+          "Month 24: Deep Maharashtra Penetration",
+          "200 Lounges",
+          "₹101.7 Crore / Month"
+        ],
+        [
+          "Month 36: Full State Coverage (Exit Phase)",
+          "367 Lounges",
+          "₹186.6 Crore / Month"
+        ]
+      ],
+      [
+        [
+          "System",
+          "Vendor / Spec",
+          "Operational Purpose"
+        ],
+        [
+          "Smart POS & Billing",
+          "PetPooja / Posist",
+          "Tracks 'Unlimited Package' time limits (Silver/Gold/Plat)"
+        ],
+        [
+          "IoT Auto-Pourers",
+          "Berg / Exacta",
+          "Dispenses exact 60ml pegs; linked to POS to prevent bartender theft"
+        ],
+        [
+          "RFID Wristbands",
+          "Custom NFC Tags",
+          "Customer entry/exit tracking and table assignments"
+        ],
+        [
+          "AI Cloud CCTV",
+          "Hikvision / Wipro",
+          "16-Camera HD tracking Kitchen Pass & Bar counter"
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Master_Project_Report.docx": {
+    "paragraph_count": 30,
+    "paragraphs": [
+      "FERABEE LIQUOR PRIVATE LIMITED",
+      "MASTER PROJECT REPORT & COMMERCIAL BUSINESS PLAN\nBrand: FERABEE LIQUOR — The Royal Bee | Confidential Investor Presentation",
+      "1. Executive Summary & Corporate Structure",
+      "FeraBee Liquor Private Limited represents a high-growth corporate model in the Indian spirits and hospitality franchise ecosystem. By securing manufacturing and bottling agreements out of Goa, the company benefits from a 30% to 40% excise tax advantage compared to surrounding states.",
+      "Legal Corporate Name: FERABEE LIQUOR PRIVATE LIMITED",
+      "Authorised Capital: ₹10,00,00,000 (₹10 Crore) | Paid-Up: ₹50,00,000 (₹50 Lakh)",
+      "Promoter Shareholding: 51% : 49% split between Founding Promoters",
+      "Final Selected Brand Logo: Option 1 Hive — Round Emblem, Honeycomb Texture, Hexagonal Crest, 3D Gold Bee, Laurel Wreath in Black & Gold Foil",
+      "Official Brand Identity: 'The Royal Bee — Gold on Black / Premium Spirits - Crisp & Refined'",
+      "Core Brand Numerology: FERABEE = 23 = 5 (Signifying rapid expansion, energy & prosperity)",
+      "Compliance Standard: Statutory compliance with GEMS & MSILC State Excise regulations",
+      "2. Product Portfolio & Technical Specifications",
+      "The FeraBee product lineup comprises core SKUs across Spirits, Craft Beer, and Wine, formulated at 42.8% v/v IMFL standard strength with custom luxury packaging:",
+      "3. The 100-Cover 'FeraBee Bee Lounge' Concept & Interior Design",
+      "Each FeraBee franchise outlet operates as a high-density, social dining destination designed to offer maximum visual appeal and customer throughput:",
+      "Store Footprint: 2,500 – 3,000 sq. ft. efficient layout (50 ft × 50 ft optimal configuration).",
+      "Seating Capacity: 100 Covers Total (60 Indoor seats with 12 Hexagonal tables + 40 Outdoor Patio covers).",
+      "Interior Aesthetic: Black Marble flooring, Gold Trim, Honey Drip Bar Counter, Gold Hexagonal LED Ceiling, and a 3D Gold Bee Feature Wall.",
+      "Territory Rights: Exclusive territorial protection of 1 Outlet per Taluka (15km radius exclusivity).",
+      "4. Franchise Unit Economics & The Unlimited Package",
+      "The commercial catalyst of the FeraBee Bee Lounge chain is the Unlimited Food + Spirits Package, structured legally as 'Unlimited Food + Complimentary FeraBee Tasting':",
+      "Franchise Outlet Monthly Profit & Loss Statement",
+      "5. Consolidated 3-Year P&L & Stock Liquidation",
+      "Direct sales through 367 FeraBee Bee Lounges provide guaranteed internal stock liquidation of 17,432 cases/month (2,09,190 cases/year), creating a powerful recurring revenue stream for the parent company:",
+      "6. Investment Ask, Capital Deployment, & Investor ROI",
+      "The company is raising capital to finance custom bottle moulds, state excise deposits, initial flagship COCO bar rollouts, and multi-state marketing campaigns:",
+      "Capital Raise Target: ₹18.0 Crore",
+      "Offered Stake: 25.0% Equity",
+      "Implied Valuation: ₹54.0 Crore Pre-Money | ₹72.0 Crore Post-Money",
+      "Use of Funds Allocation Schedule (₹18.0 Cr)"
+    ],
+    "table_count": 7,
+    "tables": [
+      [
+        [
+          "★ EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency."
+        ]
+      ],
+      [
+        [
+          "Product Category",
+          "Packaging / Volume",
+          "Blend / Alcohol Spec",
+          "MH MRP (₹)",
+          "Goa MRP (₹)"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt blend, Honey Finish",
+          "₹1,850",
+          "₹1,350"
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% v/v Triple-Distilled, Charcoal Filtered",
+          "₹1,650",
+          "₹1,150"
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% v/v Artisanal Botanical Blend",
+          "₹1,950",
+          "₹1,450"
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% v/v Premium Dark Molasses Rum",
+          "₹1,550",
+          "₹1,050"
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle & 500ml Can",
+          "5.0% / 4.8% alc/vol Premium Crisp Lager",
+          "₹220",
+          "₹140"
+        ],
+        [
+          "FeraBee Wine",
+          "750ml Glass Bottle",
+          "12.0% alc/vol Sparkling Red & White",
+          "₹1,250",
+          "₹850"
+        ]
+      ],
+      [
+        [
+          "Tier Package",
+          "Timing / Hours",
+          "Inclusions / Offerings",
+          "Unit Cost",
+          "Net Profit / Guest"
+        ],
+        [
+          "SILVER HIVE (₹999)",
+          "Mon-Thu Lunch (12-5pm)",
+          "Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food",
+          "₹380",
+          "₹619 (62% Margin)"
+        ],
+        [
+          "GOLD BEE (₹1,499)",
+          "Daily Dinner (7-11:30pm)",
+          "Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert",
+          "₹580",
+          "₹919 (61% Margin)"
+        ],
+        [
+          "PLATINUM ROYAL (₹1,999)",
+          "Weekends & Peak",
+          "All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ",
+          "₹780",
+          "₹1,219 (61% Margin)"
+        ]
+      ],
+      [
+        [
+          "P&L Item Category",
+          "Monthly Amount (₹)",
+          "Operational Commentary"
+        ],
+        [
+          "Unlimited Package Sales",
+          "₹40,92,270",
+          "105 guests/day @ ₹1,499 x 26 operating days"
+        ],
+        [
+          "A La Carte Food & Drinks",
+          "₹9,94,500",
+          "45 guests/day @ ₹850 x 26 operating days"
+        ],
+        [
+          "TOTAL MONTHLY REVENUE",
+          "₹50,86,770",
+          "Gross Turnover per outlet"
+        ],
+        [
+          "Gross Profit (61% Margin)",
+          "₹31,00,000",
+          "Net margin after food & liquor COGS"
+        ],
+        [
+          "Less: Monthly Opex",
+          "₹6,44,000",
+          "Rent (₹1L), Staff 14 salaries (₹2.2L), Power, Royalty 6%, Mktg 3%"
+        ],
+        [
+          "NET PROFIT PER BAR (MONTHLY)",
+          "₹24,50,000",
+          "Net profit accruing to Franchisee"
+        ],
+        [
+          "NET PROFIT PER BAR (ANNUAL)",
+          "₹2,94,00,000",
+          "Annualized Net Earnings"
+        ],
+        [
+          "FRANCHISE PAYBACK PERIOD",
+          "4.7 MONTHS",
+          "Payback on ₹1.15 Cr Maharashtra Capex"
+        ]
+      ],
+      [
+        [
+          "Financial Metric",
+          "Year 1 (100 Lounges)",
+          "Year 2 (250 Lounges)",
+          "Year 3 (367 Lounges)"
+        ],
+        [
+          "Active Franchise Network",
+          "100 Outlets",
+          "250 Outlets",
+          "367 Outlets"
+        ],
+        [
+          "Franchise Royalty (6%)",
+          "₹15.30 Crore",
+          "₹42.00 Crore",
+          "₹67.60 Crore"
+        ],
+        [
+          "One-Time Franchise Fees",
+          "₹10.00 Crore",
+          "₹15.00 Crore",
+          "₹11.70 Crore"
+        ],
+        [
+          "Internal Supply Margin (15%)",
+          "₹12.00 Crore",
+          "₹27.00 Crore",
+          "₹40.00 Crore"
+        ],
+        [
+          "Retail Market Distribution",
+          "₹29.20 Crore",
+          "₹55.00 Crore",
+          "₹85.00 Crore"
+        ],
+        [
+          "TOTAL COMPANY REVENUE",
+          "₹66.50 Crore",
+          "₹139.00 Crore",
+          "₹204.30 - ₹285.00 Cr"
+        ],
+        [
+          "COMPANY EBITDA",
+          "₹15.00 Crore (22.5%)",
+          "₹45.00 Crore (32.3%)",
+          "₹78.00 Crore (38.2%)"
+        ]
+      ],
+      [
+        [
+          "Capital Allocation Head",
+          "Amount (₹)",
+          "Percentage Share"
+        ],
+        [
+          "1. Custom Bottle Moulds & Tooling (6 SKUs)",
+          "₹4.20 Crore",
+          "23.3%"
+        ],
+        [
+          "2. Working Capital & MSILC/GEMS Security Deposits",
+          "₹3.00 Crore",
+          "16.7%"
+        ],
+        [
+          "3. Flagship COCO Lounges (Pune, Thane, Panjim)",
+          "₹3.45 Crore",
+          "19.2%"
+        ],
+        [
+          "4. State Excise Licences & Brand Registration",
+          "₹2.00 Crore",
+          "11.1%"
+        ],
+        [
+          "5. Launch Marketing, PR & Influencer Campaigns",
+          "₹2.00 Crore",
+          "11.1%"
+        ],
+        [
+          "6. Executive, Legal & Sales Team Buildout",
+          "₹1.20 Crore",
+          "6.7%"
+        ],
+        [
+          "7. Contingency & Buffer Capital",
+          "₹2.15 Crore",
+          "11.9%"
+        ],
+        [
+          "TOTAL CAPITAL ALLOCATION",
+          "₹18.00 Crore",
+          "100.0%"
+        ]
+      ],
+      [
+        [
+          "★ INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected ₹78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of ₹780.0 Crore. The investor's 25% equity stake will be valued at ₹195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months."
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Pitch_Deck_V2.docx": {
+    "paragraph_count": 29,
+    "paragraphs": [
+      "FERABEE",
+      "L I Q U O R",
+      "━━━━━━━━━━━━━━━━━━━━━━━",
+      "INVESTOR PITCH DECK\nSeries A  —  ₹18.0 Crore for 25% Equity\nAugust 2026  |  Confidential",
+      "Why India's ₹5,200 Crore Premium Alcobev Market is Broken",
+      "◉  Death by Distribution: Over 60% of brand margins are lost to middlemen — wholesalers, wine shops, retail bars.",
+      "◉  Archaic Pricing: Outdated 1-by-1 peg pricing models alienate Gen Z and Millennial consumers who seek experiential dining.",
+      "◉  Regulatory Maze: State excise complexity creates opaque supply chains, making tracking and compliance nearly impossible for emerging brands.",
+      "◉  Zero Incumbents: India has zero nationally scaled 'brand-owned lounge chains' in the premium spirits segment. The whitespace is massive.",
+      "Vertically Integrated: Manufacture → Distribute → Serve → Profit",
+      "◉  Own the Product: Manufacture proprietary premium spirits (Whisky, Vodka, Gin, Rum, Beer) with luxury 'Gold on Black' packaging.",
+      "◉  Own the Distribution: Deploy 367 'FeraBee Bee Lounges' — branded, Instagrammable, 100-cover premium dining destinations.",
+      "◉  Own the Experience: Pre-Paid 'Curated Flights' Token System delivering extreme perceived value at guaranteed 50%+ gross margins.",
+      "◉  Own the Brand: Franchise Owned Company Operated (FOCO) — franchisees invest capex, FeraBee controls operations & quality.",
+      "TAM → SAM → SOM Funnel",
+      "◉  Indian Alcobev market: $52 Billion (2025), growing at 12% CAGR.",
+      "◉  Premium segment (where FeraBee competes): Growing at 18% CAGR — fastest sub-segment.",
+      "◉  Maharashtra alone contributes 25% of national spirits consumption. 355 Talukas = massive whitespace.",
+      "6 Core SKUs — 42.8% v/v Premium IMFL Standard",
+      "Conservative, Legally Compliant Projections Using Token System",
+      "FeraBee vs. Key Competitors: Scale & Ticket Size",
+      "Quarterly Revenue & EBITDA Trajectory",
+      "₹18.0 Crore for 25.0% Equity Stake",
+      "Allocation of ₹18 Crore Equity Raise",
+      "Conservative, Legally Defensible Valuation",
+      "JOIN THE HIVE.",
+      "Let's Redefine India's Premium Spirits Industry.",
+      "━━━━━━━━━━━━━━━━━━━━━━━",
+      "FERABEE LIQUOR PRIVATE LIMITED\nCorporate Office: Goa & Mumbai, India\nEmail: invest@ferabee.com  |  Web: www.ferabee.com\n\nConfidential — For Authorized Investors Only"
+    ],
+    "table_count": 17,
+    "tables": [
+      [
+        [
+          "THE PROBLEM"
+        ]
+      ],
+      [
+        [
+          "THE FERABEE SOLUTION"
+        ]
+      ],
+      [
+        [
+          "MARKET OPPORTUNITY"
+        ]
+      ],
+      [
+        [
+          "THE PRODUCT PORTFOLIO"
+        ]
+      ],
+      [
+        [
+          "Product",
+          "Specification",
+          "Packaging",
+          "Target MRP (MH)"
+        ],
+        [
+          "FeraBee Whisky",
+          "Grain & Malt, Honey Finish",
+          "750ml Custom Black Glass",
+          "₹2,200"
+        ],
+        [
+          "FeraBee Vodka",
+          "Triple-Distilled, Charcoal",
+          "750ml Clear Glass",
+          "₹1,900"
+        ],
+        [
+          "FeraBee Gin",
+          "Artisanal Botanical Blend",
+          "750ml Clear Glass",
+          "₹2,400"
+        ],
+        [
+          "FeraBee Rum",
+          "Premium Dark Molasses",
+          "750ml Glass Bottle",
+          "₹1,700"
+        ],
+        [
+          "FeraBee Beer",
+          "5.0% Premium Crisp Lager",
+          "650ml Bottle / 500ml Can",
+          "₹250"
+        ],
+        [
+          "FeraBee Wine",
+          "12.0% Sparkling",
+          "750ml Glass Bottle",
+          "₹1,500"
+        ]
+      ],
+      [
+        [
+          "UNIT ECONOMICS — PER OUTLET"
+        ]
+      ],
+      [
+        [
+          "Tier",
+          "Price",
+          "Inclusions",
+          "Gross Margin"
+        ],
+        [
+          "Silver Hive",
+          "₹999",
+          "Unlimited Food + 4 Beer/Vodka Tokens",
+          "55%"
+        ],
+        [
+          "Gold Bee",
+          "₹1,499",
+          "Unlimited Food + 6 Spirit Tokens",
+          "52%"
+        ],
+        [
+          "Platinum Royal",
+          "₹1,999",
+          "Unlimited Food + 8 All-Spirit Tokens + BBQ",
+          "50%"
+        ]
+      ],
+      [
+        [
+          "₹5.0L – ₹8.0L Revised Monthly Net Profit per Outlet"
+        ]
+      ],
+      [
+        [
+          "18–24 MONTHS Revised Franchise Payback Period"
+        ]
+      ],
+      [
+        [
+          "COMPETITIVE LANDSCAPE"
+        ]
+      ],
+      [
+        [
+          "3-YEAR GROWTH ROADMAP"
+        ]
+      ],
+      [
+        [
+          "Phase",
+          "Timeline",
+          "Region",
+          "Outlets"
+        ],
+        [
+          "Pilot COCO",
+          "M1–M3",
+          "Mumbai (Andheri, BKC, Powai)",
+          "3"
+        ],
+        [
+          "Phase 1 FOCO",
+          "M4–M6",
+          "Mumbai-Thane-Navi Mumbai",
+          "20"
+        ],
+        [
+          "Phase 2",
+          "M7–M12",
+          "Pune, Nashik, Nagpur",
+          "60"
+        ],
+        [
+          "Phase 3",
+          "M13–M24",
+          "Deep Maharashtra + Goa",
+          "200"
+        ],
+        [
+          "Phase 4",
+          "M25–M36",
+          "Full 367 Taluka Coverage",
+          "367"
+        ]
+      ],
+      [
+        [
+          "THE INVESTMENT ASK"
+        ]
+      ],
+      [
+        [
+          "Capital Source",
+          "Amount",
+          "Terms"
+        ],
+        [
+          "Founders' Equity",
+          "₹50 Lakh",
+          "51:49 Equity"
+        ],
+        [
+          "Bank CC Facility",
+          "₹3.5 Crore",
+          "Secured Working Capital"
+        ],
+        [
+          "External Equity Raise",
+          "₹18.0 Crore",
+          "25% Preferred Equity"
+        ],
+        [
+          "TOTAL",
+          "₹22.0 Crore",
+          "Full Operational Runway"
+        ]
+      ],
+      [
+        [
+          "EXIT & RETURNS"
+        ]
+      ],
+      [
+        [
+          "Metric",
+          "Projection"
+        ],
+        [
+          "Year 3 Outlet Count",
+          "200–250 (Realistic Licensing)"
+        ],
+        [
+          "Year 3 EBITDA",
+          "₹24–₹36 Crore"
+        ],
+        [
+          "EBITDA Multiple",
+          "8.0x (Conservative)"
+        ],
+        [
+          "Enterprise Valuation",
+          "₹192–₹288 Crore"
+        ],
+        [
+          "Investor 25% Stake Value",
+          "₹48–₹72 Crore"
+        ],
+        [
+          "Investor ROI",
+          "2.7x – 4.0x"
+        ],
+        [
+          "IRR (Estimated)",
+          "45–60%"
+        ]
+      ],
+      [
+        [
+          "2.7x – 4.0x ROI Projected Investor Return (36 Months)"
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Product_Mix_Report.docx": {
+    "paragraph_count": 7,
+    "paragraphs": [
+      "FERABEE LIQUOR",
+      "PRODUCT MIX & PORTFOLIO STRATEGY",
+      "The FeraBee product portfolio is engineered to cover the entire spectrum of premium consumption occasions within the Bee Lounges. By maintaining a highly focused 6-SKU lineup, the brand optimizes supply chain efficiency, reduces custom glass mold costs, and perfectly aligns with the 'Curated Token' package structure.",
+      "The overarching aesthetic across all SKUs is 'Gold on Black / The Royal Bee', emphasizing luxury, exclusivity, and high visual appeal (Instagrammability) for the Gen Z and Millennial demographics.",
+      "A core advantage of the vertically integrated FOCO model is the extraction of wholesale and retail margins directly at the point of consumption. The table below outlines the A La Carte pricing strategy compared to the estimated Cost of Goods Sold (COGS), assuming local Maharashtra manufacturing to bypass import friction.",
+      "┃  PRODUCT MIX SYNERGY WITHIN THE TOKEN PACKAGES",
+      "The profitability of the FeraBee Lounges relies on the blended margin of the Pre-Paid Token Packages. By mixing high-margin white spirits (Vodka/Gin) with volume drivers (Beer) and premium perceived value items (Whisky), the blended beverage COGS is tightly controlled at approximately 20-25% across all tiers."
+    ],
+    "table_count": 10,
+    "tables": [
+      [
+        [
+          "PORTFOLIO OVERVIEW"
+        ]
+      ],
+      [
+        [
+          "THE PRODUCT LINE"
+        ]
+      ],
+      [
+        [
+          "FERABEE RESERVE WHISKY Category: Premium Blended Whisky  |  Strength: 42.8% v/v  Tasting Notes: Rich grain and malt blend with a distinct, smooth honey finish. Warm amber color with notes of vanilla and oak. Target Demographic: Core demographic (25-45). Primary driver for Gold and Platinum packages. Preferred spirit for corporate and evening dining."
+        ]
+      ],
+      [
+        [
+          "FERABEE PURE VODKA Category: Premium Vodka  |  Strength: 42.8% v/v  Tasting Notes: Triple-distilled, charcoal-filtered for absolute clarity and a crisp, neutral palate. Exceptionally smooth mouthfeel. Target Demographic: High-energy youth demographic (21-30). Foundation for all lounge cocktails and high-volume mixer consumption."
+        ]
+      ],
+      [
+        [
+          "FERABEE BOTANICAL GIN Category: Craft Gin  |  Strength: 42.8% v/v  Tasting Notes: Vapor-infused with juniper berries, Goan cardamom, coriander seeds, and fresh lemon peel. Floral and zesty. Target Demographic: Millennial and female demographic. Growing rapidly as a daytime and early evening lifestyle choice."
+        ]
+      ],
+      [
+        [
+          "FERABEE DARK RUM Category: Premium Dark Rum  |  Strength: 42.8% v/v  Tasting Notes: Deep, molasses-based dark rum matured with hints of caramel, spice, and tropical sweetness. Target Demographic: Dedicated regional consumers and cocktail base for tropical/tiki style lounge offerings."
+        ]
+      ],
+      [
+        [
+          "FERABEE CRISP LAGER Category: Craft Beer  |  Strength: 5.0% ABV  Tasting Notes: Premium 2-row Pilsner malt and Cascade hops. Light, crisp, refreshing with a clean finish. Target Demographic: High-volume daytime/lunch consumers (Silver Hive package). Crucial entry point for the 21-24 age demographic."
+        ]
+      ],
+      [
+        [
+          "FERABEE SPARKLING Category: Sparkling Wine  |  Strength: 12.0% ABV  Tasting Notes: Light, effervescent, with notes of green apple and citrus. Available in Brut and Rose variants. Target Demographic: Celebratory occasions, brunches, and the premium female demographic. Included in Platinum Royal packages."
+        ]
+      ],
+      [
+        [
+          "MARGIN & PRICING ARCHITECTURE"
+        ]
+      ],
+      [
+        [
+          "SKU",
+          "Volume",
+          "Est. COGS (₹)",
+          "A La Carte Price (₹)",
+          "Gross Margin"
+        ],
+        [
+          "Reserve Whisky",
+          "60ml Peg",
+          "₹35",
+          "₹180",
+          "80.5%"
+        ],
+        [
+          "Pure Vodka",
+          "60ml Peg",
+          "₹22",
+          "₹150",
+          "85.3%"
+        ],
+        [
+          "Botanical Gin",
+          "60ml Peg",
+          "₹30",
+          "₹170",
+          "82.3%"
+        ],
+        [
+          "Dark Rum",
+          "60ml Peg",
+          "₹25",
+          "₹140",
+          "82.1%"
+        ],
+        [
+          "Crisp Lager",
+          "500ml Can",
+          "₹55",
+          "₹180",
+          "69.4%"
+        ],
+        [
+          "Sparkling Wine",
+          "150ml Glass",
+          "₹90",
+          "₹250",
+          "64.0%"
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Project_Report_V2.docx": {
+    "paragraph_count": 70,
+    "paragraphs": [
+      "FERABEE LIQUOR PRIVATE LIMITED",
+      "T H E   R O Y A L   B E E",
+      "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+      "COMPREHENSIVE PROJECT REPORT\n360° STRATEGIC ANALYSIS & REVISED BUSINESS MODEL\n\nCONFIDENTIAL — FOR AUTHORIZED STAKEHOLDERS ONLY",
+      "Document Version 2.0  |  Revised & Corrected  |  August 2026\nPrepared by: Strategic Advisory Division",
+      "§1  Executive Summary & Strategic Vision",
+      "§2  Corporate Structure & Capitalization Assessment",
+      "§3  Regulatory Framework & Inter-State Excise Dynamics",
+      "§4  Product Portfolio Strategy & Margin Analysis",
+      "§5  The Lounge Experience & Legal Compliance Architecture",
+      "§6  Revised Unit Economics & Financial Projections",
+      "§7  Franchise Model Pivot: COFO → FOCO",
+      "§8  Strategic Reorientation & Recommendations",
+      "§9  Phased Geographic Rollout Plan",
+      "§10 Risk Matrix & Mitigation Framework",
+      "§11 Valuation, Exit Strategy & Market Benchmarking",
+      "Appendix A: Charts & Financial Exhibits",
+      "Appendix B: Legal Disclaimers",
+      "FeraBee Liquor Private Limited proposes a vertically integrated premium spirits manufacturing and captive hospitality distribution enterprise. The company plans to pair a proprietary six-to-eight product alcoholic beverage portfolio with a national rollout of 367 high-capacity 'FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas).",
+      "However, a rigorous 360-degree evaluation reveals profound structural vulnerabilities in the original model. This revised report deconstructs the original business plan, identifies critical legal, financial, and operational risks, and presents a strategically recalibrated execution framework that transforms the theoretical concept into a compliant, investable enterprise.",
+      "Fig. 1: Indian Alcobev Market Growth & Premium Segment Acceleration",
+      "§2  CORPORATE STRUCTURE & CAPITALIZATION ASSESSMENT",
+      "The corporate architecture relies on a standard private limited framework with ₹10.0 Crore authorized capital and ₹50.0 Lakh paid-up capital, apportioned through a 51:49 promoter shareholding split.",
+      "Fig. 2: Capital Structure Breakdown — ₹22 Crore Total Capitalization",
+      "The most glaring structural anomaly is the integration of the COFO model against this capitalization table. Establishing a premium 100-cover lounge requires ₹60 Lakh to ₹1.2 Crore per location. Under COFO, constructing 367 lounges requires ₹220–₹440 Crore—a 10x to 20x shortfall against the stated ₹22 Crore capitalization.",
+      "Fig. 3: Franchise Model Comparison — Capital Expenditure Distribution",
+      "§3  REGULATORY FRAMEWORK & INTER-STATE EXCISE DYNAMICS",
+      "Alcohol is constitutionally classified as a state subject in India under Entry 8 of the State List. There is no single central liquor law—each state has autonomous authority over manufacture, transport, taxation, and sale of intoxicating liquors.",
+      "▸ Inter-State Import Protocol Requirements",
+      "3.1. No Objection Certificate (NOC) from Goa Excise Department for export clearance.",
+      "3.2. Import Permit from Maharashtra State Excise Department.",
+      "3.3. Transport Pass (TP) with GPS-tracked bonded vehicle dispatch.",
+      "3.4. Maharashtra Border Checkpost verification and full duty payment.",
+      "3.5. Deposit into FL-1 licensed Bonded Wholesale Warehouse in Maharashtra.",
+      "3.6. Personal possession limit: 6 bottles of 750ml maximum for inter-state transport. Large-scale circumvention constitutes bootlegging under the Maharashtra Prohibition Act.",
+      "§4  PRODUCT PORTFOLIO STRATEGY & MARGIN ANALYSIS",
+      "The FeraBee product catalog covers Whisky, Vodka, Gin, Rum, and Craft Beer—all at 42.8% v/v IMFL standard strength. Custom luxury packaging aligns with the premiumization macro-trend (18% CAGR in premium spirits).",
+      "§5  THE LOUNGE EXPERIENCE & LEGAL COMPLIANCE ARCHITECTURE",
+      "The commercial catalyst driving the projected 105 daily guests is the tiered 'Unlimited Food + Spirits' package. The original model attempts to frame this as 'Unlimited Food + Complimentary FeraBee Tasting' to circumvent state liquor promotion laws.",
+      "▸ Age-Gating Compliance Crisis",
+      "Maharashtra's bifurcated legal drinking age (21 for beer/wine, 25 for spirits) creates impossible enforcement challenges in an 'unlimited, free-flowing' environment. Serving a 24-year-old FeraBee Whisky results in immediate license suspension.",
+      "▸ Recommended Solution: Pre-Paid Curated Token System",
+      "The ₹1,499 Gold Bee package should be reformatted to offer 'Unlimited Food + 6 Premium FeraBee Beverage Tokens.' This preserves high perceived value, strictly limits COGS, and remains fully compliant with state excise laws.",
+      "§6  REVISED UNIT ECONOMICS & FINANCIAL PROJECTIONS",
+      "The original projections of ₹24.5 Lakh monthly net profit and 4.7-month payback are aggressively optimistic. A granular reconstruction using standard Maharashtra hospitality operating metrics reveals the true cost structure.",
+      "Fig. 4: Per-Guest Unit Economics — Original vs. Realistic Revised Projections",
+      "Fig. 5: Revised Monthly OPEX Breakdown — ₹15.0 Lakh Per Outlet",
+      "Fig. 6: Revised Monthly P&L Waterfall (Per Outlet)",
+      "Fig. 7: Franchise Payback Period — Original vs. Revised",
+      "§7  FRANCHISE MODEL PIVOT: COFO → FOCO",
+      "The COFO model dictates the parent brand retains total ownership of physical assets, real estate, and infrastructure. This is exceedingly rare (<1% of Indian franchise models) and financially impossible at ₹22 Crore capitalization for 367 outlets.",
+      "▸ The FOCO Solution",
+      "Under the Franchise Owned Company Operated (FOCO) framework, local franchise investors fund the ₹80 Lakh to ₹1.5 Crore capex. FeraBee retains total operational control, supply chain management, and brand quality assurance via management fees and gross profit sharing.",
+      "§8  STRATEGIC REORIENTATION & RECOMMENDATIONS",
+      "▸ 8.1 — Localize Manufacturing in Maharashtra",
+      "Utilize a portion of the ₹18 Crore equity raise to establish a tie-up manufacturing unit directly within Maharashtra. Procuring ENA locally and bottling within the state eliminates inter-state import friction entirely, ensuring continuous supply without bootlegging risk.",
+      "▸ 8.2 — Hyper-Dense Phased Geographic Rollout",
+      "Concentrate the initial 20 FOCO lounges within the Mumbai-Thane-Navi Mumbai corridor. This concentrates marketing spend, simplifies cold-chain logistics, and builds deep relationships with a single district's excise authorities before wider penetration.",
+      "▸ 8.3 — Recalibrate Franchisee Communication",
+      "Update all franchisee recruitment materials to reflect realistic ₹15.0 Lakh monthly OPEX and 18-24 month payback. This is still highly competitive and sufficient to attract sophisticated hospitality investors.",
+      "Fig. 8: Revenue Growth Trajectory & Outlet Expansion Plan (36 Months)",
+      "§9  PHASED GEOGRAPHIC ROLLOUT PLAN",
+      "§10  RISK MATRIX & MITIGATION FRAMEWORK",
+      "§11  VALUATION, EXIT STRATEGY & MARKET BENCHMARKING",
+      "The original Year 3 exit projection of ₹780 Crore (10x EBITDA on ₹78 Cr) requires significant recalibration under the revised financial model. With realistic per-outlet net profit of ₹5-8 Lakh/month and a phased rollout, the revised valuation timeline is presented below.",
+      "I. This document is prepared for informational purposes only and does not constitute an offer or solicitation for the purchase or sale of any financial instrument.",
+      "II. All financial projections are forward-looking estimates based on assumptions that may not materialize. Actual results may differ materially.",
+      "III. The regulatory analysis herein is based on publicly available information regarding the Maharashtra Prohibition Act, 1949, and applicable state excise regulations as of August 2026.",
+      "IV. This document is strictly confidential and intended solely for the authorized recipient. Unauthorized reproduction, distribution, or disclosure is prohibited.",
+      "V. FeraBee Liquor Private Limited, its promoters, and advisors accept no liability for decisions made based on the information contained herein."
+    ],
+    "table_count": 18,
+    "tables": [
+      [
+        [
+          "TABLE OF CONTENTS"
+        ]
+      ],
+      [
+        [
+          "EXECUTIVE SUMMARY"
+        ]
+      ],
+      [
+        [
+          "✦ THE VISION Pairing proprietary premium spirits with a captive, experiential distribution network—eliminating middlemen, bypassing traditional wine shop dependency, and delivering extreme consumer value through curated beverage experiences."
+        ]
+      ],
+      [
+        [
+          "✦ CRITICAL FINDING The original ₹22.0 Crore capitalization is sufficient for fewer than 30 outlets under the COFO model—completely invalidating the 367-outlet expansion premise. A structural pivot to FOCO (Franchise Owned Company Operated) is mandatory."
+        ]
+      ],
+      [
+        [
+          "Parameter",
+          "Details"
+        ],
+        [
+          "Legal Entity",
+          "FeraBee Liquor Private Limited"
+        ],
+        [
+          "Authorised Capital",
+          "₹10,00,00,000 (₹10 Crore)"
+        ],
+        [
+          "Paid-Up Capital",
+          "₹50,00,000 (₹50 Lakh)"
+        ],
+        [
+          "Promoter Split",
+          "51% : 49%"
+        ],
+        [
+          "Brand Identity",
+          "The Royal Bee — Gold on Black"
+        ],
+        [
+          "Total Cap Raise Target",
+          "₹22.0 Crore"
+        ],
+        [
+          "External Equity (25% stake)",
+          "₹18.0 Crore"
+        ],
+        [
+          "Bank CC Facility",
+          "₹3.5 Crore"
+        ]
+      ],
+      [
+        [
+          "✦ CRITICAL LEGAL RISK The assumption that Goa's favorable excise regime translates into 30-40% margin advantage for Maharashtra retail is fundamentally flawed. Once Goa-manufactured spirits cross the border legally, they are immediately subjected to Maharashtra's excise duty multiplier (Manufacturing Cost × 4.5) plus up to 40% VAT on MRP, entirely neutralizing the Goan tax advantage."
+        ]
+      ],
+      [
+        [
+          "Product",
+          "Spec",
+          "Goa MRP",
+          "Est. MH MRP (After Excise)"
+        ],
+        [
+          "FeraBee Whisky",
+          "42.8% v/v Grain & Malt, Honey Finish",
+          "₹1,350",
+          "₹2,200–₹2,500"
+        ],
+        [
+          "FeraBee Vodka",
+          "42.8% v/v Triple-Distilled",
+          "₹1,150",
+          "₹1,900–₹2,100"
+        ],
+        [
+          "FeraBee Gin",
+          "42.8% Artisanal Botanical",
+          "₹1,450",
+          "₹2,400–₹2,700"
+        ],
+        [
+          "FeraBee Rum",
+          "42.8% Premium Dark Molasses",
+          "₹1,050",
+          "₹1,700–₹1,900"
+        ],
+        [
+          "FeraBee Beer",
+          "5.0% Premium Crisp Lager",
+          "₹140",
+          "₹220–₹280"
+        ]
+      ],
+      [
+        [
+          "✦ PACKAGING RISK NOTE Custom glass molds require massive volume commitments, tying up significant cash in raw material inventory. If COFO consumes the bulk of the ₹22 Crore for real estate, funding custom packaging across six unique SKUs will severely strain liquidity."
+        ]
+      ],
+      [
+        [
+          "✦ EXISTENTIAL LEGAL THREAT The 'complimentary tasting' loophole is fundamentally incompatible with the Maharashtra Prohibition Act, 1949. Section 142 empowers district collectors to suspend licenses for practices deemed hazardous to public order or indicative of tax evasion. A single high-profile excise raid could result in mass license revocations, criminal charges for promoters, and immediate brand destruction."
+        ]
+      ],
+      [
+        [
+          "Revised Tier",
+          "Structure",
+          "Tokens",
+          "Legal Status"
+        ],
+        [
+          "Silver Hive ₹999",
+          "Unlimited Veg Food + Beer/Vodka Tokens",
+          "4 Tokens",
+          "✅ Compliant"
+        ],
+        [
+          "Gold Bee ₹1,499",
+          "Unlimited Food + Premium Spirit Tokens",
+          "6 Tokens",
+          "✅ Compliant"
+        ],
+        [
+          "Platinum Royal ₹1,999",
+          "Unlimited Food + All-Spirit Tokens + BBQ",
+          "8 Tokens",
+          "✅ Compliant"
+        ]
+      ],
+      [
+        [
+          "P&L Item",
+          "Original",
+          "Revised (Realistic)"
+        ],
+        [
+          "Monthly Revenue",
+          "₹50.86 Lakh",
+          "₹50.86 Lakh"
+        ],
+        [
+          "Gross Profit Margin",
+          "61%",
+          "50–55%"
+        ],
+        [
+          "Monthly OPEX",
+          "₹6.44 Lakh",
+          "₹15.0 Lakh"
+        ],
+        [
+          "Monthly Net Profit",
+          "₹24.50 Lakh",
+          "₹5.0–₹8.0 Lakh"
+        ],
+        [
+          "Franchise Payback Period",
+          "4.7 Months",
+          "18–24 Months"
+        ]
+      ],
+      [
+        [
+          "✦ KEY TAKEAWAY While a 18-24 month payback remains excellent for the hospitality sector, transparent communication to franchisees is critical to prevent localized bankruptcies from severe initial undercapitalization."
+        ]
+      ],
+      [
+        [
+          "Dimension",
+          "COFO (Original)",
+          "FOCO (Recommended)"
+        ],
+        [
+          "Who Owns Assets?",
+          "Brand (FeraBee)",
+          "Franchise Investor"
+        ],
+        [
+          "Who Operates?",
+          "Franchise Partner",
+          "Brand (FeraBee)"
+        ],
+        [
+          "Capex Required from Brand",
+          "₹220–₹440 Crore",
+          "₹22 Crore (Sufficient)"
+        ],
+        [
+          "Quality Control",
+          "Low (Franchisee operates)",
+          "High (Brand operates)"
+        ],
+        [
+          "Scalability",
+          "Impossible at current cap",
+          "Highly Scalable"
+        ],
+        [
+          "Risk Profile",
+          "Catastrophic",
+          "Balanced"
+        ]
+      ],
+      [
+        [
+          "Phase",
+          "Timeline",
+          "Region",
+          "Outlets",
+          "Milestone"
+        ],
+        [
+          "Pilot",
+          "M1–M3",
+          "Mumbai (Andheri, BKC, Powai)",
+          "3 COCO",
+          "Prove unit economics"
+        ],
+        [
+          "Phase 1",
+          "M4–M6",
+          "Mumbai-Thane-Navi Mumbai",
+          "20 FOCO",
+          "₹10 Cr/month revenue"
+        ],
+        [
+          "Phase 2",
+          "M7–M12",
+          "Pune, Nashik, Nagpur",
+          "60 Total",
+          "₹30 Cr/month revenue"
+        ],
+        [
+          "Phase 3",
+          "M13–M24",
+          "Deep Maharashtra + Goa",
+          "200 Total",
+          "₹100 Cr/month revenue"
+        ],
+        [
+          "Phase 4",
+          "M25–M36",
+          "Full 367 Taluka Coverage",
+          "367 Total",
+          "₹186 Cr/month revenue"
+        ]
+      ],
+      [
+        [
+          "Risk Category",
+          "Severity",
+          "Probability",
+          "Mitigation Strategy"
+        ],
+        [
+          "Maharashtra Prohibition Act violation",
+          "CRITICAL",
+          "HIGH",
+          "Abandon 'Unlimited' model; implement Token System"
+        ],
+        [
+          "Capex shortfall under COFO",
+          "CRITICAL",
+          "CERTAIN",
+          "Pivot to FOCO model immediately"
+        ],
+        [
+          "Inter-state smuggling accusation",
+          "CRITICAL",
+          "MEDIUM",
+          "Establish MH tie-up bottling unit"
+        ],
+        [
+          "Franchise undercapitalization",
+          "HIGH",
+          "HIGH",
+          "Revise payback projections to 18-24 months"
+        ],
+        [
+          "FL-III licensing delays",
+          "MEDIUM",
+          "HIGH",
+          "Begin applications 6 months prior to planned launch"
+        ],
+        [
+          "Age-gating enforcement failure",
+          "HIGH",
+          "HIGH",
+          "Token system auto-restricts spirit tokens by age verification"
+        ],
+        [
+          "Custom packaging inventory lock-up",
+          "MEDIUM",
+          "MEDIUM",
+          "Phase in custom packaging after initial 50-outlet milestone"
+        ]
+      ],
+      [
+        [
+          "Metric",
+          "Original Projection",
+          "Revised Projection"
+        ],
+        [
+          "Year 3 Outlet Count",
+          "367",
+          "200–250 (Realistic Licensing)"
+        ],
+        [
+          "Year 3 EBITDA",
+          "₹78.0 Crore",
+          "₹24.0–₹36.0 Crore"
+        ],
+        [
+          "EBITDA Multiple",
+          "10.0x",
+          "8.0x (Conservative)"
+        ],
+        [
+          "Enterprise Valuation",
+          "₹780.0 Crore",
+          "₹192–₹288 Crore"
+        ],
+        [
+          "Investor 25% Stake Value",
+          "₹195.0 Crore",
+          "₹48–₹72 Crore"
+        ],
+        [
+          "Investor ROI",
+          "10.8x",
+          "2.7x – 4.0x"
+        ],
+        [
+          "IRR (Estimated)",
+          "~120%",
+          "~45–60%"
+        ]
+      ],
+      [
+        [
+          "✦ REVISED INVESTOR THESIS Even at the conservative revised projections, a 2.7x to 4.0x return over 36 months (45-60% IRR) represents an exceptional risk-adjusted return for an early-stage consumer brand in the Indian alcobev sector. The key differentiator is that these projections are now legally defensible and operationally achievable."
+        ]
+      ],
+      [
+        [
+          "LEGAL DISCLAIMERS & CONFIDENTIALITY"
+        ]
+      ]
+    ]
+  },
+  "FeraBee_Stunning_Design_Report.docx": {
+    "paragraph_count": 13,
+    "paragraphs": [
+      "FERABEE LIQUOR\nTHE ROYAL BEE",
+      "MASTER PROJECT REPORT & BUSINESS MODEL",
+      "Product Concept: FeraBee Small Batch Premium Whisky",
+      "┃  1. Corporate Structure",
+      "FeraBee Liquor Private Limited represents a high-growth corporate model in the Indian spirits and hospitality franchise ecosystem. By securing manufacturing and bottling agreements out of Goa, the company benefits from a 30% to 40% excise tax advantage compared to surrounding states.",
+      "┃  2. Product Portfolio",
+      "The FeraBee product lineup comprises core SKUs across Spirits, Craft Beer, and Wine, formulated at 42.8% v/v IMFL standard strength with custom luxury packaging.",
+      "┃  3. FeraBee Bee Lounge Concept",
+      "Each FeraBee franchise outlet operates as a high-density, social dining destination designed to offer maximum visual appeal and customer throughput. Features include Black Marble flooring, Gold Trim, a Honey Drip Bar Counter, and a 3D Gold Bee Feature Wall.",
+      "┃  4. Franchise Unit Economics",
+      "Based on conservative estimates of 105 guests per day at the Gold Tier and 45 A La Carte guests, the franchise model yields exceptional returns.",
+      "┃  5. Investment Ask & Cap Table",
+      "The capital structure combines founders equity, bank cash credit limits, and an equity raise to fund national expansion."
+    ],
+    "table_count": 11,
+    "tables": [
+      [
+        [
+          "EXECUTIVE SUMMARY"
+        ]
+      ],
+      [
+        [
+          "✦ THE FERABEE VISION ✦ FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra and Goa under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees massive sales volume, eliminating traditional wine shop retail dependency."
+        ]
+      ],
+      [
+        [
+          "Metric / Element",
+          "Details"
+        ],
+        [
+          "Authorised Capital",
+          "₹10,00,00,000 (₹10 Crore)"
+        ],
+        [
+          "Paid-Up Capital",
+          "₹50,00,000 (₹50 Lakh)"
+        ],
+        [
+          "Promoter Shareholding",
+          "51% : 49% Split"
+        ],
+        [
+          "Brand Aesthetics",
+          "Gold on Black / The Royal Bee / Hexagonal Crest"
+        ]
+      ],
+      [
+        [
+          "Category",
+          "Packaging",
+          "Blend Specifications",
+          "Goa MRP"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt, Honey Finish",
+          "₹1,350"
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% v/v Triple-Distilled",
+          "₹1,150"
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% Botanical Blend",
+          "₹1,450"
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% Premium Dark Rum",
+          "₹1,050"
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle / 500ml Can",
+          "5.0% Premium Crisp Lager",
+          "₹140"
+        ]
+      ],
+      [
+        [
+          "THE LOUNGE EXPERIENCE"
+        ]
+      ],
+      [
+        [
+          "✦ THE 'UNLIMITED' ADVANTAGE ✦ The commercial catalyst is the Unlimited Food + Spirits Package. Structured legally as an 'Unlimited Food + Complimentary FeraBee Tasting', it offers extreme value to customers while locking in a guaranteed 61% profit margin for franchisees."
+        ]
+      ],
+      [
+        [
+          "Tier Package",
+          "Offering Details",
+          "Net Profit / Guest"
+        ],
+        [
+          "SILVER HIVE (₹999)",
+          "Lunch: Unlimited Beer + Vodka/Rum + Veg Food",
+          "₹619 (62% Margin)"
+        ],
+        [
+          "GOLD BEE (₹1,499)",
+          "Dinner: Unlimited Spirits + 7 Starters + Main",
+          "₹919 (61% Margin)"
+        ],
+        [
+          "PLATINUM (₹1,999)",
+          "Weekends: All Spirits + Seafood + Live BBQ",
+          "₹1,219 (61% Margin)"
+        ]
+      ],
+      [
+        [
+          "P&L Item Category",
+          "Monthly Amount (₹)"
+        ],
+        [
+          "Total Monthly Revenue",
+          "₹50,86,770"
+        ],
+        [
+          "Gross Profit (61% Margin)",
+          "₹31,00,000"
+        ],
+        [
+          "Less: Monthly Opex",
+          "₹6,44,000"
+        ],
+        [
+          "NET PROFIT (MONTHLY)",
+          "₹24,50,000"
+        ],
+        [
+          "FRANCHISE PAYBACK PERIOD",
+          "4.7 MONTHS"
+        ]
+      ],
+      [
+        [
+          "FINANCIAL PROJECTIONS & EXIT"
+        ]
+      ],
+      [
+        [
+          "Capital Source",
+          "Amount (₹)",
+          "Terms"
+        ],
+        [
+          "Founders Paid-Up Equity",
+          "₹50,00,000",
+          "51% : 49%"
+        ],
+        [
+          "Bank Cash Credit (CC)",
+          "₹3,50,00,000",
+          "Secured Facility"
+        ],
+        [
+          "External Equity Raise",
+          "₹18,00,00,000",
+          "25.0% Stake"
+        ],
+        [
+          "TOTAL CAPITALIZATION",
+          "₹22,00,00,000",
+          "Operational Runway"
+        ]
+      ],
+      [
+        [
+          "✦ YEAR 3 INVESTOR RETURN ✦ At Year 3, based on a conservative 10.0x EBITDA multiple on a projected ₹78.0 Crore EBITDA, FeraBee will achieve an Enterprise Valuation of ₹780.0 Crore. The investor's 25% equity stake will be valued at ₹195.0 Crore, representing an estimated 10.8X Return on Investment over 36 months."
+        ]
+      ]
+    ]
+  },
+  "HEX_LIQUOR_Master_Project_Report.docx": {
+    "paragraph_count": 30,
+    "paragraphs": [
+      "FERABEE LIQUOR PRIVATE LIMITED",
+      "MASTER PROJECT REPORT & COMMERCIAL BUSINESS PLAN\nBrand: FERABEE LIQUOR — The Royal Bee | Confidential Investor Presentation",
+      "1. Executive Summary & Corporate Structure",
+      "FeraBee Liquor Private Limited represents a high-growth corporate model in the Indian spirits and hospitality franchise ecosystem. By securing manufacturing and bottling agreements out of Goa, the company benefits from a 30% to 40% excise tax advantage compared to surrounding states.",
+      "Legal Corporate Name: FERABEE LIQUOR PRIVATE LIMITED",
+      "Authorised Capital: ₹10,00,00,000 (₹10 Crore) | Paid-Up: ₹50,00,000 (₹50 Lakh)",
+      "Promoter Shareholding: 51% : 49% split between Founding Promoters",
+      "Final Selected Brand Logo: Option 1 Hive — Round Emblem, Honeycomb Texture, Hexagonal Crest, 3D Gold Bee, Laurel Wreath in Black & Gold Foil",
+      "Official Brand Identity: 'The Royal Bee — Gold on Black / Premium Spirits - Crisp & Refined'",
+      "Core Brand Numerology: FERABEE = 23 = 5 (Signifying rapid expansion, energy & prosperity)",
+      "Compliance Standard: Statutory compliance with GEMS & MSILC State Excise regulations",
+      "2. Product Portfolio & Technical Specifications",
+      "The FeraBee product lineup comprises core SKUs across Spirits, Craft Beer, and Wine, formulated at 42.8% v/v IMFL standard strength with custom luxury packaging:",
+      "3. The 100-Cover 'FeraBee Bee Lounge' Concept & Interior Design",
+      "Each FeraBee franchise outlet operates as a high-density, social dining destination designed to offer maximum visual appeal and customer throughput:",
+      "Store Footprint: 2,500 – 3,000 sq. ft. efficient layout (50 ft × 50 ft optimal configuration).",
+      "Seating Capacity: 100 Covers Total (60 Indoor seats with 12 Hexagonal tables + 40 Outdoor Patio covers).",
+      "Interior Aesthetic: Black Marble flooring, Gold Trim, Honey Drip Bar Counter, Gold Hexagonal LED Ceiling, and a 3D Gold Bee Feature Wall.",
+      "Territory Rights: Exclusive territorial protection of 1 Outlet per Taluka (15km radius exclusivity).",
+      "4. Franchise Unit Economics & The Unlimited Package",
+      "The commercial catalyst of the FeraBee Bee Lounge chain is the Unlimited Food + Spirits Package, structured legally as 'Unlimited Food + Complimentary FeraBee Tasting':",
+      "Franchise Outlet Monthly Profit & Loss Statement",
+      "5. Consolidated 3-Year P&L & Stock Liquidation",
+      "Direct sales through 367 FeraBee Bee Lounges provide guaranteed internal stock liquidation of 17,432 cases/month (2,09,190 cases/year), creating a powerful recurring revenue stream for the parent company:",
+      "6. Investment Ask, Capital Deployment, & Investor ROI",
+      "The company is raising capital to finance custom bottle moulds, state excise deposits, initial flagship COCO bar rollouts, and multi-state marketing campaigns:",
+      "Capital Raise Target: ₹18.0 Crore",
+      "Offered Stake: 25.0% Equity",
+      "Implied Valuation: ₹54.0 Crore Pre-Money | ₹72.0 Crore Post-Money",
+      "Use of Funds Allocation Schedule (₹18.0 Cr)"
+    ],
+    "table_count": 7,
+    "tables": [
+      [
+        [
+          "★ EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency."
+        ]
+      ],
+      [
+        [
+          "Product Category",
+          "Packaging / Volume",
+          "Blend / Alcohol Spec",
+          "MH MRP (₹)",
+          "Goa MRP (₹)"
+        ],
+        [
+          "FeraBee Whisky",
+          "750ml Custom Black Glass",
+          "42.8% v/v Grain & Malt blend, Honey Finish",
+          "₹1,850",
+          "₹1,350"
+        ],
+        [
+          "FeraBee Vodka",
+          "750ml Clear Glass",
+          "42.8% v/v Triple-Distilled, Charcoal Filtered",
+          "₹1,650",
+          "₹1,150"
+        ],
+        [
+          "FeraBee Gin",
+          "750ml Clear Glass",
+          "42.8% v/v Artisanal Botanical Blend",
+          "₹1,950",
+          "₹1,450"
+        ],
+        [
+          "FeraBee Rum",
+          "750ml Glass Bottle",
+          "42.8% v/v Premium Dark Molasses Rum",
+          "₹1,550",
+          "₹1,050"
+        ],
+        [
+          "FeraBee Beer",
+          "650ml Bottle & 500ml Can",
+          "5.0% / 4.8% alc/vol Premium Crisp Lager",
+          "₹220",
+          "₹140"
+        ],
+        [
+          "FeraBee Wine",
+          "750ml Glass Bottle",
+          "12.0% alc/vol Sparkling Red & White",
+          "₹1,250",
+          "₹850"
+        ]
+      ],
+      [
+        [
+          "Tier Package",
+          "Timing / Hours",
+          "Inclusions / Offerings",
+          "Unit Cost",
+          "Net Profit / Guest"
+        ],
+        [
+          "SILVER HIVE (₹999)",
+          "Mon-Thu Lunch (12-5pm)",
+          "Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food",
+          "₹380",
+          "₹619 (62% Margin)"
+        ],
+        [
+          "GOLD BEE (₹1,499)",
+          "Daily Dinner (7-11:30pm)",
+          "Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert",
+          "₹580",
+          "₹919 (61% Margin)"
+        ],
+        [
+          "PLATINUM ROYAL (₹1,999)",
+          "Weekends & Peak",
+          "All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ",
+          "₹780",
+          "₹1,219 (61% Margin)"
+        ]
+      ],
+      [
+        [
+          "P&L Item Category",
+          "Monthly Amount (₹)",
+          "Operational Commentary"
+        ],
+        [
+          "Unlimited Package Sales",
+          "₹40,92,270",
+          "105 guests/day @ ₹1,499 x 26 operating days"
+        ],
+        [
+          "A La Carte Food & Drinks",
+          "₹9,94,500",
+          "45 guests/day @ ₹850 x 26 operating days"
+        ],
+        [
+          "TOTAL MONTHLY REVENUE",
+          "₹50,86,770",
+          "Gross Turnover per outlet"
+        ],
+        [
+          "Gross Profit (61% Margin)",
+          "₹31,00,000",
+          "Net margin after food & liquor COGS"
+        ],
+        [
+          "Less: Monthly Opex",
+          "₹6,44,000",
+          "Rent (₹1L), Staff 14 salaries (₹2.2L), Power, Royalty 6%, Mktg 3%"
+        ],
+        [
+          "NET PROFIT PER BAR (MONTHLY)",
+          "₹24,50,000",
+          "Net profit accruing to Franchisee"
+        ],
+        [
+          "NET PROFIT PER BAR (ANNUAL)",
+          "₹2,94,00,000",
+          "Annualized Net Earnings"
+        ],
+        [
+          "FRANCHISE PAYBACK PERIOD",
+          "4.7 MONTHS",
+          "Payback on ₹1.15 Cr Maharashtra Capex"
+        ]
+      ],
+      [
+        [
+          "Financial Metric",
+          "Year 1 (100 Lounges)",
+          "Year 2 (250 Lounges)",
+          "Year 3 (367 Lounges)"
+        ],
+        [
+          "Active Franchise Network",
+          "100 Outlets",
+          "250 Outlets",
+          "367 Outlets"
+        ],
+        [
+          "Franchise Royalty (6%)",
+          "₹15.30 Crore",
+          "₹42.00 Crore",
+          "₹67.60 Crore"
+        ],
+        [
+          "One-Time Franchise Fees",
+          "₹10.00 Crore",
+          "₹15.00 Crore",
+          "₹11.70 Crore"
+        ],
+        [
+          "Internal Supply Margin (15%)",
+          "₹12.00 Crore",
+          "₹27.00 Crore",
+          "₹40.00 Crore"
+        ],
+        [
+          "Retail Market Distribution",
+          "₹29.20 Crore",
+          "₹55.00 Crore",
+          "₹85.00 Crore"
+        ],
+        [
+          "TOTAL COMPANY REVENUE",
+          "₹66.50 Crore",
+          "₹139.00 Crore",
+          "₹204.30 - ₹285.00 Cr"
+        ],
+        [
+          "COMPANY EBITDA",
+          "₹15.00 Crore (22.5%)",
+          "₹45.00 Crore (32.3%)",
+          "₹78.00 Crore (38.2%)"
+        ]
+      ],
+      [
+        [
+          "Capital Allocation Head",
+          "Amount (₹)",
+          "Percentage Share"
+        ],
+        [
+          "1. Custom Bottle Moulds & Tooling (6 SKUs)",
+          "₹4.20 Crore",
+          "23.3%"
+        ],
+        [
+          "2. Working Capital & MSILC/GEMS Security Deposits",
+          "₹3.00 Crore",
+          "16.7%"
+        ],
+        [
+          "3. Flagship COCO Lounges (Pune, Thane, Panjim)",
+          "₹3.45 Crore",
+          "19.2%"
+        ],
+        [
+          "4. State Excise Licences & Brand Registration",
+          "₹2.00 Crore",
+          "11.1%"
+        ],
+        [
+          "5. Launch Marketing, PR & Influencer Campaigns",
+          "₹2.00 Crore",
+          "11.1%"
+        ],
+        [
+          "6. Executive, Legal & Sales Team Buildout",
+          "₹1.20 Crore",
+          "6.7%"
+        ],
+        [
+          "7. Contingency & Buffer Capital",
+          "₹2.15 Crore",
+          "11.9%"
+        ],
+        [
+          "TOTAL CAPITAL ALLOCATION",
+          "₹18.00 Crore",
+          "100.0%"
+        ]
+      ],
+      [
+        [
+          "★ INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected ₹78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of ₹780.0 Crore. The investor's 25% equity stake will be valued at ₹195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months."
+        ]
+      ]
+    ]
+  }
+}

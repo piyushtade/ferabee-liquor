@@ -1,0 +1,565 @@
+﻿================================================================================
+FILE: FERABEE data.docx
+
+--- Table 1 (5 rows) ---
+Action Item | Regulatory Authority | Timeline | Status
+Apply for FL-1 Wholesale License (MH) | Maharashtra State Excise | Week 6 | Pending
+Secure Bonded Warehouse (Pune/Thane) | MH Excise & Fire Dept | Week 8 | In Progress
+Register Goa Labels for MH Import | Bhavan Excise Office, Mumbai | Week 9 | Pending
+Establish Transport Pass (TP) Protocol | Inter-State Border Checkposts | Week 10 | Pending
+
+--- Table 2 (5 rows) ---
+Milestone | Cumulative Outlet Count | Target Gross Revenue Run-Rate
+Month 6: Tier-1 Talukas Live | 25 Lounges | Ôé╣12.7 Crore / Month
+Month 12: Western MH & Goa Complete | 100 Lounges | Ôé╣50.8 Crore / Month
+Month 24: Deep Maharashtra Penetration | 200 Lounges | Ôé╣101.7 Crore / Month
+Month 36: Full State Coverage (Exit Phase) | 367 Lounges | Ôé╣186.6 Crore / Month
+
+--- Table 3 (5 rows) ---
+System | Vendor / Spec | Operational Purpose
+Smart POS & Billing | PetPooja / Posist | Tracks 'Unlimited Package' time limits (Silver/Gold/Plat)
+IoT Auto-Pourers | Berg / Exacta | Dispenses exact 60ml pegs; linked to POS to prevent bartender theft
+RFID Wristbands | Custom NFC Tags | Customer entry/exit tracking and table assignments
+AI Cloud CCTV | Hikvision / Wipro | 16-Camera HD tracking Kitchen Pass & Bar counter
+
+--- Table 4 (1 rows) ---
+EXECUTIVE SUMMARY
+
+--- Table 5 (1 rows) ---
+Ô£ª THE FERABEE VISION Ô£ª FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra and Goa under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees massive sales volume, eliminating traditional wine shop retail dependency.
+
+--- Table 6 (5 rows) ---
+Metric / Element | Details
+Authorised Capital | Ôé╣10,00,00,000 (Ôé╣10 Crore)
+Paid-Up Capital | Ôé╣50,00,000 (Ôé╣50 Lakh)
+Promoter Shareholding | 51% : 49% Split
+Brand Aesthetics | Gold on Black / The Royal Bee / Hexagonal Crest
+
+--- Table 7 (6 rows) ---
+Category | Packaging | Blend Specifications | Goa MRP
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt, Honey Finish | Ôé╣1,350
+FeraBee Vodka | 750ml Clear Glass | 42.8% v/v Triple-Distilled | Ôé╣1,150
+FeraBee Gin | 750ml Clear Glass | 42.8% Botanical Blend | Ôé╣1,450
+FeraBee Rum | 750ml Glass Bottle | 42.8% Premium Dark Rum | Ôé╣1,050
+FeraBee Beer | 650ml Bottle / 500ml Can | 5.0% Premium Crisp Lager | Ôé╣140
+
+--- Table 8 (1 rows) ---
+THE LOUNGE EXPERIENCE
+
+--- Table 9 (1 rows) ---
+Ô£ª THE 'UNLIMITED' ADVANTAGE Ô£ª The commercial catalyst is the Unlimited Food + Spirits Package. Structured legally as an 'Unlimited Food + Complimentary FeraBee Tasting', it offers extreme value to customers while locking in a guaranteed 61% profit margin for franchisees.
+
+--- Table 10 (4 rows) ---
+Tier Package | Offering Details | Net Profit / Guest
+SILVER HIVE (Ôé╣999) | Lunch: Unlimited Beer + Vodka/Rum + Veg Food | Ôé╣619 (62% Margin)
+GOLD BEE (Ôé╣1,499) | Dinner: Unlimited Spirits + 7 Starters + Main | Ôé╣919 (61% Margin)
+PLATINUM (Ôé╣1,999) | Weekends: All Spirits + Seafood + Live BBQ | Ôé╣1,219 (61% Margin)
+
+--- Table 11 (6 rows) ---
+P&L Item Category | Monthly Amount (Ôé╣)
+Total Monthly Revenue | Ôé╣50,86,770
+Gross Profit (61% Margin) | Ôé╣31,00,000
+Less: Monthly Opex | Ôé╣6,44,000
+NET PROFIT (MONTHLY) | Ôé╣24,50,000
+FRANCHISE PAYBACK PERIOD | 4.7 MONTHS
+
+--- Table 12 (1 rows) ---
+FINANCIAL PROJECTIONS & EXIT
+
+--- Table 13 (5 rows) ---
+Capital Source | Amount (Ôé╣) | Terms
+Founders Paid-Up Equity | Ôé╣50,00,000 | 51% : 49%
+Bank Cash Credit (CC) | Ôé╣3,50,00,000 | Secured Facility
+External Equity Raise | Ôé╣18,00,00,000 | 25.0% Stake
+TOTAL CAPITALIZATION | Ôé╣22,00,00,000 | Operational Runway
+
+--- Table 14 (1 rows) ---
+Ô£ª YEAR 3 INVESTOR RETURN Ô£ª At Year 3, based on a conservative 10.0x EBITDA multiple on a projected Ôé╣78.0 Crore EBITDA, FeraBee will achieve an Enterprise Valuation of Ôé╣780.0 Crore. The investor's 25% equity stake will be valued at Ôé╣195.0 Crore, representing an estimated 10.8X Return on Investment over 36 months.
+
+--- Table 15 (6 rows) ---
+Product Category | Proposed Packaging Format | Blend Specifications | Goan MRP Assumption | Strategic Assessment and Viability
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt, Honey Finish | Ôé╣1,350 | A honey-finished whisky presents a unique value proposition, bridging the gap between traditional blends and flavored spirits. At Ôé╣1,350, it competes directly with established premium domestic blends. Custom black glass will require high minimum order quantities, straining working capital.
+FeraBee Gin | 750ml Clear Glass | 42.8% Botanical Blend | Ôé╣1,450 | The Indian craft gin market is highly saturated, particularly with brands originating in Goa. Success depends heavily on a highly distinctive botanical bill rather than sheer branding, as consumers in this price tier demand complex flavor profiles.
+FeraBee Vodka | 750ml Clear Glass | 42.8% Triple-Distilled | Ôé╣1,150 | Vodka remains a critical volume driver, essential for the "Unlimited Spirits" cocktail formulations. Triple distillation is an industry standard; the primary challenge will be achieving a smooth mouthfeel using local grain to minimize adverse hangover effects during high-volume lounge consumption.
+FeraBee Rum | 750ml Glass Bottle | 42.8% Premium Dark Rum | Ôé╣1,050 | Competitively priced for the dark rum segment. The focus must remain on the aging process and the quality of the molasses source to compete with established legacy brands.
+FeraBee Beer | 650ml Bottle / 500ml Can | 5.0% Premium Crisp Lager | Ôé╣140 | Beer serves as the high-volume, low-margin anchor for the entry-level packages. Maintaining cold-chain logistics from Goa to Maharashtra is capital-intensive and risks rapid product degradation if not managed optimally.
+
+--- Table 16 (8 rows) ---
+OPEX Line Item | FeraBee Implicit Projection | Realistic Market Estimate (Maharashtra) | Strategic Context and Regulatory Justification
+Real Estate Rent & CAM | Minimal Allocation | Ôé╣3,00,000 - Ôé╣6,00,000 | Prime, high-visibility locations required for a premium gold and black marble aesthetic command extremely high rentals. Common Area Maintenance (CAM) adds 15-20% in mall formats.
+Personnel & Payroll | Ôé╣1,50,000 - Ôé╣2,00,000 | Ôé╣4,50,000 - Ôé╣6,50,000 | A 100-cover lounge running both lunch and dinner services requires a minimum of 18-25 staff members across multiple shifts, including specialized chefs, licensed bartenders, servers, security personnel, and management.
+FL-III License Amortization | Unaccounted | Ôé╣40,000 - Ôé╣2,00,000 | The Maharashtra FL-III annual renewal fee costs between Ôé╣5.0 Lakh to Ôé╣25.0 Lakh depending heavily on the city tier. This massive annual cash outflow must be amortized monthly.
+Utilities (Power, HVAC, Water) | Minimal Allocation | Ôé╣1,20,000 - Ôé╣1,80,000 | High-density lounges require massive commercial HVAC tonnage and continuous refrigeration for unlimited beer kegs, premium ice machines, and perishable seafood/meat inventories.
+Marketing, Royalty & Technology | Unaccounted | Ôé╣1,50,000 - Ôé╣2,50,000 | Costs include advanced POS systems, strict inventory management software, local digital marketing, and franchisor royalty payouts which typically range from 5% to 7% of gross sales.
+Breakage, Spoilage & Security | Unaccounted | Ôé╣80,000 - Ôé╣1,20,000 | High-volume "unlimited" alcohol consumption drastically increases glassware breakage rates and requires heightened security staff to manage intoxication and ensure age compliance.
+Total Estimated Monthly OPEX | Ôé╣6,44,000 | Ôé╣11,40,000 - Ôé╣20,00,000 | The FeraBee operating expense model underestimates actual market realities by a factor of approximately 2.0x to 3.0x.
+================================================================================
+FILE: FeraBee_Comprehensive_Master_Project_Report.docx
+
+--- Table 1 (1 rows) ---
+Ôÿà EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency.
+
+--- Table 2 (7 rows) ---
+Product Category | Packaging / Volume | Blend / Alcohol Spec | MH MRP (Ôé╣) | Goa MRP (Ôé╣)
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt blend, Honey Finish | Ôé╣1,850 | Ôé╣1,350
+FeraBee Vodka | 750ml Clear Glass | 42.8% v/v Triple-Distilled, Charcoal Filtered | Ôé╣1,650 | Ôé╣1,150
+FeraBee Gin | 750ml Clear Glass | 42.8% v/v Artisanal Botanical Blend | Ôé╣1,950 | Ôé╣1,450
+FeraBee Rum | 750ml Glass Bottle | 42.8% v/v Premium Dark Molasses Rum | Ôé╣1,550 | Ôé╣1,050
+FeraBee Beer | 650ml Bottle & 500ml Can | 5.0% / 4.8% alc/vol Premium Crisp Lager | Ôé╣220 | Ôé╣140
+FeraBee Wine | 750ml Glass Bottle | 12.0% alc/vol Sparkling Red & White | Ôé╣1,250 | Ôé╣850
+
+--- Table 3 (4 rows) ---
+Tier Package | Timing / Hours | Inclusions / Offerings | Unit Cost | Net Profit / Guest
+SILVER HIVE (Ôé╣999) | Mon-Thu Lunch (12-5pm) | Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food | Ôé╣380 | Ôé╣619 (62% Margin)
+GOLD BEE (Ôé╣1,499) | Daily Dinner (7-11:30pm) | Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert | Ôé╣580 | Ôé╣919 (61% Margin)
+PLATINUM ROYAL (Ôé╣1,999) | Weekends & Peak | All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ | Ôé╣780 | Ôé╣1,219 (61% Margin)
+
+--- Table 4 (9 rows) ---
+P&L Item Category | Monthly Amount (Ôé╣) | Operational Commentary
+Unlimited Package Sales | Ôé╣40,92,270 | 105 guests/day @ Ôé╣1,499 x 26 operating days
+A La Carte Food & Drinks | Ôé╣9,94,500 | 45 guests/day @ Ôé╣850 x 26 operating days
+TOTAL MONTHLY REVENUE | Ôé╣50,86,770 | Gross Turnover per outlet
+Gross Profit (61% Margin) | Ôé╣31,00,000 | Net margin after food & liquor COGS
+Less: Monthly Opex | Ôé╣6,44,000 | Rent (Ôé╣1L), Staff 14 salaries (Ôé╣2.2L), Power, Royalty 6%, Mktg 3%
+NET PROFIT PER BAR (MONTHLY) | Ôé╣24,50,000 | Net profit accruing to Franchisee
+NET PROFIT PER BAR (ANNUAL) | Ôé╣2,94,00,000 | Annualized Net Earnings
+FRANCHISE PAYBACK PERIOD | 4.7 MONTHS | Payback on Ôé╣1.15 Cr Maharashtra Capex
+
+--- Table 5 (6 rows) ---
+Target Region | Key Talukas / Locations Included | Outlet Count
+Goa State (100% Coverage) | Tiswadi (Panjim), Bardez (Mapusa/Anjuna/Baga), Salcete (Margao), Mormugao, Ponda, Pernem | 12 Outlets
+Pune District Cluster | Haveli (Vimannagar/Kharadi), Pune City (FC Rd/JM Rd), Maval (Hinjawadi/Wakad), Mulshi (Baner) | 8 Outlets
+Mumbai & Thane Belt | Mumbai City, Salsette (Andheri/Bandra/Borivali), Thane (Ghodbunder/Majiwada), Navi Mumbai | 12 Outlets
+Western MH & Konkan | Nashik (College Rd), Chhatrapati Sambhajinagar, Kolhapur Karveer, Satara, Sangli, Solapur | 10 Outlets
+Vidarbha Region | Nagpur Urban (Dharampeth/Sadar), Nagpur Rural, Chandrapur, Amravati | 8 Outlets
+
+--- Table 6 (5 rows) ---
+Transit Stage | Statutory Procedure & Regulatory Compliance
+1. Distillery Clearance | Bottling permit issued via Goa Excise Portal (GEMS). Payment of Goa Export Duty (~Ôé╣10-15/case).
+2. Transit Pass (TP) | Application for Inter-State Transport Pass (Pass-2). GPS-tracked bonded truck dispatch from Goa facility.
+3. Maharashtra Border Entry | Import Pass verification at Maharashtra State Border Checkposts (Banda/Insuli). Duty payment.
+4. Bonded Wholesale Storage | Stock deposited in State-approved FL-1 Wholesale Bonded Warehouse before distribution to FeraBee bars.
+
+--- Table 7 (5 rows) ---
+Ingredient / Material | Technical Sourcing Specification
+Grain Neutral Spirit (ENA) | 96.5% Extra Neutral Alcohol derived from grain, sulfur-free (Sourced from MH/Karnataka)
+Scotch Malt Concentrate | Imported 18-Year Highland Single Malt Concentrate (Imported via Custom Bonded Warehouse)
+Botanical Extracts (Gin) | Juniper berries, coriander seeds, Goan cardamom, lemon peel extracts via vapor infusion
+Craft Beer Brewing Stock | Premium 2-row Pilsner malt, Caramel malt, Cascade hops, and ale yeast for Amber Ale
+
+--- Table 8 (5 rows) ---
+Capital Source | Amount (Ôé╣) | Structure & Terms
+Founders Paid-Up Equity | Ôé╣50,00,000 | Equity Shares (51% : 49%)
+Bank Cash Credit (CC) / Loan | Ôé╣3,50,00,000 | Secured Working Capital Facility
+External Investor Equity Raise | Ôé╣18,00,00,000 | Preferred Equity (25.0% Stake)
+TOTAL CAPITALIZATION | Ôé╣22,00,00,000 | Total Operational Runway
+
+--- Table 9 (1 rows) ---
+Ôÿà INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected Ôé╣78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of Ôé╣780.0 Crore. The investor's 25% equity stake will be valued at Ôé╣195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months.
+================================================================================
+FILE: FeraBee_Execution_Blueprint.docx
+
+--- Table 1 (5 rows) ---
+Action Item | Regulatory Authority | Timeline | Status
+Apply for FL-1 Wholesale License (MH) | Maharashtra State Excise | Week 6 | Pending
+Secure Bonded Warehouse (Pune/Thane) | MH Excise & Fire Dept | Week 8 | In Progress
+Register Goa Labels for MH Import | Bhavan Excise Office, Mumbai | Week 9 | Pending
+Establish Transport Pass (TP) Protocol | Inter-State Border Checkposts | Week 10 | Pending
+
+--- Table 2 (5 rows) ---
+Milestone | Cumulative Outlet Count | Target Gross Revenue Run-Rate
+Month 6: Tier-1 Talukas Live | 25 Lounges | Ôé╣12.7 Crore / Month
+Month 12: Western MH & Goa Complete | 100 Lounges | Ôé╣50.8 Crore / Month
+Month 24: Deep Maharashtra Penetration | 200 Lounges | Ôé╣101.7 Crore / Month
+Month 36: Full State Coverage (Exit Phase) | 367 Lounges | Ôé╣186.6 Crore / Month
+
+--- Table 3 (5 rows) ---
+System | Vendor / Spec | Operational Purpose
+Smart POS & Billing | PetPooja / Posist | Tracks 'Unlimited Package' time limits (Silver/Gold/Plat)
+IoT Auto-Pourers | Berg / Exacta | Dispenses exact 60ml pegs; linked to POS to prevent bartender theft
+RFID Wristbands | Custom NFC Tags | Customer entry/exit tracking and table assignments
+AI Cloud CCTV | Hikvision / Wipro | 16-Camera HD tracking Kitchen Pass & Bar counter
+================================================================================
+FILE: FeraBee_Master_Project_Report.docx
+
+--- Table 1 (1 rows) ---
+Ôÿà EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency.
+
+--- Table 2 (7 rows) ---
+Product Category | Packaging / Volume | Blend / Alcohol Spec | MH MRP (Ôé╣) | Goa MRP (Ôé╣)
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt blend, Honey Finish | Ôé╣1,850 | Ôé╣1,350
+FeraBee Vodka | 750ml Clear Glass | 42.8% v/v Triple-Distilled, Charcoal Filtered | Ôé╣1,650 | Ôé╣1,150
+FeraBee Gin | 750ml Clear Glass | 42.8% v/v Artisanal Botanical Blend | Ôé╣1,950 | Ôé╣1,450
+FeraBee Rum | 750ml Glass Bottle | 42.8% v/v Premium Dark Molasses Rum | Ôé╣1,550 | Ôé╣1,050
+FeraBee Beer | 650ml Bottle & 500ml Can | 5.0% / 4.8% alc/vol Premium Crisp Lager | Ôé╣220 | Ôé╣140
+FeraBee Wine | 750ml Glass Bottle | 12.0% alc/vol Sparkling Red & White | Ôé╣1,250 | Ôé╣850
+
+--- Table 3 (4 rows) ---
+Tier Package | Timing / Hours | Inclusions / Offerings | Unit Cost | Net Profit / Guest
+SILVER HIVE (Ôé╣999) | Mon-Thu Lunch (12-5pm) | Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food | Ôé╣380 | Ôé╣619 (62% Margin)
+GOLD BEE (Ôé╣1,499) | Daily Dinner (7-11:30pm) | Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert | Ôé╣580 | Ôé╣919 (61% Margin)
+PLATINUM ROYAL (Ôé╣1,999) | Weekends & Peak | All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ | Ôé╣780 | Ôé╣1,219 (61% Margin)
+
+--- Table 4 (9 rows) ---
+P&L Item Category | Monthly Amount (Ôé╣) | Operational Commentary
+Unlimited Package Sales | Ôé╣40,92,270 | 105 guests/day @ Ôé╣1,499 x 26 operating days
+A La Carte Food & Drinks | Ôé╣9,94,500 | 45 guests/day @ Ôé╣850 x 26 operating days
+TOTAL MONTHLY REVENUE | Ôé╣50,86,770 | Gross Turnover per outlet
+Gross Profit (61% Margin) | Ôé╣31,00,000 | Net margin after food & liquor COGS
+Less: Monthly Opex | Ôé╣6,44,000 | Rent (Ôé╣1L), Staff 14 salaries (Ôé╣2.2L), Power, Royalty 6%, Mktg 3%
+NET PROFIT PER BAR (MONTHLY) | Ôé╣24,50,000 | Net profit accruing to Franchisee
+NET PROFIT PER BAR (ANNUAL) | Ôé╣2,94,00,000 | Annualized Net Earnings
+FRANCHISE PAYBACK PERIOD | 4.7 MONTHS | Payback on Ôé╣1.15 Cr Maharashtra Capex
+
+--- Table 5 (8 rows) ---
+Financial Metric | Year 1 (100 Lounges) | Year 2 (250 Lounges) | Year 3 (367 Lounges)
+Active Franchise Network | 100 Outlets | 250 Outlets | 367 Outlets
+Franchise Royalty (6%) | Ôé╣15.30 Crore | Ôé╣42.00 Crore | Ôé╣67.60 Crore
+One-Time Franchise Fees | Ôé╣10.00 Crore | Ôé╣15.00 Crore | Ôé╣11.70 Crore
+Internal Supply Margin (15%) | Ôé╣12.00 Crore | Ôé╣27.00 Crore | Ôé╣40.00 Crore
+Retail Market Distribution | Ôé╣29.20 Crore | Ôé╣55.00 Crore | Ôé╣85.00 Crore
+TOTAL COMPANY REVENUE | Ôé╣66.50 Crore | Ôé╣139.00 Crore | Ôé╣204.30 - Ôé╣285.00 Cr
+COMPANY EBITDA | Ôé╣15.00 Crore (22.5%) | Ôé╣45.00 Crore (32.3%) | Ôé╣78.00 Crore (38.2%)
+
+--- Table 6 (9 rows) ---
+Capital Allocation Head | Amount (Ôé╣) | Percentage Share
+1. Custom Bottle Moulds & Tooling (6 SKUs) | Ôé╣4.20 Crore | 23.3%
+2. Working Capital & MSILC/GEMS Security Deposits | Ôé╣3.00 Crore | 16.7%
+3. Flagship COCO Lounges (Pune, Thane, Panjim) | Ôé╣3.45 Crore | 19.2%
+4. State Excise Licences & Brand Registration | Ôé╣2.00 Crore | 11.1%
+5. Launch Marketing, PR & Influencer Campaigns | Ôé╣2.00 Crore | 11.1%
+6. Executive, Legal & Sales Team Buildout | Ôé╣1.20 Crore | 6.7%
+7. Contingency & Buffer Capital | Ôé╣2.15 Crore | 11.9%
+TOTAL CAPITAL ALLOCATION | Ôé╣18.00 Crore | 100.0%
+
+--- Table 7 (1 rows) ---
+Ôÿà INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected Ôé╣78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of Ôé╣780.0 Crore. The investor's 25% equity stake will be valued at Ôé╣195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months.
+================================================================================
+FILE: FeraBee_Pitch_Deck_V2.docx
+
+--- Table 1 (1 rows) ---
+THE PROBLEM
+
+--- Table 2 (1 rows) ---
+THE FERABEE SOLUTION
+
+--- Table 3 (1 rows) ---
+MARKET OPPORTUNITY
+
+--- Table 4 (1 rows) ---
+THE PRODUCT PORTFOLIO
+
+--- Table 5 (7 rows) ---
+Product | Specification | Packaging | Target MRP (MH)
+FeraBee Whisky | Grain & Malt, Honey Finish | 750ml Custom Black Glass | Ôé╣2,200
+FeraBee Vodka | Triple-Distilled, Charcoal | 750ml Clear Glass | Ôé╣1,900
+FeraBee Gin | Artisanal Botanical Blend | 750ml Clear Glass | Ôé╣2,400
+FeraBee Rum | Premium Dark Molasses | 750ml Glass Bottle | Ôé╣1,700
+FeraBee Beer | 5.0% Premium Crisp Lager | 650ml Bottle / 500ml Can | Ôé╣250
+FeraBee Wine | 12.0% Sparkling | 750ml Glass Bottle | Ôé╣1,500
+
+--- Table 6 (1 rows) ---
+UNIT ECONOMICS ÔÇö PER OUTLET
+
+--- Table 7 (4 rows) ---
+Tier | Price | Inclusions | Gross Margin
+Silver Hive | Ôé╣999 | Unlimited Food + 4 Beer/Vodka Tokens | 55%
+Gold Bee | Ôé╣1,499 | Unlimited Food + 6 Spirit Tokens | 52%
+Platinum Royal | Ôé╣1,999 | Unlimited Food + 8 All-Spirit Tokens + BBQ | 50%
+
+--- Table 8 (1 rows) ---
+Ôé╣5.0L ÔÇô Ôé╣8.0L Revised Monthly Net Profit per Outlet
+
+--- Table 9 (1 rows) ---
+18ÔÇô24 MONTHS Revised Franchise Payback Period
+
+--- Table 10 (1 rows) ---
+COMPETITIVE LANDSCAPE
+
+--- Table 11 (1 rows) ---
+3-YEAR GROWTH ROADMAP
+
+--- Table 12 (6 rows) ---
+Phase | Timeline | Region | Outlets
+Pilot COCO | M1ÔÇôM3 | Mumbai (Andheri, BKC, Powai) | 3
+Phase 1 FOCO | M4ÔÇôM6 | Mumbai-Thane-Navi Mumbai | 20
+Phase 2 | M7ÔÇôM12 | Pune, Nashik, Nagpur | 60
+Phase 3 | M13ÔÇôM24 | Deep Maharashtra + Goa | 200
+Phase 4 | M25ÔÇôM36 | Full 367 Taluka Coverage | 367
+
+--- Table 13 (1 rows) ---
+THE INVESTMENT ASK
+
+--- Table 14 (5 rows) ---
+Capital Source | Amount | Terms
+Founders' Equity | Ôé╣50 Lakh | 51:49 Equity
+Bank CC Facility | Ôé╣3.5 Crore | Secured Working Capital
+External Equity Raise | Ôé╣18.0 Crore | 25% Preferred Equity
+TOTAL | Ôé╣22.0 Crore | Full Operational Runway
+
+--- Table 15 (1 rows) ---
+EXIT & RETURNS
+
+--- Table 16 (8 rows) ---
+Metric | Projection
+Year 3 Outlet Count | 200ÔÇô250 (Realistic Licensing)
+Year 3 EBITDA | Ôé╣24ÔÇôÔé╣36 Crore
+EBITDA Multiple | 8.0x (Conservative)
+Enterprise Valuation | Ôé╣192ÔÇôÔé╣288 Crore
+Investor 25% Stake Value | Ôé╣48ÔÇôÔé╣72 Crore
+Investor ROI | 2.7x ÔÇô 4.0x
+IRR (Estimated) | 45ÔÇô60%
+
+--- Table 17 (1 rows) ---
+2.7x ÔÇô 4.0x ROI Projected Investor Return (36 Months)
+================================================================================
+FILE: FeraBee_Product_Mix_Report.docx
+
+--- Table 1 (1 rows) ---
+PORTFOLIO OVERVIEW
+
+--- Table 2 (1 rows) ---
+THE PRODUCT LINE
+
+--- Table 3 (1 rows) ---
+FERABEE RESERVE WHISKY Category: Premium Blended Whisky  |  Strength: 42.8% v/v  Tasting Notes: Rich grain and malt blend with a distinct, smooth honey finish. Warm amber color with notes of vanilla and oak. Target Demographic: Core demographic (25-45). Primary driver for Gold and Platinum packages. Preferred spirit for corporate and evening dining.
+
+--- Table 4 (1 rows) ---
+FERABEE PURE VODKA Category: Premium Vodka  |  Strength: 42.8% v/v  Tasting Notes: Triple-distilled, charcoal-filtered for absolute clarity and a crisp, neutral palate. Exceptionally smooth mouthfeel. Target Demographic: High-energy youth demographic (21-30). Foundation for all lounge cocktails and high-volume mixer consumption.
+
+--- Table 5 (1 rows) ---
+FERABEE BOTANICAL GIN Category: Craft Gin  |  Strength: 42.8% v/v  Tasting Notes: Vapor-infused with juniper berries, Goan cardamom, coriander seeds, and fresh lemon peel. Floral and zesty. Target Demographic: Millennial and female demographic. Growing rapidly as a daytime and early evening lifestyle choice.
+
+--- Table 6 (1 rows) ---
+FERABEE DARK RUM Category: Premium Dark Rum  |  Strength: 42.8% v/v  Tasting Notes: Deep, molasses-based dark rum matured with hints of caramel, spice, and tropical sweetness. Target Demographic: Dedicated regional consumers and cocktail base for tropical/tiki style lounge offerings.
+
+--- Table 7 (1 rows) ---
+FERABEE CRISP LAGER Category: Craft Beer  |  Strength: 5.0% ABV  Tasting Notes: Premium 2-row Pilsner malt and Cascade hops. Light, crisp, refreshing with a clean finish. Target Demographic: High-volume daytime/lunch consumers (Silver Hive package). Crucial entry point for the 21-24 age demographic.
+
+--- Table 8 (1 rows) ---
+FERABEE SPARKLING Category: Sparkling Wine  |  Strength: 12.0% ABV  Tasting Notes: Light, effervescent, with notes of green apple and citrus. Available in Brut and Rose variants. Target Demographic: Celebratory occasions, brunches, and the premium female demographic. Included in Platinum Royal packages.
+
+--- Table 9 (1 rows) ---
+MARGIN & PRICING ARCHITECTURE
+
+--- Table 10 (7 rows) ---
+SKU | Volume | Est. COGS (Ôé╣) | A La Carte Price (Ôé╣) | Gross Margin
+Reserve Whisky | 60ml Peg | Ôé╣35 | Ôé╣180 | 80.5%
+Pure Vodka | 60ml Peg | Ôé╣22 | Ôé╣150 | 85.3%
+Botanical Gin | 60ml Peg | Ôé╣30 | Ôé╣170 | 82.3%
+Dark Rum | 60ml Peg | Ôé╣25 | Ôé╣140 | 82.1%
+Crisp Lager | 500ml Can | Ôé╣55 | Ôé╣180 | 69.4%
+Sparkling Wine | 150ml Glass | Ôé╣90 | Ôé╣250 | 64.0%
+================================================================================
+FILE: FeraBee_Project_Report_V2.docx
+
+--- Table 1 (1 rows) ---
+TABLE OF CONTENTS
+
+--- Table 2 (1 rows) ---
+EXECUTIVE SUMMARY
+
+--- Table 3 (1 rows) ---
+Ô£ª THE VISION Pairing proprietary premium spirits with a captive, experiential distribution networkÔÇöeliminating middlemen, bypassing traditional wine shop dependency, and delivering extreme consumer value through curated beverage experiences.
+
+--- Table 4 (1 rows) ---
+Ô£ª CRITICAL FINDING The original Ôé╣22.0 Crore capitalization is sufficient for fewer than 30 outlets under the COFO modelÔÇöcompletely invalidating the 367-outlet expansion premise. A structural pivot to FOCO (Franchise Owned Company Operated) is mandatory.
+
+--- Table 5 (9 rows) ---
+Parameter | Details
+Legal Entity | FeraBee Liquor Private Limited
+Authorised Capital | Ôé╣10,00,00,000 (Ôé╣10 Crore)
+Paid-Up Capital | Ôé╣50,00,000 (Ôé╣50 Lakh)
+Promoter Split | 51% : 49%
+Brand Identity | The Royal Bee ÔÇö Gold on Black
+Total Cap Raise Target | Ôé╣22.0 Crore
+External Equity (25% stake) | Ôé╣18.0 Crore
+Bank CC Facility | Ôé╣3.5 Crore
+
+--- Table 6 (1 rows) ---
+Ô£ª CRITICAL LEGAL RISK The assumption that Goa's favorable excise regime translates into 30-40% margin advantage for Maharashtra retail is fundamentally flawed. Once Goa-manufactured spirits cross the border legally, they are immediately subjected to Maharashtra's excise duty multiplier (Manufacturing Cost ├ù 4.5) plus up to 40% VAT on MRP, entirely neutralizing the Goan tax advantage.
+
+--- Table 7 (6 rows) ---
+Product | Spec | Goa MRP | Est. MH MRP (After Excise)
+FeraBee Whisky | 42.8% v/v Grain & Malt, Honey Finish | Ôé╣1,350 | Ôé╣2,200ÔÇôÔé╣2,500
+FeraBee Vodka | 42.8% v/v Triple-Distilled | Ôé╣1,150 | Ôé╣1,900ÔÇôÔé╣2,100
+FeraBee Gin | 42.8% Artisanal Botanical | Ôé╣1,450 | Ôé╣2,400ÔÇôÔé╣2,700
+FeraBee Rum | 42.8% Premium Dark Molasses | Ôé╣1,050 | Ôé╣1,700ÔÇôÔé╣1,900
+FeraBee Beer | 5.0% Premium Crisp Lager | Ôé╣140 | Ôé╣220ÔÇôÔé╣280
+
+--- Table 8 (1 rows) ---
+Ô£ª PACKAGING RISK NOTE Custom glass molds require massive volume commitments, tying up significant cash in raw material inventory. If COFO consumes the bulk of the Ôé╣22 Crore for real estate, funding custom packaging across six unique SKUs will severely strain liquidity.
+
+--- Table 9 (1 rows) ---
+Ô£ª EXISTENTIAL LEGAL THREAT The 'complimentary tasting' loophole is fundamentally incompatible with the Maharashtra Prohibition Act, 1949. Section 142 empowers district collectors to suspend licenses for practices deemed hazardous to public order or indicative of tax evasion. A single high-profile excise raid could result in mass license revocations, criminal charges for promoters, and immediate brand destruction.
+
+--- Table 10 (4 rows) ---
+Revised Tier | Structure | Tokens | Legal Status
+Silver Hive Ôé╣999 | Unlimited Veg Food + Beer/Vodka Tokens | 4 Tokens | Ô£à Compliant
+Gold Bee Ôé╣1,499 | Unlimited Food + Premium Spirit Tokens | 6 Tokens | Ô£à Compliant
+Platinum Royal Ôé╣1,999 | Unlimited Food + All-Spirit Tokens + BBQ | 8 Tokens | Ô£à Compliant
+
+--- Table 11 (6 rows) ---
+P&L Item | Original | Revised (Realistic)
+Monthly Revenue | Ôé╣50.86 Lakh | Ôé╣50.86 Lakh
+Gross Profit Margin | 61% | 50ÔÇô55%
+Monthly OPEX | Ôé╣6.44 Lakh | Ôé╣15.0 Lakh
+Monthly Net Profit | Ôé╣24.50 Lakh | Ôé╣5.0ÔÇôÔé╣8.0 Lakh
+Franchise Payback Period | 4.7 Months | 18ÔÇô24 Months
+
+--- Table 12 (1 rows) ---
+Ô£ª KEY TAKEAWAY While a 18-24 month payback remains excellent for the hospitality sector, transparent communication to franchisees is critical to prevent localized bankruptcies from severe initial undercapitalization.
+
+--- Table 13 (7 rows) ---
+Dimension | COFO (Original) | FOCO (Recommended)
+Who Owns Assets? | Brand (FeraBee) | Franchise Investor
+Who Operates? | Franchise Partner | Brand (FeraBee)
+Capex Required from Brand | Ôé╣220ÔÇôÔé╣440 Crore | Ôé╣22 Crore (Sufficient)
+Quality Control | Low (Franchisee operates) | High (Brand operates)
+Scalability | Impossible at current cap | Highly Scalable
+Risk Profile | Catastrophic | Balanced
+
+--- Table 14 (6 rows) ---
+Phase | Timeline | Region | Outlets | Milestone
+Pilot | M1ÔÇôM3 | Mumbai (Andheri, BKC, Powai) | 3 COCO | Prove unit economics
+Phase 1 | M4ÔÇôM6 | Mumbai-Thane-Navi Mumbai | 20 FOCO | Ôé╣10 Cr/month revenue
+Phase 2 | M7ÔÇôM12 | Pune, Nashik, Nagpur | 60 Total | Ôé╣30 Cr/month revenue
+Phase 3 | M13ÔÇôM24 | Deep Maharashtra + Goa | 200 Total | Ôé╣100 Cr/month revenue
+Phase 4 | M25ÔÇôM36 | Full 367 Taluka Coverage | 367 Total | Ôé╣186 Cr/month revenue
+
+--- Table 15 (8 rows) ---
+Risk Category | Severity | Probability | Mitigation Strategy
+Maharashtra Prohibition Act violation | CRITICAL | HIGH | Abandon 'Unlimited' model; implement Token System
+Capex shortfall under COFO | CRITICAL | CERTAIN | Pivot to FOCO model immediately
+Inter-state smuggling accusation | CRITICAL | MEDIUM | Establish MH tie-up bottling unit
+Franchise undercapitalization | HIGH | HIGH | Revise payback projections to 18-24 months
+FL-III licensing delays | MEDIUM | HIGH | Begin applications 6 months prior to planned launch
+Age-gating enforcement failure | HIGH | HIGH | Token system auto-restricts spirit tokens by age verification
+Custom packaging inventory lock-up | MEDIUM | MEDIUM | Phase in custom packaging after initial 50-outlet milestone
+
+--- Table 16 (8 rows) ---
+Metric | Original Projection | Revised Projection
+Year 3 Outlet Count | 367 | 200ÔÇô250 (Realistic Licensing)
+Year 3 EBITDA | Ôé╣78.0 Crore | Ôé╣24.0ÔÇôÔé╣36.0 Crore
+EBITDA Multiple | 10.0x | 8.0x (Conservative)
+Enterprise Valuation | Ôé╣780.0 Crore | Ôé╣192ÔÇôÔé╣288 Crore
+Investor 25% Stake Value | Ôé╣195.0 Crore | Ôé╣48ÔÇôÔé╣72 Crore
+Investor ROI | 10.8x | 2.7x ÔÇô 4.0x
+IRR (Estimated) | ~120% | ~45ÔÇô60%
+
+--- Table 17 (1 rows) ---
+Ô£ª REVISED INVESTOR THESIS Even at the conservative revised projections, a 2.7x to 4.0x return over 36 months (45-60% IRR) represents an exceptional risk-adjusted return for an early-stage consumer brand in the Indian alcobev sector. The key differentiator is that these projections are now legally defensible and operationally achievable.
+
+--- Table 18 (1 rows) ---
+LEGAL DISCLAIMERS & CONFIDENTIALITY
+================================================================================
+FILE: FeraBee_Stunning_Design_Report.docx
+
+--- Table 1 (1 rows) ---
+EXECUTIVE SUMMARY
+
+--- Table 2 (1 rows) ---
+Ô£ª THE FERABEE VISION Ô£ª FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra and Goa under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees massive sales volume, eliminating traditional wine shop retail dependency.
+
+--- Table 3 (5 rows) ---
+Metric / Element | Details
+Authorised Capital | Ôé╣10,00,00,000 (Ôé╣10 Crore)
+Paid-Up Capital | Ôé╣50,00,000 (Ôé╣50 Lakh)
+Promoter Shareholding | 51% : 49% Split
+Brand Aesthetics | Gold on Black / The Royal Bee / Hexagonal Crest
+
+--- Table 4 (6 rows) ---
+Category | Packaging | Blend Specifications | Goa MRP
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt, Honey Finish | Ôé╣1,350
+FeraBee Vodka | 750ml Clear Glass | 42.8% v/v Triple-Distilled | Ôé╣1,150
+FeraBee Gin | 750ml Clear Glass | 42.8% Botanical Blend | Ôé╣1,450
+FeraBee Rum | 750ml Glass Bottle | 42.8% Premium Dark Rum | Ôé╣1,050
+FeraBee Beer | 650ml Bottle / 500ml Can | 5.0% Premium Crisp Lager | Ôé╣140
+
+--- Table 5 (1 rows) ---
+THE LOUNGE EXPERIENCE
+
+--- Table 6 (1 rows) ---
+Ô£ª THE 'UNLIMITED' ADVANTAGE Ô£ª The commercial catalyst is the Unlimited Food + Spirits Package. Structured legally as an 'Unlimited Food + Complimentary FeraBee Tasting', it offers extreme value to customers while locking in a guaranteed 61% profit margin for franchisees.
+
+--- Table 7 (4 rows) ---
+Tier Package | Offering Details | Net Profit / Guest
+SILVER HIVE (Ôé╣999) | Lunch: Unlimited Beer + Vodka/Rum + Veg Food | Ôé╣619 (62% Margin)
+GOLD BEE (Ôé╣1,499) | Dinner: Unlimited Spirits + 7 Starters + Main | Ôé╣919 (61% Margin)
+PLATINUM (Ôé╣1,999) | Weekends: All Spirits + Seafood + Live BBQ | Ôé╣1,219 (61% Margin)
+
+--- Table 8 (6 rows) ---
+P&L Item Category | Monthly Amount (Ôé╣)
+Total Monthly Revenue | Ôé╣50,86,770
+Gross Profit (61% Margin) | Ôé╣31,00,000
+Less: Monthly Opex | Ôé╣6,44,000
+NET PROFIT (MONTHLY) | Ôé╣24,50,000
+FRANCHISE PAYBACK PERIOD | 4.7 MONTHS
+
+--- Table 9 (1 rows) ---
+FINANCIAL PROJECTIONS & EXIT
+
+--- Table 10 (5 rows) ---
+Capital Source | Amount (Ôé╣) | Terms
+Founders Paid-Up Equity | Ôé╣50,00,000 | 51% : 49%
+Bank Cash Credit (CC) | Ôé╣3,50,00,000 | Secured Facility
+External Equity Raise | Ôé╣18,00,00,000 | 25.0% Stake
+TOTAL CAPITALIZATION | Ôé╣22,00,00,000 | Operational Runway
+
+--- Table 11 (1 rows) ---
+Ô£ª YEAR 3 INVESTOR RETURN Ô£ª At Year 3, based on a conservative 10.0x EBITDA multiple on a projected Ôé╣78.0 Crore EBITDA, FeraBee will achieve an Enterprise Valuation of Ôé╣780.0 Crore. The investor's 25% equity stake will be valued at Ôé╣195.0 Crore, representing an estimated 10.8X Return on Investment over 36 months.
+================================================================================
+FILE: HEX_LIQUOR_Master_Project_Report.docx
+
+--- Table 1 (1 rows) ---
+Ôÿà EXECUTIVE SUMMARY FeraBee Liquor Pvt Ltd is launching a premium 6-to-8 product alcobev portfolio paired with an exclusive chain of 367 '100-Cover FeraBee Bee Lounges' across Maharashtra (355 Talukas) and Goa (12 Talukas) under a Company Owned Franchise Operated (COFO) model. Direct consumption through franchise outlets guarantees 2,09,190 cases/year of stock liquidation, eliminating traditional wine shop retail dependency.
+
+--- Table 2 (7 rows) ---
+Product Category | Packaging / Volume | Blend / Alcohol Spec | MH MRP (Ôé╣) | Goa MRP (Ôé╣)
+FeraBee Whisky | 750ml Custom Black Glass | 42.8% v/v Grain & Malt blend, Honey Finish | Ôé╣1,850 | Ôé╣1,350
+FeraBee Vodka | 750ml Clear Glass | 42.8% v/v Triple-Distilled, Charcoal Filtered | Ôé╣1,650 | Ôé╣1,150
+FeraBee Gin | 750ml Clear Glass | 42.8% v/v Artisanal Botanical Blend | Ôé╣1,950 | Ôé╣1,450
+FeraBee Rum | 750ml Glass Bottle | 42.8% v/v Premium Dark Molasses Rum | Ôé╣1,550 | Ôé╣1,050
+FeraBee Beer | 650ml Bottle & 500ml Can | 5.0% / 4.8% alc/vol Premium Crisp Lager | Ôé╣220 | Ôé╣140
+FeraBee Wine | 750ml Glass Bottle | 12.0% alc/vol Sparkling Red & White | Ôé╣1,250 | Ôé╣850
+
+--- Table 3 (4 rows) ---
+Tier Package | Timing / Hours | Inclusions / Offerings | Unit Cost | Net Profit / Guest
+SILVER HIVE (Ôé╣999) | Mon-Thu Lunch (12-5pm) | Unlimited Beer + Vodka/Rum (max 6 pegs) + Veg Food | Ôé╣380 | Ôé╣619 (62% Margin)
+GOLD BEE (Ôé╣1,499) | Daily Dinner (7-11:30pm) | Unlimited Whisky/Vodka/Gin/Rum/Beer + 7 Starters + Main + Dessert | Ôé╣580 | Ôé╣919 (61% Margin)
+PLATINUM ROYAL (Ôé╣1,999) | Weekends & Peak | All 6 Spirits incl. Sparkling Wine + Seafood + Live BBQ | Ôé╣780 | Ôé╣1,219 (61% Margin)
+
+--- Table 4 (9 rows) ---
+P&L Item Category | Monthly Amount (Ôé╣) | Operational Commentary
+Unlimited Package Sales | Ôé╣40,92,270 | 105 guests/day @ Ôé╣1,499 x 26 operating days
+A La Carte Food & Drinks | Ôé╣9,94,500 | 45 guests/day @ Ôé╣850 x 26 operating days
+TOTAL MONTHLY REVENUE | Ôé╣50,86,770 | Gross Turnover per outlet
+Gross Profit (61% Margin) | Ôé╣31,00,000 | Net margin after food & liquor COGS
+Less: Monthly Opex | Ôé╣6,44,000 | Rent (Ôé╣1L), Staff 14 salaries (Ôé╣2.2L), Power, Royalty 6%, Mktg 3%
+NET PROFIT PER BAR (MONTHLY) | Ôé╣24,50,000 | Net profit accruing to Franchisee
+NET PROFIT PER BAR (ANNUAL) | Ôé╣2,94,00,000 | Annualized Net Earnings
+FRANCHISE PAYBACK PERIOD | 4.7 MONTHS | Payback on Ôé╣1.15 Cr Maharashtra Capex
+
+--- Table 5 (8 rows) ---
+Financial Metric | Year 1 (100 Lounges) | Year 2 (250 Lounges) | Year 3 (367 Lounges)
+Active Franchise Network | 100 Outlets | 250 Outlets | 367 Outlets
+Franchise Royalty (6%) | Ôé╣15.30 Crore | Ôé╣42.00 Crore | Ôé╣67.60 Crore
+One-Time Franchise Fees | Ôé╣10.00 Crore | Ôé╣15.00 Crore | Ôé╣11.70 Crore
+Internal Supply Margin (15%) | Ôé╣12.00 Crore | Ôé╣27.00 Crore | Ôé╣40.00 Crore
+Retail Market Distribution | Ôé╣29.20 Crore | Ôé╣55.00 Crore | Ôé╣85.00 Crore
+TOTAL COMPANY REVENUE | Ôé╣66.50 Crore | Ôé╣139.00 Crore | Ôé╣204.30 - Ôé╣285.00 Cr
+COMPANY EBITDA | Ôé╣15.00 Crore (22.5%) | Ôé╣45.00 Crore (32.3%) | Ôé╣78.00 Crore (38.2%)
+
+--- Table 6 (9 rows) ---
+Capital Allocation Head | Amount (Ôé╣) | Percentage Share
+1. Custom Bottle Moulds & Tooling (6 SKUs) | Ôé╣4.20 Crore | 23.3%
+2. Working Capital & MSILC/GEMS Security Deposits | Ôé╣3.00 Crore | 16.7%
+3. Flagship COCO Lounges (Pune, Thane, Panjim) | Ôé╣3.45 Crore | 19.2%
+4. State Excise Licences & Brand Registration | Ôé╣2.00 Crore | 11.1%
+5. Launch Marketing, PR & Influencer Campaigns | Ôé╣2.00 Crore | 11.1%
+6. Executive, Legal & Sales Team Buildout | Ôé╣1.20 Crore | 6.7%
+7. Contingency & Buffer Capital | Ôé╣2.15 Crore | 11.9%
+TOTAL CAPITAL ALLOCATION | Ôé╣18.00 Crore | 100.0%
+
+--- Table 7 (1 rows) ---
+Ôÿà INVESTOR RETURN HIGHLIGHT At Year 3, based on a conservative 10.0x EBITDA multiple on projected Ôé╣78.0 Crore EBITDA, FeraBee Liquor Private Limited will achieve an Enterprise Valuation of Ôé╣780.0 Crore. The investor's 25% equity stake will be valued at Ôé╣195.0 Crore, representing an estimated 10.8X Return on Investment (ROI) over 36 months.

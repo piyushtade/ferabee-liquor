@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERABEE LIQUOR | The Royal Bee — Master Executive Intelligence & Financial Platform</title>
+    <!-- Google Fonts: Luxury Serif, Roman Royal & Precision Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js for smooth luxury interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --bg-deep: #05070a;
+            --bg-surface: #0a0e17;
+            --bg-card: rgba(14, 20, 32, 0.72);
+            --bg-card-hover: rgba(22, 30, 48, 0.85);
+            --gold-base: #c5a059;
+            --gold-light: #e6ca85;
+            --gold-bright: #f9e7b9;
+            --gold-dark: #8c6d32;
+            --gold-gradient: linear-gradient(135deg, #f9e7b9 0%, #c5a059 50%, #7a5c24 100%);
+            --gold-gradient-glow: linear-gradient(135deg, rgba(249,231,185,0.2) 0%, rgba(197,160,89,0.4) 50%, rgba(122,92,36,0.1) 100%);
+            --gold-border: rgba(197, 160, 89, 0.32);
+            --gold-border-subtle: rgba(197, 160, 89, 0.14);
+            --gold-glow: 0 0 40px -5px rgba(197, 160, 89, 0.28);
+            --gold-glow-lg: 0 0 60px -5px rgba(197, 160, 89, 0.4);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --text-gold: #e6ca85;
+            --accent-emerald: #10b981;
+            --accent-emerald-glow: 0 0 25px rgba(16, 185, 129, 0.3);
+            --accent-rose: #f43f5e;
+            --accent-blue: #38bdf8;
+            --font-royal: 'Cinzel', serif;
+            --font-editorial: 'Playfair Display', serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 22px;
+            --radius-full: 9999px;
+            --shadow-luxury: 0 25px 50px -15px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(197, 160, 89, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.65;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Canvas Particle Background */
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1460px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* AMBIENT AURORA GLOWS */
+        .aurora-1 {
+            position: fixed;
+            top: -10%;
+            left: 10%;
+            width: 50vw;
+            height: 50vh;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.06) 0%, transparent 70%);
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: 0;
+            animation: pulseGlow 12s infinite alternate ease-in-out;
+        }
+
+        .aurora-2 {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width: 45vw;
+            height: 45vh;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.04) 0%, transparent 70%);
+            filter: blur(90px);
+            pointer-events: none;
+            z-index: 0;
+            animation: pulseGlow 16s infinite alternate-reverse ease-in-out;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: scale(1) translate(0, 0); opacity: 0.6; }
+            100% { transform: scale(1.15) translate(30px, -20px); opacity: 1; }
+        }
+
+        /* LIVE TICKER STRIP */
+        .live-ticker-strip {
+            background: rgba(14, 20, 32, 0.85);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-full);
+            padding: 0.45rem 1.25rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .ticker-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--gold-light);
+            text-transform: uppercase;
+        }
+
+        .pulsing-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-emerald);
+            border-radius: 50%;
+            box-shadow: var(--accent-emerald-glow);
+            animation: blink 1.8s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+
+        .ticker-items {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.825rem;
+            color: var(--text-secondary);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .ticker-items span strong {
+            color: #fff;
+            font-family: var(--font-mono);
+        }
+
+        /* TOP BRAND BAR */
+        .brand-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.75rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--gold-border-subtle);
+            position: relative;
+            animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .brand-header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 220px;
+            height: 2px;
+            background: var(--gold-gradient);
+            box-shadow: 0 0 15px var(--gold-base);
+            animation: expandBar 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes expandBar {
+            from { width: 0; }
+            to { width: 220px; }
+        }
+
+        .brand-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+        }
+
+        .crown-crest {
+            width: 72px;
+            height: 72px;
+            background: radial-gradient(circle, #251d11 0%, #0e121a 100%);
+            border: 1.5px solid var(--gold-base);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: var(--gold-glow);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .crown-crest:hover {
+            transform: scale(1.08) rotate(3deg);
+            box-shadow: var(--gold-glow-lg);
+        }
+
+        .crown-crest::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(249, 231, 185, 0.25), transparent);
+            transform: rotate(45deg);
+            animation: crestShimmer 4s infinite linear;
+        }
+
+        @keyframes crestShimmer {
+            0% { transform: rotate(45deg) translateY(-100%); }
+            100% { transform: rotate(45deg) translateY(100%); }
+        }
+
+        .brand-titles h1 {
+            font-family: var(--font-royal);
+            font-size: 2.35rem;
+            letter-spacing: 3px;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            line-height: 1.1;
+            text-shadow: 0 0 30px rgba(197, 160, 89, 0.2);
+        }
+
+        .brand-titles p {
+            font-family: var(--font-editorial);
+            font-size: 1.08rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+            margin-top: 0.25rem;
+        }
+
+        .header-badges {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+        }
+
+        .luxury-badge {
+            background: rgba(197, 160, 89, 0.08);
+            border: 1px solid var(--gold-border);
+            padding: 0.55rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            color: var(--gold-bright);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .luxury-badge:hover {
+            background: rgba(197, 160, 89, 0.16);
+            border-color: var(--gold-base);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(197, 160, 89, 0.25);
+        }
+
+        .luxury-badge.emerald {
+            background: rgba(16, 185, 129, 0.08);
+            border-color: rgba(16, 185, 129, 0.35);
+            color: var(--accent-emerald);
+        }
+
+        /* NAVIGATION PILLS */
+        .nav-bar {
+            display: flex;
+            gap: 0.65rem;
+            overflow-x: auto;
+            padding: 1.75rem 0 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav-btn {
+            background: rgba(14, 20, 32, 0.75);
+            border: 1px solid var(--gold-border-subtle);
+            color: var(--text-secondary);
+            font-family: var(--font-sans);
+            font-size: 0.925rem;
+            font-weight: 600;
+            padding: 0.8rem 1.6rem;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-btn:hover::before {
+            left: 100%;
+        }
+
+        .nav-btn:hover {
+            color: #fff;
+            border-color: var(--gold-border);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .nav-btn.active {
+            background: var(--gold-gradient);
+            color: #05070a;
+            border-color: transparent;
+            font-weight: 700;
+            box-shadow: 0 8px 25px -4px rgba(197, 160, 89, 0.45), 0 0 15px rgba(197, 160, 89, 0.3);
+            transform: translateY(-1px);
+        }
+
+        /* 3D TILT HERO STAT CARDS */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.6rem;
+            margin-bottom: 2.75rem;
+        }
+
+        .luxury-card {
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 1.85rem;
+            box-shadow: var(--shadow-luxury);
+            position: relative;
+            backdrop-filter: blur(16px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .luxury-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold-gradient);
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        .luxury-card:hover {
+            border-color: var(--gold-border);
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.9), var(--gold-glow);
+        }
+
+        .luxury-card:hover::before {
+            opacity: 1;
+            box-shadow: 0 0 15px var(--gold-base);
+        }
+
+        .card-top-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            color: var(--gold-light);
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.85rem;
+        }
+
+        .card-hero-val {
+            font-family: var(--font-mono);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            margin-bottom: 0.45rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.35rem;
+        }
+
+        .card-hero-val span.unit {
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            font-family: var(--font-sans);
+            font-weight: 600;
+        }
+
+        .card-subtext {
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+        }
+
+        /* 2-COLUMN SECTION */
+        .layout-2col {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2.75rem;
+        }
+
+        @media (max-width: 1024px) {
+            .layout-2col { grid-template-columns: 1fr; }
+        }
+
+        .panel-box {
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2.2rem;
+            box-shadow: var(--shadow-luxury);
+            backdrop-filter: blur(16px);
+            position: relative;
+            transition: border-color 0.3s ease;
+        }
+
+        .panel-box:hover {
+            border-color: var(--gold-border);
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.6rem;
+            border-bottom: 1px solid var(--gold-border-subtle);
+        }
+
+        .panel-title {
+            font-family: var(--font-royal);
+            font-size: 1.35rem;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* LUXURY TABLES */
+        .table-wrap {
+            overflow-x: auto;
+            width: 100%;
+            border-radius: var(--radius-sm);
+        }
+
+        table.luxury-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.92rem;
+        }
+
+        table.luxury-table th {
+            background: rgba(10, 14, 23, 0.95);
+            color: var(--gold-light);
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            padding: 1.1rem 1.2rem;
+            border-bottom: 1.5px solid var(--gold-border);
+        }
+
+        table.luxury-table td {
+            padding: 1.05rem 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+
+        table.luxury-table tr:hover td {
+            background: rgba(197, 160, 89, 0.06);
+            color: #fff;
+        }
+
+        table.luxury-table td.strong-val {
+            color: #ffffff;
+            font-weight: 600;
+            font-family: var(--font-mono);
+        }
+
+        .gold-highlight { color: var(--gold-bright); font-weight: 700; }
+        .emerald-highlight { color: var(--accent-emerald); font-weight: 700; }
+        .rose-highlight { color: var(--accent-rose); font-weight: 700; }
+
+        /* PRODUCT SHOWCASE CARDS */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 1.6rem;
+            margin-bottom: 2.75rem;
+        }
+
+        .product-card {
+            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.45) 0%, rgba(10, 14, 23, 0.98) 100%);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 1.85rem;
+            box-shadow: var(--shadow-luxury);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            border-color: var(--gold-base);
+            transform: translateY(-6px);
+            box-shadow: var(--gold-glow);
+        }
+
+        .sku-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .sku-name {
+            font-family: var(--font-royal);
+            font-size: 1.3rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .sku-cat {
+            font-size: 0.8rem;
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-top: 0.2rem;
+        }
+
+        .sku-meta-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1.1rem 0;
+        }
+
+        .meta-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 0.4rem 0.85rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+        }
+
+        .sku-margin-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            margin-top: 1.1rem;
+        }
+
+        .sku-margin-badge {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            color: var(--accent-emerald);
+            padding: 0.4rem 0.95rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+        }
+
+        /* LIVE INTERACTIVE SIMULATOR */
+        .sim-container {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 2.5rem;
+        }
+
+        @media (max-width: 992px) {
+            .sim-container { grid-template-columns: 1fr; }
+        }
+
+        .slider-group {
+            margin-bottom: 1.6rem;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.7rem;
+            color: var(--text-secondary);
+        }
+
+        .slider-header span.val-display {
+            color: var(--gold-bright);
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            outline: none;
+            accent-color: var(--gold-base);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        input[type="range"]:hover {
+            background: rgba(197, 160, 89, 0.3);
+        }
+
+        .sim-display-board {
+            background: radial-gradient(circle at center, #131926 0%, #080b11 100%);
+            border: 1.5px solid var(--gold-border);
+            border-radius: var(--radius-lg);
+            padding: 2.2rem;
+            box-shadow: inset 0 0 40px rgba(0,0,0,0.8), var(--gold-glow);
+            position: relative;
+        }
+
+        .board-title {
+            font-family: var(--font-royal);
+            font-size: 1.15rem;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            border-bottom: 1px solid var(--gold-border-subtle);
+            padding-bottom: 0.85rem;
+            margin-bottom: 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: background 0.2s;
+        }
+
+        .res-metric-row:last-child {
+            border-bottom: none;
+        }
+
+        .res-label {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .res-val {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .res-val.hero-gold {
+            font-size: 1.7rem;
+            color: var(--gold-bright);
+            text-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+        }
+
+        .scenario-selector {
+            display: flex;
+            gap: 0.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .scen-btn {
+            flex: 1;
+            padding: 0.85rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scen-btn:hover {
+            border-color: var(--gold-border);
+            color: #fff;
+            background: rgba(197, 160, 89, 0.08);
+        }
+
+        .scen-btn.active {
+            background: rgba(197, 160, 89, 0.18);
+            border-color: var(--gold-base);
+            color: var(--gold-bright);
+            font-weight: 700;
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
+        }
+
+        /* TAB MANAGEMENT & FADE ANIMATION */
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: panelFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes panelFadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* LUXURY FOOTER */
+        footer {
+            margin-top: 4.5rem;
+            padding: 2.5rem 0 1.5rem;
+            border-top: 1px solid var(--gold-border-subtle);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            position: relative;
+        }
+
+        .footer-brand {
+            font-family: var(--font-royal);
+            color: var(--gold-light);
+            font-size: 1.05rem;
+            letter-spacing: 1.5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ambient Aurora & Particle Canvas -->
+<div class="aurora-1"></div>
+<div class="aurora-2"></div>
+<canvas id="particle-canvas"></canvas>
+
+<div class="container">
+    <!-- LIVE STAT TICKER -->
+    <div class="live-ticker-strip">
+        <div class="ticker-left">
+            <div class="pulsing-dot"></div>
+            <span>FeraBee Master Platform</span>
+        </div>
+        <div class="ticker-items">
+            <span>Series-A Target: <strong>₹18.00 Cr (25%)</strong></span>
+            <span>Taluka Lounges: <strong>367 Outlets</strong></span>
+            <span>Annual Liquidation: <strong>2,09,190 Cases</strong></span>
+            <span>Franchise Net Payback: <strong>12.6 – 18.0 Months</strong></span>
+            <span>Target Y3 EBITDA: <strong>₹36.0 Cr – ₹78.0 Cr</strong></span>
+        </div>
+    </div>
+
+    <!-- MASTER BRAND HEADER -->
+    <header class="brand-header">
+        <div class="brand-title-wrap">
+            <div class="crown-crest">👑</div>
+            <div class="brand-titles">
+                <h1>FERABEE LIQUOR</h1>
+                <p>The Royal Bee — Integrated Craft Spirits & 367-Taluka Bee Lounge Franchise Platform</p>
+            </div>
+        </div>
+        <div class="header-badges">
+            <div class="luxury-badge">📍 367 Talukas Target</div>
+            <div class="luxury-badge emerald">💼 ₹18.0 Cr Series-A (25% Equity)</div>
+            <div class="luxury-badge">⚡ Pre-Money: ₹54.0 Cr</div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="nav-bar">
+        <button class="nav-btn active" onclick="showTab(event, 'tab-overview')">📊 Executive Intelligence</button>
+        <button class="nav-btn" onclick="showTab(event, 'tab-simulator')">🧮 Interactive Financial Simulator</button>
+        <button class="nav-btn" onclick="showTab(event, 'tab-products')">🍸 Product Mix & 80%+ Margins</button>
+        <button class="nav-btn" onclick="showTab(event, 'tab-unit-pnl')">🏢 Lounge Unit Economics (FOCO)</button>
+        <button class="nav-btn" onclick="showTab(event, 'tab-consolidated')">📈 3-Year Corporate Projections</button>
+        <button class="nav-btn" onclick="showTab(event, 'tab-compliance')">🏛️ Regulatory & Section 142</button>
+    </nav>
+
+    <!-- TAB 1: EXECUTIVE INTELLIGENCE -->
+    <div id="tab-overview" class="tab-panel active">
+        <!-- TOP 4 STAT CARDS WITH TILT -->
+        <div class="hero-grid">
+            <div class="luxury-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="card-top-label">
+                    <span>Taluka Footprint</span>
+                    <span>🏛️</span>
+                </div>
+                <div class="card-hero-val"><span id="cnt-outlets">367</span><span class="unit">Outlets</span></div>
+                <div class="card-subtext">355 Maharashtra + 12 Goa Exclusive Talukas</div>
+            </div>
+
+            <div class="luxury-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="card-top-label">
+                    <span>Captive Liquidation Engine</span>
+                    <span>📦</span>
+                </div>
+                <div class="card-hero-val">2.09L<span class="unit">Cases/Yr</span></div>
+                <div class="card-subtext">1.88M Litres direct off-take bypassing retail gatekeepers</div>
+            </div>
+
+            <div class="luxury-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="card-top-label">
+                    <span>Per-Store Net Cash Profit</span>
+                    <span>💰</span>
+                </div>
+                <div class="card-hero-val">₹9.95L<span class="unit">/ Month</span></div>
+                <div class="card-subtext">12.6 – 18.0 Month Payback (62% Franchise IRR)</div>
+            </div>
+
+            <div class="luxury-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="card-top-label">
+                    <span>Series-A Target Exit (36 Mo)</span>
+                    <span>🚀</span>
+                </div>
+                <div class="card-hero-val">4.0x – 10.8x<span class="unit">MOIC</span></div>
+                <div class="card-subtext">₹288 Cr (Base) to ₹780 Cr (Bull) Enterprise Valuation</div>
+            </div>
+        </div>
+
+        <!-- 2-COLUMN STRATEGIC OVERVIEW -->
+        <div class="layout-2col">
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">🏆 The Direct-to-Consumer Alcobev Disruption</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Traditional liquor brands suffer from a fatal structural bottleneck: <strong style="color: #fff;">Distributor monopolies, state corporation quotas (MSILC), and 35-40% marketing cash burn</strong> on retail shelf kickbacks.
+                </p>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    FeraBee eliminates all middlemen by creating its own <strong style="color: var(--gold-bright);">exclusive 100-cover Bee Lounge network</strong>. Every lounge operates as a high-density experiential tasting hub, creating guaranteed captive liquidation while extracting both <span class="emerald-highlight">manufacturer wholesale margins (15-35%)</span> and <span class="gold-highlight">recurring franchise royalties (6%)</span>.
+                </p>
+                <div style="background: rgba(197, 160, 89, 0.08); border-left: 3px solid var(--gold-base); padding: 1rem 1.25rem; border-radius: 8px;">
+                    <strong style="color: var(--gold-bright);">The Prix-Fixe Dining Formula:</strong> Fixed-price packages (Silver ₹999, Gold ₹1,499, Platinum ₹1,999) generate predictable footfall (150 guests/day), locking in <span class="emerald-highlight">52% gross margin</span> and extreme customer value.
+                </div>
+            </div>
+
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">🛡️ Institutional Validation: V1 vs V2</div>
+                </div>
+                <div class="table-wrap">
+                    <table class="luxury-table">
+                        <thead>
+                            <tr>
+                                <th>Strategic Dimension</th>
+                                <th>Original (V1)</th>
+                                <th>Validated (V2)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Operating Framework</td>
+                                <td>COFO (Capex Deficit)</td>
+                                <td class="emerald-highlight">FOCO (Franchise Owned)</td>
+                            </tr>
+                            <tr>
+                                <td>Monthly Store OPEX</td>
+                                <td>₹6.44 Lakh</td>
+                                <td class="rose-highlight">₹15.0 - ₹16.5 Lakh</td>
+                            </tr>
+                            <tr>
+                                <td>Franchise Payback</td>
+                                <td>4.7 Months</td>
+                                <td class="gold-highlight">12.6 – 18.0 Months</td>
+                            </tr>
+                            <tr>
+                                <td>Legal Alcohol Model</td>
+                                <td>Open Complimentary</td>
+                                <td class="emerald-highlight">RFID Smart Tokens</td>
+                            </tr>
+                            <tr>
+                                <td>3-Year Exit Valuation</td>
+                                <td>₹780 Cr (10.8x)</td>
+                                <td class="emerald-highlight">₹288 Cr (4.0x Base)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHARTS SECTION -->
+        <div class="layout-2col">
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">📈 3-Year Corporate Revenue & EBITDA Scaling</div>
+                </div>
+                <div style="height: 300px; position: relative;">
+                    <canvas id="chartConsolidated"></canvas>
+                </div>
+            </div>
+
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">🏢 Per-Lounge Monthly P&L Waterfall (₹ Lakh)</div>
+                </div>
+                <div style="height: 300px; position: relative;">
+                    <canvas id="chartUnitEcon"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2: INTERACTIVE SIMULATOR -->
+    <div id="tab-simulator" class="tab-panel">
+        <div class="panel-box">
+            <div class="panel-header">
+                <div class="panel-title">🧮 Live Multi-Variable Financial Modeling Simulator</div>
+            </div>
+
+            <div class="scenario-selector">
+                <div class="scen-btn active" onclick="loadSimScenario(event, 'base')">📌 Base Case (Target Realistic)</div>
+                <div class="scen-btn" onclick="loadSimScenario(event, 'bull')">🚀 Bull Case (Full 367 Scale)</div>
+                <div class="scen-btn" onclick="loadSimScenario(event, 'bear')">🛡️ Bear Case (Conservative)</div>
+            </div>
+
+            <div class="sim-container">
+                <!-- CONTROLS -->
+                <div>
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Active Network Lounges</span>
+                            <span class="val-display" id="disp-outlets">150 Outlets</span>
+                        </div>
+                        <input type="range" id="sim-outlets" min="10" max="367" value="150" step="5" oninput="runSim()">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Daily Package Guests / Lounge</span>
+                            <span class="val-display" id="disp-guests">105 Guests</span>
+                        </div>
+                        <input type="range" id="sim-guests" min="40" max="180" value="105" step="5" oninput="runSim()">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Average Package Ticket Price (₹)</span>
+                            <span class="val-display" id="disp-ticket">₹1,499</span>
+                        </div>
+                        <input type="range" id="sim-ticket" min="999" max="1999" value="1499" step="50" oninput="runSim()">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Monthly Store OPEX (₹ Lakh)</span>
+                            <span class="val-display" id="disp-opex">₹15.0 Lakh</span>
+                        </div>
+                        <input type="range" id="sim-opex" min="6.0" max="22.0" value="15.0" step="0.5" oninput="runSim()">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Franchise Royalty Rate (%)</span>
+                            <span class="val-display" id="disp-royalty">6.0%</span>
+                        </div>
+                        <input type="range" id="sim-royalty" min="4.0" max="10.0" value="6.0" step="0.5" oninput="runSim()">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <span>Exit Valuation Multiple (EV / EBITDA)</span>
+                            <span class="val-display" id="disp-multiple">8.0x</span>
+                        </div>
+                        <input type="range" id="sim-multiple" min="5.0" max="15.0" value="8.0" step="0.5" oninput="runSim()">
+                    </div>
+                </div>
+
+                <!-- RESULTS BOARD -->
+                <div class="sim-display-board">
+                    <div class="board-title">
+                        <span>⚡ Real-Time Computed Outputs</span>
+                        <span class="luxury-badge">DYNAMIC ENGINE</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Monthly Gross Store Revenue</span>
+                        <span class="res-val" id="res-store-rev">₹50.87 L</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Monthly Net Cash Profit to Franchisee</span>
+                        <span class="res-val emerald-highlight" id="res-store-profit">₹11.45 L</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Franchise Payback Period</span>
+                        <span class="res-val gold-highlight" id="res-payback">10.9 Months</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Annual Captive Offtake Liquidation</span>
+                        <span class="res-val" id="res-cases">85,500 Cases</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Corporate Consolidated Gross Revenue</span>
+                        <span class="res-val" id="res-brand-rev">₹85.4 Cr</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Corporate Consolidated EBITDA</span>
+                        <span class="res-val emerald-highlight" id="res-brand-ebitda">₹24.8 Cr</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Enterprise Valuation</span>
+                        <span class="res-val hero-gold" id="res-ev">₹198.4 Cr</span>
+                    </div>
+
+                    <div class="res-metric-row">
+                        <span class="res-label">Investor 25% Stake Value (MOIC on ₹18 Cr)</span>
+                        <span class="res-val emerald-highlight" id="res-investor">₹49.6 Cr (2.76x)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3: PRODUCT MIX & MARGINS -->
+    <div id="tab-products" class="tab-panel">
+        <div class="panel-header" style="margin-bottom: 2rem;">
+            <div class="panel-title">🍸 Master 6-SKU Portfolio & Unit Margin Architecture</div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Whisky -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Reserve Whisky</div>
+                        <div class="sku-cat">Premium Blended Whisky (42.8% v/v)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Rich grain and malt blend with a distinct, smooth Goan honey finish. Warm amber color with vanilla and oak notes.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">750ml Custom Black Glass</span>
+                    <span class="meta-pill">Goa MRP: ₹1,350</span>
+                    <span class="meta-pill">MH MRP: ₹2,200</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹35 / ₹180 (60ml)</div>
+                    </div>
+                    <div class="sku-margin-badge">80.5% Margin</div>
+                </div>
+            </div>
+
+            <!-- Vodka -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Pure Vodka</div>
+                        <div class="sku-cat">Premium Vodka (42.8% v/v)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Triple-distilled, charcoal-filtered for absolute clarity and a crisp, neutral palate. Essential high-volume cocktail base.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">750ml Clear Glass</span>
+                    <span class="meta-pill">Goa MRP: ₹1,150</span>
+                    <span class="meta-pill">MH MRP: ₹1,900</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹22 / ₹150 (60ml)</div>
+                    </div>
+                    <div class="sku-margin-badge">85.3% Margin</div>
+                </div>
+            </div>
+
+            <!-- Gin -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Botanical Gin</div>
+                        <div class="sku-cat">Craft Artisanal Gin (42.8% v/v)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Vapor-infused with juniper berries, Goan cardamom, coriander seeds, and fresh lemon peel extracts. Floral and zesty.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">750ml Clear Glass</span>
+                    <span class="meta-pill">Goa MRP: ₹1,450</span>
+                    <span class="meta-pill">MH MRP: ₹2,400</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹30 / ₹170 (60ml)</div>
+                    </div>
+                    <div class="sku-margin-badge">82.3% Margin</div>
+                </div>
+            </div>
+
+            <!-- Rum -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Dark Rum</div>
+                        <div class="sku-cat">Premium Dark Molasses Rum (42.8% v/v)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Deep molasses-based dark rum matured with hints of caramel, tropical spice, and subtle oak sweetness.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">750ml Glass Bottle</span>
+                    <span class="meta-pill">Goa MRP: ₹1,050</span>
+                    <span class="meta-pill">MH MRP: ₹1,700</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹25 / ₹140 (60ml)</div>
+                    </div>
+                    <div class="sku-margin-badge">82.1% Margin</div>
+                </div>
+            </div>
+
+            <!-- Beer -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Crisp Lager</div>
+                        <div class="sku-cat">Premium Craft Beer (5.0% ABV)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Premium 2-row Pilsner malt and Cascade hops. Light, crisp, refreshing with clean carbonation. High-volume anchor.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">650ml Btl / 500ml Can</span>
+                    <span class="meta-pill">Goa MRP: ₹140</span>
+                    <span class="meta-pill">MH MRP: ₹250</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹55 / ₹180 (500ml)</div>
+                    </div>
+                    <div class="sku-margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">69.4% Margin</div>
+                </div>
+            </div>
+
+            <!-- Wine -->
+            <div class="product-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+                <div class="sku-header">
+                    <div>
+                        <div class="sku-name">FeraBee Sparkling Wine</div>
+                        <div class="sku-cat">Sparkling Wine (12.0% ABV)</div>
+                    </div>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Light, effervescent, with notes of green apple, crisp pear, and citrus. Perfect for celebrations and weekend brunches.
+                </p>
+                <div class="sku-meta-pills">
+                    <span class="meta-pill">750ml Glass Bottle</span>
+                    <span class="meta-pill">Goa MRP: ₹850</span>
+                    <span class="meta-pill">MH MRP: ₹1,500</span>
+                </div>
+                <div class="sku-margin-row">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Serving COGS / Price</div>
+                        <div style="font-family: var(--font-mono); font-size: 0.95rem; color: #fff;">₹90 / ₹250 (150ml)</div>
+                    </div>
+                    <div class="sku-margin-badge" style="color: var(--gold-light); border-color: var(--gold-border);">64.0% Margin</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4: LOUNGE UNIT ECONOMICS -->
+    <div id="tab-unit-pnl" class="tab-panel">
+        <div class="panel-box">
+            <div class="panel-header">
+                <div class="panel-title">🏢 100-Cover Bee Lounge Monthly Unit Economics (FOCO)</div>
+            </div>
+            <div class="table-wrap">
+                <table class="luxury-table">
+                    <thead>
+                        <tr>
+                            <th>Line Item Head</th>
+                            <th>Monthly Value (₹)</th>
+                            <th>Share (%)</th>
+                            <th>Operational Drivers & Cost Assumptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unlimited Package Sales</td>
+                            <td class="strong-val">₹40,92,270</td>
+                            <td>80.4%</td>
+                            <td>105 guests/day @ ₹1,499 avg ticket × 26 operating days</td>
+                        </tr>
+                        <tr>
+                            <td>A La Carte Food & Cocktails</td>
+                            <td class="strong-val">₹9,94,500</td>
+                            <td>19.6%</td>
+                            <td>45 guests/day @ ₹850 avg spend × 26 operating days</td>
+                        </tr>
+                        <tr style="background: rgba(197, 160, 89, 0.08);">
+                            <td><strong style="color: #fff;">GROSS OPERATING REVENUE</strong></td>
+                            <td class="strong-val gold-highlight">₹50,86,770</td>
+                            <td class="gold-highlight">100.0%</td>
+                            <td><strong>Annualized turnover of ₹6.10 Crore per lounge</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Food & Spirits COGS</td>
+                            <td class="strong-val">₹24,41,650</td>
+                            <td>48.0%</td>
+                            <td>Raw material culinary stock + internal FeraBee spirits</td>
+                        </tr>
+                        <tr style="background: rgba(16, 185, 129, 0.05);">
+                            <td><strong style="color: #fff;">GROSS OPERATING PROFIT</strong></td>
+                            <td class="strong-val emerald-highlight">₹26,45,120</td>
+                            <td class="emerald-highlight">52.0%</td>
+                            <td><strong>Healthy 52% gross margin locked in</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Real Estate Rent & CAM</td>
+                            <td class="strong-val">₹4,50,000</td>
+                            <td>8.8%</td>
+                            <td>2,500 – 3,000 sq.ft prime arterial location / highway hub</td>
+                        </tr>
+                        <tr>
+                            <td>Personnel Payroll (22 Staff)</td>
+                            <td class="strong-val">₹5,50,000</td>
+                            <td>10.8%</td>
+                            <td>2-shift roster: Master Chef, Bartenders, Stewards, Bouncers</td>
+                        </tr>
+                        <tr>
+                            <td>Power, Refrigeration & HVAC</td>
+                            <td class="strong-val">₹1,50,000</td>
+                            <td>2.9%</td>
+                            <td>Continuous chillers for beer kegs and high commercial HVAC load</td>
+                        </tr>
+                        <tr>
+                            <td>Franchise Royalty (6%)</td>
+                            <td class="strong-val">₹1,50,000</td>
+                            <td>2.9%</td>
+                            <td>Paid monthly to FeraBee brand parent entity</td>
+                        </tr>
+                        <tr>
+                            <td>FL-III License Amortization</td>
+                            <td class="strong-val">₹1,20,000</td>
+                            <td>2.4%</td>
+                            <td>Amortization of ₹14.4 Lakh annual MH FL-III bar license</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing, Tech SaaS & Security</td>
+                            <td class="strong-val">₹2,30,000</td>
+                            <td>4.5%</td>
+                            <td>RFID wristbands, IoT optic pourer cloud, local digital ads</td>
+                        </tr>
+                        <tr style="background: rgba(244, 63, 94, 0.05);">
+                            <td><strong style="color: #fff;">TOTAL MONTHLY STORE OPEX</strong></td>
+                            <td class="strong-val rose-highlight">₹16,50,000</td>
+                            <td class="rose-highlight">32.4%</td>
+                            <td><strong>Realistic validated market operating expense</strong></td>
+                        </tr>
+                        <tr style="background: rgba(16, 185, 129, 0.12);">
+                            <td><strong style="color: var(--gold-bright); font-size: 1rem;">NET CASH PROFIT (FRANCHISEE)</strong></td>
+                            <td class="strong-val emerald-highlight" style="font-size: 1.15rem;">₹9,95,120</td>
+                            <td class="emerald-highlight"><strong>19.6%</strong></td>
+                            <td><strong>Delivers ₹1.19 Crore net annual cash distributions</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Franchise Payback Period</strong></td>
+                            <td class="strong-val gold-highlight">12.6 – 18.0 Months</td>
+                            <td>—</td>
+                            <td><strong>Payback on ₹1.25 Cr Setup Capex (IRR ~62%)</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 5: CONSOLIDATED PROJECTIONS -->
+    <div id="tab-consolidated" class="tab-panel">
+        <div class="panel-box">
+            <div class="panel-header">
+                <div class="panel-title">📈 3-Year Consolidated Financial Projections & Investor Returns</div>
+            </div>
+            <div class="table-wrap">
+                <table class="luxury-table">
+                    <thead>
+                        <tr>
+                            <th>Consolidated Stream / Metric</th>
+                            <th>Year 1 (60 Outlets)</th>
+                            <th>Year 2 (150 Outlets)</th>
+                            <th>Year 3 Base (250 Outlets)</th>
+                            <th>Year 3 Bull (367 Outlets)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Franchise Royalty (6%)</td>
+                            <td class="strong-val">₹9.18 Cr</td>
+                            <td class="strong-val">₹25.20 Cr</td>
+                            <td class="strong-val">₹46.00 Cr</td>
+                            <td class="strong-val gold-highlight">₹67.60 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>One-Time Franchise Fees (₹10L/unit)</td>
+                            <td class="strong-val">₹6.00 Cr</td>
+                            <td class="strong-val">₹9.00 Cr</td>
+                            <td class="strong-val">₹10.00 Cr</td>
+                            <td class="strong-val">₹11.70 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>Wholesale Spirits Supply Margin (15%)</td>
+                            <td class="strong-val">₹7.20 Cr</td>
+                            <td class="strong-val">₹16.20 Cr</td>
+                            <td class="strong-val">₹28.00 Cr</td>
+                            <td class="strong-val gold-highlight">₹40.00 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>Retail Market Off-Trade Distribution</td>
+                            <td class="strong-val">₹15.00 Cr</td>
+                            <td class="strong-val">₹30.00 Cr</td>
+                            <td class="strong-val">₹50.00 Cr</td>
+                            <td class="strong-val">₹85.00 Cr</td>
+                        </tr>
+                        <tr style="background: rgba(197, 160, 89, 0.08);">
+                            <td><strong style="color: #fff;">TOTAL CONSOLIDATED REVENUE</strong></td>
+                            <td class="strong-val gold-highlight">₹37.38 Cr</td>
+                            <td class="strong-val gold-highlight">₹80.40 Cr</td>
+                            <td class="strong-val gold-highlight">₹134.00 Cr</td>
+                            <td class="strong-val gold-highlight">₹204.30 – ₹285.00 Cr</td>
+                        </tr>
+                        <tr style="background: rgba(16, 185, 129, 0.08);">
+                            <td><strong style="color: var(--gold-bright);">CONSOLIDATED CORPORATE EBITDA</strong></td>
+                            <td class="strong-val emerald-highlight">₹10.00 Cr (26.7%)</td>
+                            <td class="strong-val emerald-highlight">₹23.00 Cr (28.6%)</td>
+                            <td class="strong-val emerald-highlight">₹36.00 Cr (26.9%)</td>
+                            <td class="strong-val emerald-highlight">₹78.00 Cr (38.2%)</td>
+                        </tr>
+                        <tr>
+                            <td>Target EV / EBITDA Multiple</td>
+                            <td class="strong-val">8.0x</td>
+                            <td class="strong-val">8.0x</td>
+                            <td class="strong-val">8.0x</td>
+                            <td class="strong-val">10.0x</td>
+                        </tr>
+                        <tr>
+                            <td>ENTERPRISE VALUATION (EV)</td>
+                            <td class="strong-val">₹80.00 Cr</td>
+                            <td class="strong-val">₹184.00 Cr</td>
+                            <td class="strong-val gold-highlight">₹288.00 Cr</td>
+                            <td class="strong-val gold-highlight">₹780.00 Cr</td>
+                        </tr>
+                        <tr style="background: rgba(197, 160, 89, 0.12);">
+                            <td><strong style="color: #fff;">Investor 25% Equity Stake Value</strong></td>
+                            <td class="strong-val emerald-highlight">₹20.00 Cr</td>
+                            <td class="strong-val emerald-highlight">₹46.00 Cr</td>
+                            <td class="strong-val emerald-highlight">₹72.00 Cr</td>
+                            <td class="strong-val emerald-highlight">₹195.00 Cr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investor Return Multiple (MOIC on ₹18 Cr)</strong></td>
+                            <td class="strong-val">1.11x</td>
+                            <td class="strong-val">2.55x</td>
+                            <td class="strong-val gold-highlight">4.00x</td>
+                            <td class="strong-val gold-highlight">10.83x (121% IRR)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 6: COMPLIANCE & SECTION 142 -->
+    <div id="tab-compliance" class="tab-panel">
+        <div class="layout-2col">
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">⚖️ Legal Token Architecture (Section 142 Defense)</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    Under Section 142 of the <strong style="color: #fff;">Maharashtra Prohibition Act, 1949</strong>, open "unlimited drinking competitions" are illegal. FeraBee operates an airtight, validated compliance architecture:
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--gold-border-subtle); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: var(--gold-bright);">1. Menu & Board Wording:</strong>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Strictly worded as: <em>"Prix-Fixe Multi-Course Dining with Measured Complimentary FeraBee Tasting Session"</em>.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--gold-border-subtle); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: var(--gold-bright);">2. Measured Token Caps:</strong>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Silver (4 tokens = 240ml max), Gold (6 tokens = 360ml max), Platinum (8 tokens). Hard limits prevent intoxication risks.
+                        </p>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--gold-border-subtle); padding: 1rem; border-radius: 8px;">
+                        <strong style="color: var(--gold-bright);">3. IoT 60ml Electronic Pourers:</strong>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Bluetooth-connected optics dispense exact 60ml pegs per token tap directly logged to the excise FLR-3/4 digital register.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-box">
+                <div class="panel-header">
+                    <div class="panel-title">🏛️ Inter-State Fiscal Transit (Goa to MH)</div>
+                </div>
+                <div class="table-wrap">
+                    <table class="luxury-table">
+                        <thead>
+                            <tr>
+                                <th>Transit Checkpoint</th>
+                                <th>Statutory Procedure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Goa Clearance</td>
+                                <td>Goa Excise GEMS portal export duty (~₹10–₹15/case)</td>
+                            </tr>
+                            <tr>
+                                <td>2. Transit Pass-2</td>
+                                <td>GPS-tracked bonded container with excise seal</td>
+                            </tr>
+                            <tr>
+                                <td>3. MH Border Checkpost</td>
+                                <td>Insuli/Banda checkpost verification & MH Duty (4.5x Mfg)</td>
+                            </tr>
+                            <tr>
+                                <td>4. FL-1 Wholesale Hub</td>
+                                <td>Pune/Thane bonded depot stock release to Bee Lounges</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer>
+        <div>
+            <div class="footer-brand">FERABEE LIQUOR PRIVATE LIMITED</div>
+            <div style="font-size: 0.8rem; margin-top: 0.25rem;">Corporate HQ: Pune, Maharashtra | Distillery Base: Goa | Brand: The Royal Bee</div>
+        </div>
+        <div>
+            <span class="luxury-badge">CONFIDENTIAL INVESTOR & FRANCHISE PORTAL</span>
+        </div>
+    </footer>
+</div>
+
+<!-- JAVASCRIPT: PARTICLE CANVAS, 3D TILT, COUNTERS, CHARTS & SIMULATOR -->
+<script>
+    // -------------------------------------------------------------
+    // 1. PARTICLE CANVAS ANIMATION (Floating Gold Dust)
+    // -------------------------------------------------------------
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+        constructor() {
+            this.reset();
+        }
+        reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2.2 + 0.5;
+            this.speedX = Math.random() * 0.4 - 0.2;
+            this.speedY = Math.random() * -0.5 - 0.1;
+            this.opacity = Math.random() * 0.5 + 0.1;
+            this.pulseSpeed = Math.random() * 0.02 + 0.005;
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.opacity += Math.sin(Date.now() * this.pulseSpeed) * 0.005;
+            if (this.y < 0 || this.x < 0 || this.x > canvas.width) {
+                this.reset();
+                this.y = canvas.height;
+            }
+        }
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(197, 160, 89, ${Math.max(0.05, Math.min(0.6, this.opacity))})`;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = "rgba(249, 231, 185, 0.4)";
+            ctx.fill();
+        }
+    }
+
+    function initParticles() {
+        particles = [];
+        const count = Math.floor(window.innerWidth / 25);
+        for (let i = 0; i < count; i++) {
+            particles.push(new Particle());
+        }
+    }
+    initParticles();
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let p of particles) {
+            p.update();
+            p.draw();
+        }
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // -------------------------------------------------------------
+    // 2. 3D CARD TILT ON MOUSEMOVE
+    // -------------------------------------------------------------
+    function tiltCard(e, card) {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -7;
+        const rotateY = ((x - centerX) / centerX) * 7;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+    }
+
+    function resetCard(card) {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+    }
+
+    // -------------------------------------------------------------
+    // 3. TAB CONTROLS & ANIMATIONS
+    // -------------------------------------------------------------
+    function showTab(evt, tabId) {
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        
+        evt.currentTarget.classList.add('active');
+        const activePanel = document.getElementById(tabId);
+        activePanel.classList.add('active');
+    }
+
+    // -------------------------------------------------------------
+    // 4. SIMULATOR LOGIC & DYNAMIC CHARTS
+    // -------------------------------------------------------------
+    let chartConsolidatedInstance = null;
+    let chartUnitEconInstance = null;
+
+    function loadSimScenario(evt, type) {
+        document.querySelectorAll('.scen-btn').forEach(b => b.classList.remove('active'));
+        evt.currentTarget.classList.add('active');
+
+        if(type === 'bull') {
+            document.getElementById('sim-outlets').value = 367;
+            document.getElementById('sim-guests').value = 105;
+            document.getElementById('sim-ticket').value = 1499;
+            document.getElementById('sim-opex').value = 6.44;
+            document.getElementById('sim-royalty').value = 6.0;
+            document.getElementById('sim-multiple').value = 10.0;
+        } else if(type === 'base') {
+            document.getElementById('sim-outlets').value = 150;
+            document.getElementById('sim-guests').value = 105;
+            document.getElementById('sim-ticket').value = 1499;
+            document.getElementById('sim-opex').value = 15.0;
+            document.getElementById('sim-royalty').value = 6.0;
+            document.getElementById('sim-multiple').value = 8.0;
+        } else if(type === 'bear') {
+            document.getElementById('sim-outlets').value = 80;
+            document.getElementById('sim-guests').value = 75;
+            document.getElementById('sim-ticket').value = 1299;
+            document.getElementById('sim-opex').value = 16.5;
+            document.getElementById('sim-royalty').value = 5.0;
+            document.getElementById('sim-multiple').value = 6.0;
+        }
+        runSim();
+    }
+
+    function runSim() {
+        const outlets = parseInt(document.getElementById('sim-outlets').value);
+        const guests = parseInt(document.getElementById('sim-guests').value);
+        const ticket = parseInt(document.getElementById('sim-ticket').value);
+        const opexLakh = parseFloat(document.getElementById('sim-opex').value);
+        const royaltyPct = parseFloat(document.getElementById('sim-royalty').value);
+        const multiple = parseFloat(document.getElementById('sim-multiple').value);
+
+        // Update displays
+        document.getElementById('disp-outlets').innerText = outlets + ' Outlets';
+        document.getElementById('disp-guests').innerText = guests + ' Guests';
+        document.getElementById('disp-ticket').innerText = '₹' + ticket.toLocaleString();
+        document.getElementById('disp-opex').innerText = '₹' + opexLakh.toFixed(1) + ' Lakh';
+        document.getElementById('disp-royalty').innerText = royaltyPct.toFixed(1) + '%';
+        document.getElementById('disp-multiple').innerText = multiple.toFixed(1) + 'x';
+
+        // Calculations
+        const opDays = 26;
+        const alcGuests = Math.round(guests * 0.43);
+        const alcTicket = 850;
+
+        const pkgRev = guests * ticket * opDays;
+        const alcRev = alcGuests * alcTicket * opDays;
+        const storeGrossRev = pkgRev + alcRev;
+        const storeGrossLakh = storeGrossRev / 100000;
+
+        const grossProfitLakh = storeGrossLakh * 0.52;
+        const netProfitLakh = grossProfitLakh - opexLakh;
+        const capexLakh = 125.0;
+        const payback = netProfitLakh > 0 ? (capexLakh / netProfitLakh).toFixed(1) : 'Deficit';
+
+        const casesPerYear = Math.round(outlets * 47.5 * 12);
+
+        // Corporate Rollup
+        const brandRoyaltyCr = (outlets * storeGrossRev * 12 * (royaltyPct / 100)) / 10000000;
+        const brandSupplyCr = (outlets * storeGrossRev * 12 * 0.08) / 10000000;
+        const retailOffTradeCr = outlets * 0.20;
+        const brandRevCr = brandRoyaltyCr + brandSupplyCr + retailOffTradeCr;
+        const brandEbitdaCr = brandRevCr * 0.30;
+        const evCr = brandEbitdaCr * multiple;
+        const investorValCr = evCr * 0.25;
+        const moic = (investorValCr / 18.0).toFixed(2);
+
+        // Animate & Update text
+        document.getElementById('res-store-rev').innerText = '₹' + storeGrossLakh.toFixed(2) + ' L';
+        document.getElementById('res-store-profit').innerText = '₹' + netProfitLakh.toFixed(2) + ' L';
+        document.getElementById('res-payback').innerText = payback + (payback !== 'Deficit' ? ' Months' : '');
+        document.getElementById('res-cases').innerText = casesPerYear.toLocaleString() + ' Cases';
+        document.getElementById('res-brand-rev').innerText = '₹' + brandRevCr.toFixed(1) + ' Cr';
+        document.getElementById('res-brand-ebitda').innerText = '₹' + brandEbitdaCr.toFixed(1) + ' Cr';
+        document.getElementById('res-ev').innerText = '₹' + evCr.toFixed(1) + ' Cr';
+        document.getElementById('res-investor').innerText = '₹' + investorValCr.toFixed(1) + ' Cr (' + moic + 'x)';
+    }
+
+    // -------------------------------------------------------------
+    // 5. INITIALIZE CHART.JS WITH LUXURY GLOW
+    // -------------------------------------------------------------
+    window.addEventListener('DOMContentLoaded', () => {
+        runSim();
+
+        // 1. Consolidated Revenue Chart
+        const ctxCon = document.getElementById('chartConsolidated').getContext('2d');
+        const gradientGold = ctxCon.createLinearGradient(0, 0, 0, 300);
+        gradientGold.addColorStop(0, '#f9e7b9');
+        gradientGold.addColorStop(1, '#8c6d32');
+
+        const gradientEmerald = ctxCon.createLinearGradient(0, 0, 0, 300);
+        gradientEmerald.addColorStop(0, '#34d399');
+        gradientEmerald.addColorStop(1, '#065f46');
+
+        chartConsolidatedInstance = new Chart(ctxCon, {
+            type: 'bar',
+            data: {
+                labels: ['Year 1 (60)', 'Year 2 (150)', 'Year 3 Base (250)', 'Year 3 Bull (367)'],
+                datasets: [
+                    {
+                        label: 'Consolidated Revenue (₹ Cr)',
+                        data: [37.38, 80.40, 134.00, 285.00],
+                        backgroundColor: gradientGold,
+                        borderRadius: 8,
+                        borderWidth: 1,
+                        borderColor: 'rgba(249, 231, 185, 0.4)'
+                    },
+                    {
+                        label: 'EBITDA (₹ Cr)',
+                        data: [10.00, 23.00, 36.00, 78.00],
+                        backgroundColor: gradientEmerald,
+                        borderRadius: 8,
+                        borderWidth: 1,
+                        borderColor: 'rgba(52, 211, 153, 0.4)'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 1200,
+                    easing: 'easeOutQuart'
+                },
+                plugins: {
+                    legend: { labels: { color: '#94a3b8', font: { family: 'Plus Jakarta Sans', size: 11, weight: '600' } } },
+                    tooltip: {
+                        backgroundColor: 'rgba(10, 14, 23, 0.95)',
+                        titleColor: '#f9e7b9',
+                        bodyColor: '#fff',
+                        borderColor: 'rgba(197, 160, 89, 0.4)',
+                        borderWidth: 1,
+                        padding: 12,
+                        cornerRadius: 8
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#94a3b8', font: { weight: '600' } }, grid: { display: false } },
+                    y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+                }
+            }
+        });
+
+        // 2. Unit Econ Waterfall Chart
+        const ctxUnit = document.getElementById('chartUnitEcon').getContext('2d');
+        chartUnitEconInstance = new Chart(ctxUnit, {
+            type: 'bar',
+            data: {
+                labels: ['Gross Rev', 'COGS (48%)', 'Gross Profit', 'Rent & CAM', 'Payroll (22)', 'Other OPEX', 'Net Cash Flow'],
+                datasets: [{
+                    label: 'Amount in ₹ Lakh',
+                    data: [50.87, -24.42, 26.45, -4.50, -5.50, -6.50, 9.95],
+                    backgroundColor: [
+                        '#c5a059', '#f43f5e', '#10b981', '#38bdf8', '#38bdf8', '#38bdf8', '#10b981'
+                    ],
+                    borderRadius: 8,
+                    borderWidth: 1,
+                    borderColor: 'rgba(255,255,255,0.1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 1400,
+                    easing: 'easeOutQuart'
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: 'rgba(10, 14, 23, 0.95)',
+                        titleColor: '#f9e7b9',
+                        bodyColor: '#fff',
+                        borderColor: 'rgba(197, 160, 89, 0.4)',
+                        borderWidth: 1,
+                        padding: 12,
+                        cornerRadius: 8
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#94a3b8', font: { size: 9.5, weight: '600' } }, grid: { display: false } },
+                    y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
