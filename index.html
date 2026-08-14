@@ -6,15 +6,22 @@
     <title>FERABEE LIQUOR | The Royal Bee — Direct-to-Consumer Alcobev Ecosystem</title>
     
     <!-- SEO, OpenGraph & Twitter Metadata -->
-    <meta name="description" content="India's first direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Built with WebGL, Audio-Reactive Three.js, GSAP, and AI Intelligence.">
-    <meta name="keywords" content="FeraBee Liquor, The Royal Bee, Craft Spirits India, Alcobev Franchise, Series A Investment, WebGL, Three.js, GSAP, FOCO Model, Creative Technology">
+    <meta name="description" content="India's first direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Built with WebGL, 3D Raycasting, Audio-Reactive Three.js, GSAP, and AI Intelligence.">
+    <meta name="keywords" content="FeraBee Liquor, The Royal Bee, Craft Spirits India, Alcobev Franchise, Series A Investment, WebGL, Three.js, GSAP, Raycasting, Creative Technology">
     <meta name="author" content="FeraBee Liquor Private Limited">
     <meta property="og:title" content="FERABEE LIQUOR | The Royal Bee — Direct-to-Consumer Spirits Platform">
     <meta property="og:description" content="India's first integrated direct-to-consumer craft spirits brand & 367-Taluka Bee Lounge network in Maharashtra & Goa.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://piyushtade.github.io/ferabee-liquor/">
 
-    <!-- Schema.org JSON-LD Structured Data for Search Engines -->
+    <!-- Performance: DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,8 +47,6 @@
     </script>
 
     <!-- Google Fonts: Royal Roman, Editorial Serif, Modern Sans & Monospace -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- External Animation, 3D & Math Libraries -->
@@ -121,7 +126,7 @@
             opacity: 0.75;
         }
 
-        /* Accessibility: Reduced Motion Support */
+        /* Accessibility: Reduced Motion */
         @media (prefers-reduced-motion: reduce) {
             * {
                 animation-duration: 0.01ms !important;
@@ -214,7 +219,7 @@
             font-weight: 700;
         }
 
-        /* SCROLL PROGRESS BAR (TOP) */
+        /* SCROLL PROGRESS BAR */
         #scroll-progress {
             position: fixed;
             top: 0; left: 0; height: 3.5px;
@@ -224,7 +229,7 @@
             transition: width 0.05s ease-out;
         }
 
-        /* 3D WEBGL CANVAS BACKGROUND */
+        /* 3D WEBGL CANVAS */
         #webgl-canvas {
             position: fixed;
             top: 0; left: 0;
@@ -233,7 +238,7 @@
             z-index: 0;
         }
 
-        /* CUSTOM GLOWING MOUSE CURSOR TRAIL */
+        /* CUSTOM GLOWING MOUSE CURSOR */
         #cursor-glow {
             position: fixed;
             width: 440px; height: 440px;
@@ -376,7 +381,6 @@
             gap: 1rem;
         }
 
-        /* Sound Ambiance Toggle */
         .audio-toggle-btn {
             background: rgba(14, 20, 32, 0.8);
             border: 1px solid var(--gold-border-subtle);
@@ -857,6 +861,70 @@
             box-shadow: 0 0 18px rgba(16, 185, 129, 0.2);
         }
 
+        /* REGIONAL EXPANSION MAP EXPLORER */
+        .map-explorer-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 2.8rem;
+            box-shadow: var(--shadow-luxury);
+        }
+
+        @media (max-width: 1024px) {
+            .map-explorer-wrap { grid-template-columns: 1fr; }
+        }
+
+        .cluster-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cluster-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--gold-border-subtle);
+            border-radius: var(--radius-md);
+            padding: 1.2rem 1.6rem;
+            color: #fff;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cluster-btn:hover, .cluster-btn.active {
+            background: rgba(197, 160, 89, 0.15);
+            border-color: var(--gold-base);
+            transform: translateX(8px);
+        }
+
+        .cluster-btn-name {
+            font-family: var(--font-royal);
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .cluster-btn-count {
+            font-family: var(--font-mono);
+            color: var(--gold-light);
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .cluster-detail-box {
+            background: radial-gradient(circle at center, #131926 0%, #06090e 100%);
+            border: 1.5px solid var(--gold-border);
+            border-radius: var(--radius-lg);
+            padding: 2.2rem;
+            box-shadow: var(--gold-glow);
+        }
+
         /* SIMULATOR LAYOUT */
         .simulator-layout {
             display: grid;
@@ -1224,9 +1292,10 @@
         <ul class="nav-links">
             <li><a href="#about">Disruption</a></li>
             <li><a href="#products">Portfolio</a></li>
+            <li><a href="#territories">Territories</a></li>
             <li><a href="#charts-view">Analytics</a></li>
             <li><a href="#simulator">Simulator</a></li>
-            <li><a href="#downloads">Institutional Deck</a></li>
+            <li><a href="#downloads">Dossiers</a></li>
         </ul>
         <div class="nav-actions">
             <button id="btn-audio" class="audio-toggle-btn" onclick="toggleAudio()">
@@ -1485,6 +1554,85 @@
     </div>
 </section>
 
+<!-- SECTION 2B: REGIONAL EXPANSION MAP EXPLORER -->
+<section id="territories" class="content-section">
+    <div class="container">
+        <div class="section-header-wrap gsap-fade">
+            <span class="section-tag">Geographic Distribution Network</span>
+            <h2 class="section-title">367-TALUKA TERRITORY CLUSTERS</h2>
+            <p class="section-desc">Select a region below to inspect store density, captive case offtake, and estimated territory returns.</p>
+        </div>
+
+        <div class="map-explorer-wrap gsap-card">
+            <div class="cluster-btns">
+                <button class="cluster-btn active" onclick="selectCluster('mmr', this)">
+                    <div>
+                        <div class="cluster-btn-name">🏙️ Mumbai Metropolitan Region (MMR)</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary);">Mumbai City, Suburbs, Thane, Navi Mumbai</div>
+                    </div>
+                    <div class="cluster-btn-count">48 Lounges</div>
+                </button>
+
+                <button class="cluster-btn" onclick="selectCluster('pune', this)">
+                    <div>
+                        <div class="cluster-btn-name">⛰️ Pune & Western Maharashtra</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary);">Pune, Pimpri-Chinchwad, Satara, Kolhapur</div>
+                    </div>
+                    <div class="cluster-btn-count">82 Lounges</div>
+                </button>
+
+                <button class="cluster-btn" onclick="selectCluster('north', this)">
+                    <div>
+                        <div class="cluster-btn-name">🍇 North Maharashtra & Wine Belt</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary);">Nashik, Dhule, Jalgaon, Ahmednagar</div>
+                    </div>
+                    <div class="cluster-btn-count">65 Lounges</div>
+                </button>
+
+                <button class="cluster-btn" onclick="selectCluster('vidarbha', this)">
+                    <div>
+                        <div class="cluster-btn-name">🐅 Vidarbha & Marathwada</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary);">Nagpur, Chhatrapati Sambhajinagar, Amravati</div>
+                    </div>
+                    <div class="cluster-btn-count">110 Lounges</div>
+                </button>
+
+                <button class="cluster-btn" onclick="selectCluster('goa', this)">
+                    <div>
+                        <div class="cluster-btn-name">🏖️ Coastal Konkan & Goa HQ</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary);">North Goa, South Goa, Ratnagiri, Sindhudurg</div>
+                    </div>
+                    <div class="cluster-btn-count">62 Lounges</div>
+                </button>
+            </div>
+
+            <div class="cluster-detail-box" id="cluster-details">
+                <h3 id="c-name" style="font-family: var(--font-royal); font-size: 1.4rem; color: var(--gold-bright); margin-bottom: 0.6rem;">Mumbai Metropolitan Region</h3>
+                <p id="c-desc" style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.6rem;">Highest-density urban market with premium cocktail affinity and corporate party footfalls.</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; border-top: 1px solid var(--gold-border-subtle); padding-top: 1.4rem;">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Allocated Outlets</div>
+                        <div id="c-outlets" style="font-family: var(--font-mono); font-size: 1.4rem; color: #fff; font-weight: 700;">48 Bee Lounges</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Annual Offtake</div>
+                        <div id="c-cases" style="font-family: var(--font-mono); font-size: 1.4rem; color: var(--gold-bright); font-weight: 700;">27,360 Cases</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Cluster Monthly P&L</div>
+                        <div id="c-profit" style="font-family: var(--font-mono); font-size: 1.4rem; color: var(--accent-emerald); font-weight: 700;">₹4.78 Cr / Mo</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Rollout Phase</div>
+                        <div id="c-phase" style="font-family: var(--font-mono); font-size: 1.4rem; color: #fff; font-weight: 700;">Phase 1 (Months 1–12)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SECTION 3: VISUAL CHARTS -->
 <section id="charts-view" class="content-section">
     <div class="container">
@@ -1697,8 +1845,8 @@
                 <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 1rem; font-family: var(--font-royal);">Key Modules</h4>
                 <p><a href="#about" style="color: var(--text-secondary); text-decoration: none;">Strategic Disruption</a></p>
                 <p><a href="#products" style="color: var(--text-secondary); text-decoration: none;">6-SKU Portfolio</a></p>
+                <p><a href="#territories" style="color: var(--text-secondary); text-decoration: none;">367-Taluka Map</a></p>
                 <p><a href="#simulator" style="color: var(--text-secondary); text-decoration: none;">Financial Simulator</a></p>
-                <p><a href="#downloads" style="color: var(--text-secondary); text-decoration: none;">Document Downloads</a></p>
             </div>
             <div>
                 <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 1rem; font-family: var(--font-royal);">Institutional Desk</h4>
@@ -1710,12 +1858,12 @@
 
         <div class="footer-bottom">
             <div>© 2026 FeraBee Liquor Private Limited. All Rights Reserved. Confidential Deal Room.</div>
-            <div style="color: var(--gold-light);">Engineered with Three.js, Audio-Reactive WebGL, GSAP, ScrollTrigger & Lenis</div>
+            <div style="color: var(--gold-light);">Engineered with Three.js, Raycasting, GSAP, ScrollTrigger & Lenis</div>
         </div>
     </div>
 </footer>
 
-<!-- COMPLETE JAVASCRIPT ENGINE (Audio-Reactive WebGL, GSAP, Lenis, AI Assistant, Web Audio) -->
+<!-- COMPLETE JAVASCRIPT ENGINE (Raycasting, Audio-Reactive WebGL, GSAP, Lenis, AI Assistant, Web Audio) -->
 <script>
     // -------------------------------------------------------------
     // 1. PRELOADER & TIMELINE
@@ -1791,9 +1939,9 @@
     }
 
     // -------------------------------------------------------------
-    // 3. THREE.JS 3D WEBGL AUDIO-REACTIVE SCENE
+    // 3. THREE.JS 3D WEBGL RAYCASTING & AUDIO-REACTIVE SCENE
     // -------------------------------------------------------------
-    let scene, camera, renderer, particlesMesh, hexGroup;
+    let scene, camera, renderer, particlesMesh, hexGroup, raycaster, mouseVec;
     let mouseX = 0, mouseY = 0;
 
     function initThreeJS() {
@@ -1805,6 +1953,9 @@
         renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        raycaster = new THREE.Raycaster();
+        mouseVec = new THREE.Vector2();
 
         const ambientLight = new THREE.AmbientLight(0xc5a059, 0.45);
         scene.add(ambientLight);
@@ -1836,15 +1987,15 @@
         // Honeycomb Hexagonal Prisms
         hexGroup = new THREE.Group();
         const hexGeo = new THREE.CylinderGeometry(0.85, 0.85, 0.2, 6);
-        const hexMat = new THREE.MeshStandardMaterial({
-            color: 0x251d11,
-            emissive: 0x7a5c24,
-            metalness: 0.85,
-            roughness: 0.2,
-            wireframe: true
-        });
 
         for (let i = 0; i < 18; i++) {
+            const hexMat = new THREE.MeshStandardMaterial({
+                color: 0x251d11,
+                emissive: 0x7a5c24,
+                metalness: 0.85,
+                roughness: 0.2,
+                wireframe: true
+            });
             const mesh = new THREE.Mesh(hexGeo, hexMat);
             mesh.position.set((Math.random() - 0.5) * 55, (Math.random() - 0.5) * 55, (Math.random() - 0.5) * 25);
             mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
@@ -1858,6 +2009,8 @@
         document.addEventListener('mousemove', (e) => {
             mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
             mouseY = (e.clientY / window.innerHeight - 0.5) * -2;
+            mouseVec.x = (e.clientX / window.innerWidth) * 2 - 1;
+            mouseVec.y = -(e.clientY / window.innerHeight) * 2 + 1;
             
             const glow = document.getElementById('cursor-glow');
             const dot = document.getElementById('cursor-dot');
@@ -1874,11 +2027,24 @@
 
     function animateThreeJS() {
         requestAnimationFrame(animateThreeJS);
+        
+        // Raycasting Hover
+        if (raycaster && hexGroup) {
+            raycaster.setFromCamera(mouseVec, camera);
+            const intersects = raycaster.intersectObjects(hexGroup.children);
+            hexGroup.children.forEach(mesh => {
+                mesh.material.emissive.setHex(0x7a5c24);
+            });
+            if (intersects.length > 0) {
+                intersects[0].object.material.emissive.setHex(0xfaeac4);
+                intersects[0].object.rotation.y += 0.05;
+            }
+        }
+
         if (particlesMesh) {
             particlesMesh.rotation.y += 0.0015;
             particlesMesh.rotation.x += 0.0008;
             
-            // Audio-reactive particle pulse
             if (isAudioPlaying && analyser) {
                 analyser.getByteFrequencyData(dataArray);
                 const avg = dataArray.reduce((p, c) => p + c, 0) / dataArray.length;
@@ -1981,7 +2147,66 @@
     }
 
     // -------------------------------------------------------------
-    // 5. MAGNETIC BUTTON PHYSICS
+    // 5. REGIONAL CLUSTER DATA SELECTOR
+    // -------------------------------------------------------------
+    const clustersData = {
+        mmr: {
+            name: "Mumbai Metropolitan Region (MMR)",
+            desc: "Highest-density urban market with premium cocktail affinity and high corporate party footfalls.",
+            outlets: "48 Bee Lounges",
+            cases: "27,360 Cases",
+            profit: "₹4.78 Cr / Mo",
+            phase: "Phase 1 (Months 1–12)"
+        },
+        pune: {
+            name: "Pune & Western Maharashtra",
+            desc: "Tech and automotive corridor with expansive young affluent consumer demographics.",
+            outlets: "82 Bee Lounges",
+            cases: "46,740 Cases",
+            profit: "₹8.16 Cr / Mo",
+            phase: "Phase 1 & 2 (Months 6–18)"
+        },
+        north: {
+            name: "North Maharashtra & Wine Belt",
+            desc: "Agricultural affluent district centers with strong social club culture and celebratory dining.",
+            outlets: "65 Bee Lounges",
+            cases: "37,050 Cases",
+            profit: "₹6.47 Cr / Mo",
+            phase: "Phase 2 (Months 12–24)"
+        },
+        vidarbha: {
+            name: "Vidarbha & Marathwada",
+            desc: "Broad tier-2/3 taluka market penetration with high spirits per-capita volume consumption.",
+            outlets: "110 Bee Lounges",
+            cases: "62,700 Cases",
+            profit: "₹10.95 Cr / Mo",
+            phase: "Phase 3 (Months 18–36)"
+        },
+        goa: {
+            name: "Coastal Konkan & Goa Base",
+            desc: "Distillery home market and coastal tourist lounges driving massive brand affinity and trial.",
+            outlets: "62 Bee Lounges",
+            cases: "35,340 Cases",
+            profit: "₹6.17 Cr / Mo",
+            phase: "Phase 1 (Months 1–12)"
+        }
+    };
+
+    function selectCluster(key, btn) {
+        document.querySelectorAll('.cluster-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const c = clustersData[key];
+        document.getElementById('c-name').innerText = c.name;
+        document.getElementById('c-desc').innerText = c.desc;
+        document.getElementById('c-outlets').innerText = c.outlets;
+        document.getElementById('c-cases').innerText = c.cases;
+        document.getElementById('c-profit').innerText = c.profit;
+        document.getElementById('c-phase').innerText = c.phase;
+        playChimeSound();
+    }
+
+    // -------------------------------------------------------------
+    // 6. MAGNETIC BUTTON PHYSICS
     // -------------------------------------------------------------
     document.querySelectorAll('.magnetic-btn').forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
@@ -1996,7 +2221,7 @@
     });
 
     // -------------------------------------------------------------
-    // 6. AI INTELLIGENCE ASSISTANT ENGINE
+    // 7. AI INTELLIGENCE ASSISTANT ENGINE
     // -------------------------------------------------------------
     function toggleAIChat() {
         const modal = document.getElementById('ai-chat-modal');
@@ -2042,7 +2267,7 @@
     }
 
     // -------------------------------------------------------------
-    // 7. WEB AUDIO AMBIENT SYNTHESIZER & SFX
+    // 8. WEB AUDIO AMBIENT SYNTHESIZER & SFX
     // -------------------------------------------------------------
     let audioCtx = null;
     let isAudioPlaying = false;
@@ -2101,8 +2326,8 @@
             const chimeGain = audioCtx.createGain();
             
             chimeOsc.type = 'triangle';
-            chimeOsc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
-            chimeOsc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // A5
+            chimeOsc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+            chimeOsc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15);
             
             chimeGain.gain.setValueAtTime(0.05, audioCtx.currentTime);
             chimeGain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
@@ -2115,7 +2340,7 @@
     }
 
     // -------------------------------------------------------------
-    // 8. 3D CARD TILT ON MOUSEMOVE
+    // 9. 3D CARD TILT ON MOUSEMOVE
     // -------------------------------------------------------------
     function tiltCard(e, card) {
         const rect = card.getBoundingClientRect();
@@ -2133,7 +2358,7 @@
     }
 
     // -------------------------------------------------------------
-    // 9. FINANCIAL SIMULATOR LOGIC
+    // 10. FINANCIAL SIMULATOR LOGIC
     // -------------------------------------------------------------
     function updateSim() {
         const outlets = parseInt(document.getElementById('slider-outlets').value);
@@ -2184,7 +2409,7 @@
     }
 
     // -------------------------------------------------------------
-    // 10. INITIALIZATION ON DOM LOAD
+    // 11. INITIALIZATION ON DOM LOAD
     // -------------------------------------------------------------
     window.addEventListener('DOMContentLoaded', () => {
         initThreeJS();
