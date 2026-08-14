@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lenis lenis-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FERABEE LIQUOR | The Royal Bee — India's Direct-to-Consumer Spirits Platform</title>
-    <meta name="description" content="India's first integrated direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Series-A equity investment & territory allocations.">
-    <!-- Google Fonts: Royal Roman, Editorial Serif, Modern Sans & Precision Mono -->
+    <title>FERABEE LIQUOR | The Royal Bee — Craft Spirits & 367-Taluka Captive Lounge Platform</title>
+    <meta name="description" content="India's first direct-to-consumer craft spirits brand and 367-Taluka Bee Lounge franchise network in Maharashtra and Goa. Built with Three.js, GSAP, ScrollTrigger, and Lenis.">
+
+    <!-- Google Fonts: Royal Roman, High Editorial Serif, Precision Sans & Monospace -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chart.js for smooth luxury interactive charts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External Libraries: Three.js, GSAP, ScrollTrigger, Lenis Smooth Scroll, Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <style>
         :root {
-            --bg-deep: #030508;
-            --bg-surface: #070a10;
-            --bg-card: rgba(12, 17, 28, 0.72);
-            --bg-card-hover: rgba(20, 28, 45, 0.88);
+            --bg-deep: #020306;
+            --bg-surface: #06090f;
+            --bg-card: rgba(10, 15, 26, 0.72);
+            --bg-card-hover: rgba(18, 26, 42, 0.88);
             --gold-base: #c5a059;
             --gold-light: #e6ca85;
             --gold-bright: #faeac4;
             --gold-dark: #7a5c24;
             --gold-gradient: linear-gradient(135deg, #faeac4 0%, #c5a059 45%, #7a5c24 100%);
-            --gold-gradient-glow: linear-gradient(135deg, rgba(250,234,196,0.3) 0%, rgba(197,160,89,0.5) 50%, rgba(122,92,36,0.1) 100%);
             --gold-border: rgba(197, 160, 89, 0.35);
             --gold-border-subtle: rgba(197, 160, 89, 0.14);
             --gold-glow: 0 0 45px -5px rgba(197, 160, 89, 0.32);
-            --gold-glow-lg: 0 0 75px -5px rgba(197, 160, 89, 0.5);
+            --gold-glow-lg: 0 0 80px -5px rgba(197, 160, 89, 0.55);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
             --text-gold: #e6ca85;
             --accent-emerald: #10b981;
-            --accent-emerald-glow: 0 0 30px rgba(16, 185, 129, 0.35);
+            --accent-emerald-glow: 0 0 30px rgba(16, 185, 129, 0.4);
             --accent-rose: #f43f5e;
             --accent-blue: #38bdf8;
             --font-royal: 'Cinzel', serif;
@@ -44,14 +49,21 @@
             --radius-md: 16px;
             --radius-lg: 24px;
             --radius-full: 9999px;
-            --shadow-luxury: 0 30px 60px -15px rgba(0, 0, 0, 0.9), 0 0 1px 1px rgba(197, 160, 89, 0.2);
+            --shadow-luxury: 0 35px 70px -15px rgba(0, 0, 0, 0.95), 0 0 1px 1px rgba(197, 160, 89, 0.2);
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
+        }
+
+        html.lenis, html.lenis body {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto !important;
         }
 
         body {
@@ -62,6 +74,7 @@
             overflow-x: hidden;
             min-height: 100vh;
             position: relative;
+            cursor: default;
         }
 
         /* Subtle Luxury Grain Overlay */
@@ -69,157 +82,75 @@
             content: '';
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
-            background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
             background-size: 24px 24px;
             pointer-events: none;
             z-index: 1;
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
         /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-deep);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--gold-dark);
-            border-radius: 4px;
-            border: 1px solid var(--gold-border);
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--gold-base);
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-deep); }
+        ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; border: 1px solid var(--gold-border); }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold-base); }
 
         /* SCROLL PROGRESS BAR (TOP) */
         #scroll-progress {
             position: fixed;
-            top: 0;
-            left: 0;
-            height: 3.5px;
+            top: 0; left: 0; height: 3.5px;
             background: var(--gold-gradient);
-            width: 0%;
-            z-index: 9999;
+            width: 0%; z-index: 9999;
             box-shadow: 0 0 15px var(--gold-base), 0 0 30px var(--gold-light);
-            transition: width 0.08s ease-out;
+            transition: width 0.05s ease-out;
+        }
+
+        /* 3D WEBGL CANVAS BACKGROUND */
+        #webgl-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 0;
         }
 
         /* CUSTOM GLOWING MOUSE CURSOR TRAIL */
         #cursor-glow {
             position: fixed;
-            width: 450px;
-            height: 450px;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.06) 0%, transparent 65%);
+            width: 420px; height: 420px;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.065) 0%, transparent 65%);
             border-radius: 50%;
             pointer-events: none;
-            z-index: 0;
+            z-index: 2;
             transform: translate(-50%, -50%);
-            transition: transform 0.15s ease-out, opacity 0.3s ease;
-            opacity: 0.8;
+            transition: transform 0.1s ease-out;
         }
 
-        /* Particle Canvas Background */
-        #particle-canvas {
+        #cursor-dot {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+            width: 8px; height: 8px;
+            background: var(--gold-bright);
+            border-radius: 50%;
             pointer-events: none;
-            z-index: 0;
-        }
-
-        /* Ambient Aurora Glows */
-        .aurora-1 {
-            position: fixed;
-            top: -15%;
-            left: 10%;
-            width: 60vw;
-            height: 60vh;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.06) 0%, transparent 70%);
-            filter: blur(100px);
-            pointer-events: none;
-            z-index: 0;
-            animation: pulseGlow 14s infinite alternate ease-in-out;
-        }
-
-        .aurora-2 {
-            position: fixed;
-            bottom: 0%;
-            right: 5%;
-            width: 55vw;
-            height: 55vh;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.04) 0%, transparent 70%);
-            filter: blur(110px);
-            pointer-events: none;
-            z-index: 0;
-            animation: pulseGlow 18s infinite alternate-reverse ease-in-out;
-        }
-
-        @keyframes pulseGlow {
-            0% { transform: scale(1) translate(0, 0); opacity: 0.5; }
-            100% { transform: scale(1.22) translate(35px, -30px); opacity: 0.95; }
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 12px var(--gold-base);
+            transition: transform 0.05s linear, width 0.2s, height 0.2s;
         }
 
         .container {
-            max-width: 1460px;
+            max-width: 1480px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 2.2rem;
             position: relative;
-            z-index: 2;
-        }
-
-        /* SCROLL REVEAL ANIMATIONS */
-        .reveal {
-            opacity: 0;
-            transform: translateY(35px);
-            transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-left {
-            opacity: 0;
-            transform: translateX(-40px);
-            transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .reveal-left.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .reveal-right {
-            opacity: 0;
-            transform: translateX(40px);
-            transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .reveal-right.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .reveal-scale {
-            opacity: 0;
-            transform: scale(0.92);
-            transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .reveal-scale.active {
-            opacity: 1;
-            transform: scale(1);
+            z-index: 3;
         }
 
         /* STICKY LUXURY NAVIGATION */
         header.site-header {
             position: sticky;
             top: 0;
-            background: rgba(3, 5, 8, 0.88);
+            background: rgba(2, 3, 6, 0.88);
             backdrop-filter: blur(24px);
             border-bottom: 1px solid var(--gold-border-subtle);
             z-index: 1000;
@@ -241,8 +172,7 @@
         }
 
         .crest-icon {
-            width: 50px;
-            height: 50px;
+            width: 52px; height: 52px;
             background: radial-gradient(circle, #251d11 0%, #0e121a 100%);
             border: 1.5px solid var(--gold-base);
             border-radius: 14px;
@@ -271,13 +201,13 @@
         }
 
         .brand-logo-wrap:hover .crest-icon {
-            transform: scale(1.1) rotate(5deg);
+            transform: scale(1.1) rotate(6deg);
         }
 
         .logo-text h1 {
             font-family: var(--font-royal);
-            font-size: 1.5rem;
-            letter-spacing: 2.5px;
+            font-size: 1.55rem;
+            letter-spacing: 3px;
             font-weight: 800;
             background: var(--gold-gradient);
             -webkit-background-clip: text;
@@ -295,7 +225,7 @@
 
         .nav-links {
             display: flex;
-            gap: 1.75rem;
+            gap: 1.85rem;
             align-items: center;
             list-style: none;
         }
@@ -303,7 +233,7 @@
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             font-weight: 600;
             transition: all 0.25s;
             position: relative;
@@ -312,25 +242,45 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0%;
-            height: 1.5px;
+            bottom: -4px; left: 0;
+            width: 0%; height: 1.5px;
             background: var(--gold-gradient);
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--gold-bright);
+        .nav-links a:hover { color: var(--gold-bright); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
+        /* Sound Ambiance Toggle */
+        .audio-toggle-btn {
+            background: rgba(14, 20, 32, 0.8);
+            border: 1px solid var(--gold-border-subtle);
+            color: var(--gold-light);
+            padding: 0.65rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .audio-toggle-btn:hover {
+            border-color: var(--gold-base);
+            background: rgba(197, 160, 89, 0.12);
         }
 
         .nav-cta-btn {
             background: var(--gold-gradient);
-            color: #030508;
+            color: #020306;
             border: none;
             padding: 0.7rem 1.6rem;
             border-radius: var(--radius-full);
@@ -349,26 +299,14 @@
             overflow: hidden;
         }
 
-        .nav-cta-btn::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%; width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .nav-cta-btn:hover::before {
-            left: 100%;
-        }
-
         .nav-cta-btn:hover {
             transform: translateY(-2px) scale(1.02);
             box-shadow: 0 12px 30px -4px rgba(197, 160, 89, 0.7);
         }
 
-        /* LIVE STATUS MARQUEE STRIP */
+        /* STATUS TICKER STRIP */
         .live-strip {
-            background: rgba(7, 10, 16, 0.95);
+            background: rgba(6, 9, 15, 0.95);
             border-bottom: 1px solid var(--gold-border-subtle);
             padding: 0.55rem 0;
             font-size: 0.825rem;
@@ -396,8 +334,7 @@
         }
 
         .pulsing-beacon {
-            width: 8px;
-            height: 8px;
+            width: 8px; height: 8px;
             background: var(--accent-emerald);
             border-radius: 50%;
             box-shadow: var(--accent-emerald-glow);
@@ -411,7 +348,7 @@
 
         /* HERO SECTION */
         .hero-section {
-            padding: 6rem 0 5rem;
+            padding: 6.5rem 0 5.5rem;
             display: grid;
             grid-template-columns: 1.15fr 0.85fr;
             gap: 4rem;
@@ -444,12 +381,11 @@
 
         .hero-heading {
             font-family: var(--font-royal);
-            font-size: 3.6rem;
+            font-size: 3.8rem;
             line-height: 1.08;
             font-weight: 900;
             letter-spacing: 2px;
             margin-bottom: 1.6rem;
-            text-shadow: 0 0 40px rgba(197, 160, 89, 0.15);
         }
 
         .hero-heading span.gradient-text {
@@ -461,9 +397,9 @@
 
         .hero-subtitle {
             font-family: var(--font-editorial);
-            font-size: 1.28rem;
+            font-size: 1.3rem;
             color: var(--text-secondary);
-            margin-bottom: 2.5rem;
+            margin-bottom: 2.6rem;
             line-height: 1.65;
             font-style: italic;
         }
@@ -477,7 +413,7 @@
 
         .btn-luxury-primary {
             background: var(--gold-gradient);
-            color: #030508;
+            color: #020306;
             border: none;
             padding: 1.05rem 2.4rem;
             border-radius: var(--radius-full);
@@ -502,7 +438,7 @@
         }
 
         .btn-luxury-secondary {
-            background: rgba(12, 17, 28, 0.85);
+            background: rgba(10, 15, 26, 0.85);
             border: 1px solid var(--gold-border);
             color: #ffffff;
             padding: 1.05rem 2.2rem;
@@ -536,7 +472,7 @@
 
         .metric-cell .metric-val {
             font-family: var(--font-mono);
-            font-size: 2rem;
+            font-size: 2.1rem;
             font-weight: 700;
             color: #ffffff;
         }
@@ -553,7 +489,7 @@
         /* HERO BOTTLE 3D FLOATING CARD */
         .hero-bottle-wrap {
             position: relative;
-            background: radial-gradient(circle at center, rgba(37, 29, 17, 0.7) 0%, rgba(12, 17, 28, 0.98) 100%);
+            background: radial-gradient(circle at center, rgba(37, 29, 17, 0.7) 0%, rgba(10, 15, 26, 0.98) 100%);
             border: 1.5px solid var(--gold-border);
             border-radius: var(--radius-lg);
             padding: 2.8rem 2.2rem;
@@ -567,7 +503,7 @@
 
         @keyframes floatBottle {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-12px); }
+            50% { transform: translateY(-14px); }
         }
 
         .hero-bottle-wrap:hover {
@@ -691,8 +627,7 @@
         }
 
         .card-icon-badge {
-            width: 56px;
-            height: 56px;
+            width: 56px; height: 56px;
             background: rgba(197, 160, 89, 0.1);
             border: 1px solid var(--gold-border);
             border-radius: 16px;
@@ -711,15 +646,23 @@
             letter-spacing: 0.8px;
         }
 
-        /* PRODUCT GRID */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.2rem;
+        /* HORIZONTAL SCROLL PRODUCT SHOWCASE */
+        .horizontal-section {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .horizontal-scroll-track {
+            display: flex;
+            gap: 2rem;
+            width: max-content;
+            padding: 1rem 0 3rem;
         }
 
         .sku-card {
-            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.45) 0%, rgba(7, 10, 16, 0.98) 100%);
+            width: 380px;
+            flex-shrink: 0;
+            background: radial-gradient(circle at top, rgba(30, 41, 59, 0.45) 0%, rgba(6, 9, 15, 0.98) 100%);
             border: 1px solid var(--gold-border-subtle);
             border-radius: var(--radius-lg);
             padding: 2.2rem;
@@ -730,7 +673,7 @@
 
         .sku-card:hover {
             border-color: var(--gold-base);
-            transform: translateY(-8px);
+            transform: translateY(-8px) scale(1.02);
             box-shadow: var(--gold-glow);
         }
 
@@ -812,9 +755,7 @@
             .simulator-layout { grid-template-columns: 1fr; }
         }
 
-        .sim-slider-row {
-            margin-bottom: 1.75rem;
-        }
+        .sim-slider-row { margin-bottom: 1.75rem; }
 
         .sim-slider-header {
             display: flex;
@@ -843,9 +784,7 @@
             transition: all 0.2s;
         }
 
-        input[type="range"]:hover {
-            background: rgba(197, 160, 89, 0.35);
-        }
+        input[type="range"]:hover { background: rgba(197, 160, 89, 0.35); }
 
         .sim-results-screen {
             background: radial-gradient(circle at center, #131926 0%, #06090e 100%);
@@ -876,9 +815,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
 
-        .res-line:last-child {
-            border-bottom: none;
-        }
+        .res-line:last-child { border-bottom: none; }
 
         .res-val-big {
             font-family: var(--font-mono);
@@ -893,9 +830,7 @@
             text-shadow: 0 0 20px rgba(197, 160, 89, 0.45);
         }
 
-        .res-val-big.emerald {
-            color: var(--accent-emerald);
-        }
+        .res-val-big.emerald { color: var(--accent-emerald); }
 
         /* 2-COLUMN SECTION */
         .layout-2col {
@@ -934,10 +869,7 @@
             box-shadow: var(--gold-glow);
         }
 
-        .doc-icon {
-            font-size: 2.2rem;
-            margin-bottom: 0.9rem;
-        }
+        .doc-icon { font-size: 2.2rem; margin-bottom: 0.9rem; }
 
         .doc-title {
             font-family: var(--font-royal);
@@ -1007,14 +939,13 @@
 </head>
 <body>
 
-<!-- Interactive Glowing Mouse Follower -->
+<!-- Interactive Glowing Mouse Follower & Scroll Progress -->
 <div id="cursor-glow"></div>
+<div id="cursor-dot"></div>
 <div id="scroll-progress"></div>
 
-<!-- Ambient Aurora & Particle Canvas -->
-<div class="aurora-1"></div>
-<div class="aurora-2"></div>
-<canvas id="particle-canvas"></canvas>
+<!-- 3D WebGL Three.js Canvas -->
+<canvas id="webgl-canvas"></canvas>
 
 <!-- STICKY HEADER -->
 <header class="site-header">
@@ -1033,7 +964,12 @@
             <li><a href="#simulator">Simulator</a></li>
             <li><a href="#downloads">Institutional Deck</a></li>
         </ul>
-        <a href="#downloads" class="nav-cta-btn">💼 Access Dossier</a>
+        <div class="nav-actions">
+            <button id="btn-audio" class="audio-toggle-btn" onclick="toggleAudio()">
+                <span>🎵 Ambiance:</span> <span id="audio-status">OFF</span>
+            </button>
+            <a href="#downloads" class="nav-cta-btn">💼 Access Dossier</a>
+        </div>
     </div>
 </header>
 
@@ -1054,7 +990,7 @@
 <!-- HERO SECTION -->
 <div class="container">
     <section class="hero-section">
-        <div class="hero-content reveal-left">
+        <div class="hero-content" id="hero-text-block">
             <div class="hero-pill-badge">🏛️ Series-A Capital Offering & Franchise Rollout</div>
             <h1 class="hero-heading">
                 INDIA'S FIRST
@@ -1070,7 +1006,7 @@
             </div>
             <div class="hero-key-metrics">
                 <div class="metric-cell">
-                    <div class="metric-val" data-target="367">367</div>
+                    <div class="metric-val counter" data-target="367">0</div>
                     <div class="metric-label">Target Talukas</div>
                 </div>
                 <div class="metric-cell">
@@ -1085,7 +1021,7 @@
         </div>
 
         <!-- 3D FLOATING BOTTLE HERO CARD -->
-        <div class="hero-bottle-wrap reveal-right" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+        <div class="hero-bottle-wrap" id="hero-bottle" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
             <div class="bottle-img-box">
                 <img src="assets/whisky_hero.png" alt="FeraBee Reserve Whisky" onerror="this.src='ferabee_whisky_1786630225417.png'">
             </div>
@@ -1100,14 +1036,14 @@
 <!-- SECTION 1: THE STRATEGIC DISRUPTION -->
 <section id="about" class="content-section">
     <div class="container">
-        <div class="section-header-wrap reveal">
+        <div class="section-header-wrap gsap-fade">
             <span class="section-tag">Market Monopoly Breakdown</span>
             <h2 class="section-title">THE CAPTIVE RETAIL ADVANTAGE</h2>
             <p class="section-desc">Why traditional liquor brands burn 40% on middleman shelf fees while FeraBee captures the entire value chain.</p>
         </div>
 
         <div class="disruption-grid">
-            <div class="luxury-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="luxury-card gsap-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="card-icon-badge">🚫</div>
                 <h3 class="card-h3">Traditional Retail Trap</h3>
                 <p style="color: var(--text-secondary); font-size: 0.92rem;">
@@ -1115,7 +1051,7 @@
                 </p>
             </div>
 
-            <div class="luxury-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" style="border-color: var(--gold-base);">
+            <div class="luxury-card gsap-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)" style="border-color: var(--gold-base);">
                 <div class="card-icon-badge" style="background: rgba(197, 160, 89, 0.25);">👑</div>
                 <h3 class="card-h3" style="color: var(--gold-bright);">The FeraBee Solution</h3>
                 <p style="color: var(--text-secondary); font-size: 0.92rem;">
@@ -1123,7 +1059,7 @@
                 </p>
             </div>
 
-            <div class="luxury-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="luxury-card gsap-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="card-icon-badge">💎</div>
                 <h3 class="card-h3">Dual Margin Capture</h3>
                 <p style="color: var(--text-secondary); font-size: 0.92rem;">
@@ -1134,18 +1070,18 @@
     </div>
 </section>
 
-<!-- SECTION 2: 6-SKU PRODUCT PORTFOLIO -->
-<section id="products" class="content-section">
+<!-- SECTION 2: 6-SKU HORIZONTAL SCROLL PRODUCT SHOWCASE -->
+<section id="products" class="content-section horizontal-section">
     <div class="container">
-        <div class="section-header-wrap reveal">
-            <span class="section-tag">High-Margin Portfolio</span>
+        <div class="section-header-wrap gsap-fade">
+            <span class="section-tag">High-Margin Portfolio (Scroll to Explore)</span>
             <h2 class="section-title">PROPRIETARY 6-SKU PRODUCT MIX</h2>
             <p class="section-desc">Distilled in Goa under master supervision with verified gross profit margins between 64% and 85%.</p>
         </div>
 
-        <div class="product-grid">
+        <div class="horizontal-scroll-track" id="product-track">
             <!-- 1. WHISKY -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Reserve Whisky</div>
@@ -1168,7 +1104,7 @@
             </div>
 
             <!-- 2. VODKA -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Pure Vodka</div>
@@ -1191,7 +1127,7 @@
             </div>
 
             <!-- 3. GIN -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Botanical Gin</div>
@@ -1214,7 +1150,7 @@
             </div>
 
             <!-- 4. RUM -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Dark Rum</div>
@@ -1237,7 +1173,7 @@
             </div>
 
             <!-- 5. BEER -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Crisp Lager</div>
@@ -1260,7 +1196,7 @@
             </div>
 
             <!-- 6. WINE -->
-            <div class="sku-card reveal" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
+            <div class="sku-card" onmousemove="tiltCard(event, this)" onmouseleave="resetCard(this)">
                 <div class="sku-title-row">
                     <div>
                         <div class="sku-title">FeraBee Sparkling Wine</div>
@@ -1288,21 +1224,21 @@
 <!-- SECTION 3: VISUAL CHARTS -->
 <section id="charts-view" class="content-section">
     <div class="container">
-        <div class="section-header-wrap reveal">
+        <div class="section-header-wrap gsap-fade">
             <span class="section-tag">Quantitative Trajectory</span>
             <h2 class="section-title">FINANCIAL TRAJECTORY & WATERFALL</h2>
             <p class="section-desc">Dynamic 3-Year revenue scaling and store-level cash flow waterfall.</p>
         </div>
 
         <div class="layout-2col">
-            <div class="luxury-card reveal-left">
+            <div class="luxury-card gsap-card">
                 <h3 class="card-h3" style="color: var(--gold-bright);">📈 3-Year Revenue & EBITDA Growth</h3>
                 <div style="height: 300px; position: relative; margin-top: 1.2rem;">
                     <canvas id="chartConsolidated"></canvas>
                 </div>
             </div>
 
-            <div class="luxury-card reveal-right">
+            <div class="luxury-card gsap-card">
                 <h3 class="card-h3" style="color: var(--gold-bright);">🏢 Monthly Lounge P&L Waterfall (₹ Lakh)</h3>
                 <div style="height: 300px; position: relative; margin-top: 1.2rem;">
                     <canvas id="chartUnitEcon"></canvas>
@@ -1315,13 +1251,13 @@
 <!-- SECTION 4: LIVE FINANCIAL SIMULATOR -->
 <section id="simulator" class="content-section">
     <div class="container">
-        <div class="section-header-wrap reveal">
+        <div class="section-header-wrap gsap-fade">
             <span class="section-tag">Interactive Financial Engine</span>
             <h2 class="section-title">LIVE MULTI-VARIABLE SIMULATOR</h2>
             <p class="section-desc">Adjust operating parameters to simulate store cash flows, network off-take, and investor returns in real-time.</p>
         </div>
 
-        <div class="simulator-layout reveal-scale">
+        <div class="simulator-layout gsap-card">
             <div>
                 <div class="sim-slider-row">
                     <div class="sim-slider-header">
@@ -1418,14 +1354,14 @@
 <!-- SECTION 5: INSTITUTIONAL DOWNLOAD CENTER -->
 <section id="downloads" class="content-section">
     <div class="container">
-        <div class="section-header-wrap reveal">
+        <div class="section-header-wrap gsap-fade">
             <span class="section-tag">Executive Asset Library</span>
             <h2 class="section-title">INSTITUTIONAL DOSSIERS & DOWNLOADS</h2>
             <p class="section-desc">Access the full institutional suite of Word documents, financial models, presentations, and packaged distribution archives.</p>
         </div>
 
         <div class="download-grid">
-            <a href="FeraBee_Master_Commercial_Suite_2026.zip" class="download-card reveal">
+            <a href="FeraBee_Master_Commercial_Suite_2026.zip" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">🌟</div>
                     <div class="doc-title">Master Commercial Suite (ZIP)</div>
@@ -1434,7 +1370,7 @@
                 <div class="doc-badge">📥 Download Master Archive (1.35 MB)</div>
             </a>
 
-            <a href="FeraBee_Investor_SeriesA_Package.zip" class="download-card reveal">
+            <a href="FeraBee_Investor_SeriesA_Package.zip" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">💼</div>
                     <div class="doc-title">Investor Series-A Package (ZIP)</div>
@@ -1443,7 +1379,7 @@
                 <div class="doc-badge">📥 Download Investor Pack (142 KB)</div>
             </a>
 
-            <a href="FeraBee_Franchise_Partner_Package.zip" class="download-card reveal">
+            <a href="FeraBee_Franchise_Partner_Package.zip" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">🏢</div>
                     <div class="doc-title">Franchise Partner Package (ZIP)</div>
@@ -1452,7 +1388,7 @@
                 <div class="doc-badge">📥 Download Franchise Pack (167 KB)</div>
             </a>
 
-            <a href="FeraBee_Master_Financial_Model_v2.xlsx" class="download-card reveal">
+            <a href="FeraBee_Master_Financial_Model_v2.xlsx" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">📊</div>
                     <div class="doc-title">Financial Model (.xlsx)</div>
@@ -1461,7 +1397,7 @@
                 <div class="doc-badge">📥 Download Excel Model</div>
             </a>
 
-            <a href="FeraBee_Master_Investor_and_Franchise_Pitch_Deck.pptx" class="download-card reveal">
+            <a href="FeraBee_Master_Investor_and_Franchise_Pitch_Deck.pptx" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">📽️</div>
                     <div class="doc-title">Pitch Deck (.pptx)</div>
@@ -1470,7 +1406,7 @@
                 <div class="doc-badge">📥 Download Slide Deck</div>
             </a>
 
-            <a href="FeraBee_Franchise_Agreement_and_LOI_Contract_Template.docx" class="download-card reveal">
+            <a href="FeraBee_Franchise_Agreement_and_LOI_Contract_Template.docx" class="download-card gsap-card">
                 <div>
                     <div class="doc-icon">⚖️</div>
                     <div class="doc-title">Franchise Agreement & LOI (.docx)</div>
@@ -1510,101 +1446,268 @@
 
         <div class="footer-bottom">
             <div>© 2026 FeraBee Liquor Private Limited. All Rights Reserved. Confidential Deal Room.</div>
-            <div style="color: var(--gold-light);">Designed for Institutional Presentation & Global Deployment</div>
+            <div style="color: var(--gold-light);">Engineered with Three.js, GSAP, ScrollTrigger & Lenis</div>
         </div>
     </div>
 </footer>
 
-<!-- JAVASCRIPT FOR SCROLL REVEALS, PARTICLES, 3D TILT & LIVE ENGINE -->
+<!-- COMPLETE JAVASCRIPT ENGINE (Three.js, GSAP, Lenis, Web Audio) -->
 <script>
-    // 1. SCROLL PROGRESS BAR
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        document.getElementById('scroll-progress').style.width = scrollPercent + '%';
-    });
+    // -------------------------------------------------------------
+    // 1. LENIS INERTIAL SMOOTH SCROLLING
+    // -------------------------------------------------------------
+    let lenis;
+    if (typeof Lenis !== 'undefined') {
+        lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2
+        });
 
-    // 2. MOUSE GLOW FOLLOWER
-    const cursorGlow = document.getElementById('cursor-glow');
-    window.addEventListener('mousemove', (e) => {
-        cursorGlow.style.left = e.clientX + 'px';
-        cursorGlow.style.top = e.clientY + 'px';
-    });
+        lenis.on('scroll', (e) => {
+            if (typeof ScrollTrigger !== 'undefined') {
+                ScrollTrigger.update();
+            }
+            // Update Top Progress Bar
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollTop / docHeight) * 100;
+            document.getElementById('scroll-progress').style.width = progress + '%';
+        });
 
-    // 3. SCROLL REVEAL OBSERVER
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    }
+
+    // -------------------------------------------------------------
+    // 2. THREE.JS 3D WEBGL AMBIENT SCENE
+    // -------------------------------------------------------------
+    let scene, camera, renderer, particlesMesh, hexGroup;
+    let mouseX = 0, mouseY = 0;
+
+    function initThreeJS() {
+        const canvas = document.getElementById('webgl-canvas');
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 30;
+
+        renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // Ambient & Point Lighting
+        const ambientLight = new THREE.AmbientLight(0xc5a059, 0.4);
+        scene.add(ambientLight);
+
+        const pointLight = new THREE.PointLight(0xfaeac4, 1.2, 100);
+        pointLight.position.set(10, 10, 20);
+        scene.add(pointLight);
+
+        // 3D Particles
+        const particlesGeo = new THREE.BufferGeometry();
+        const particlesCount = 350;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for(let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 60;
+        }
+        particlesGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMat = new THREE.PointsMaterial({
+            size: 0.22,
+            color: 0xc5a059,
+            transparent: true,
+            opacity: 0.65,
+            blending: THREE.AdditiveBlending
+        });
+        particlesMesh = new THREE.Points(particlesGeo, particlesMat);
+        scene.add(particlesMesh);
+
+        // 3D Honeycomb Hexagonal Prisms
+        hexGroup = new THREE.Group();
+        const hexGeo = new THREE.CylinderGeometry(0.8, 0.8, 0.2, 6);
+        const hexMat = new THREE.MeshStandardMaterial({
+            color: 0x251d11,
+            emissive: 0x7a5c24,
+            metalness: 0.8,
+            roughness: 0.2,
+            wireframe: true
+        });
+
+        for (let i = 0; i < 15; i++) {
+            const mesh = new THREE.Mesh(hexGeo, hexMat);
+            mesh.position.set((Math.random() - 0.5) * 45, (Math.random() - 0.5) * 45, (Math.random() - 0.5) * 20);
+            mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+            const scale = Math.random() * 1.5 + 0.5;
+            mesh.scale.set(scale, scale, scale);
+            hexGroup.add(mesh);
+        }
+        scene.add(hexGroup);
+
+        window.addEventListener('resize', onWindowResize);
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+            mouseY = (e.clientY / window.innerHeight - 0.5) * -2;
+            
+            // Move glowing cursor
+            const glow = document.getElementById('cursor-glow');
+            const dot = document.getElementById('cursor-dot');
+            if (glow) { glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px'; }
+            if (dot) { dot.style.left = e.clientX + 'px'; dot.style.top = e.clientY + 'px'; }
+        });
+    }
+
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animateThreeJS() {
+        requestAnimationFrame(animateThreeJS);
+        if (particlesMesh) {
+            particlesMesh.rotation.y += 0.0015;
+            particlesMesh.rotation.x += 0.0008;
+        }
+        if (hexGroup) {
+            hexGroup.rotation.y += 0.002;
+            hexGroup.rotation.z += 0.001;
+        }
+        camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+        camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+        renderer.render(scene, camera);
+    }
+
+    // -------------------------------------------------------------
+    // 3. GSAP & SCROLLTRIGGER TIMELINES
+    // -------------------------------------------------------------
+    function initGSAP() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Entrance
+        gsap.from("#hero-text-block", {
+            duration: 1.2,
+            y: 50,
+            opacity: 0,
+            ease: "power3.out"
+        });
+
+        gsap.from("#hero-bottle", {
+            duration: 1.4,
+            scale: 0.85,
+            opacity: 0,
+            ease: "power3.out",
+            delay: 0.3
+        });
+
+        // Stagger Cards
+        gsap.utils.toArray(".gsap-fade").forEach(el => {
+            gsap.from(el, {
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%"
+                },
+                y: 35,
+                opacity: 0,
+                duration: 0.9,
+                ease: "power2.out"
+            });
+        });
+
+        gsap.utils.toArray(".gsap-card").forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 88%"
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.85,
+                delay: (i % 3) * 0.12,
+                ease: "power2.out"
+            });
+        });
+
+        // Number Counter Animation
+        ScrollTrigger.create({
+            trigger: ".hero-key-metrics",
+            start: "top 85%",
+            onEnter: () => {
+                document.querySelectorAll('.counter').forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const step = target / 50;
+                    const updateCount = () => {
+                        count += step;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count);
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
-        revealObserver.observe(el);
-    });
-
-    // 4. PARTICLE CANVAS ANIMATION
-    const canvas = document.getElementById('particle-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
     }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
 
-    class Particle {
-        constructor() { this.reset(); }
-        reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 2.2 + 0.5;
-            this.speedX = Math.random() * 0.4 - 0.2;
-            this.speedY = Math.random() * -0.45 - 0.1;
-            this.opacity = Math.random() * 0.5 + 0.1;
-            this.pulseSpeed = Math.random() * 0.02 + 0.005;
+    // -------------------------------------------------------------
+    // 4. WEB AUDIO AMBIENT SYNTHESIZER
+    // -------------------------------------------------------------
+    let audioCtx = null;
+    let isAudioPlaying = false;
+    let oscillator = null;
+    let gainNode = null;
+
+    function toggleAudio() {
+        if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         }
-        update() {
-            this.x += this.speedX;
-            this.y += this.speedY;
-            this.opacity += Math.sin(Date.now() * this.pulseSpeed) * 0.005;
-            if (this.y < 0 || this.x < 0 || this.x > canvas.width) {
-                this.reset();
-                this.y = canvas.height;
+
+        const statusLabel = document.getElementById('audio-status');
+        if (!isAudioPlaying) {
+            oscillator = audioCtx.createOscillator();
+            gainNode = audioCtx.createGain();
+            
+            oscillator.type = 'sine';
+            oscillator.frequency.setValueAtTime(144, audioCtx.currentTime); // Deep warm harmonic C
+            
+            gainNode.gain.setValueAtTime(0.01, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 2);
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            oscillator.start();
+            
+            isAudioPlaying = true;
+            statusLabel.innerText = "ON 🔊";
+            statusLabel.style.color = "var(--accent-emerald)";
+        } else {
+            if (gainNode) {
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.8);
+                setTimeout(() => {
+                    if (oscillator) oscillator.stop();
+                }, 800);
             }
-        }
-        draw() {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(197, 160, 89, ${Math.max(0.05, Math.min(0.6, this.opacity))})`;
-            ctx.shadowBlur = 8;
-            ctx.shadowColor = "rgba(250, 234, 196, 0.4)";
-            ctx.fill();
+            isAudioPlaying = false;
+            statusLabel.innerText = "OFF";
+            statusLabel.style.color = "var(--gold-light)";
         }
     }
 
-    function initParticles() {
-        particles = [];
-        const count = Math.floor(window.innerWidth / 22);
-        for (let i = 0; i < count; i++) { particles.push(new Particle()); }
-    }
-    initParticles();
-
-    function animateParticles() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (let p of particles) {
-            p.update();
-            p.draw();
-        }
-        requestAnimationFrame(animateParticles);
-    }
-    animateParticles();
-
+    // -------------------------------------------------------------
     // 5. 3D CARD TILT ON MOUSEMOVE
+    // -------------------------------------------------------------
     function tiltCard(e, card) {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -1620,7 +1723,9 @@
         card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
     }
 
-    // 6. FINANCIAL SIMULATOR
+    // -------------------------------------------------------------
+    // 6. FINANCIAL SIMULATOR LOGIC
+    // -------------------------------------------------------------
     function updateSim() {
         const outlets = parseInt(document.getElementById('slider-outlets').value);
         const guests = parseInt(document.getElementById('slider-guests').value);
@@ -1669,11 +1774,16 @@
         document.getElementById('out-investor').innerText = '₹' + investorValCr.toFixed(1) + ' Cr (' + moic + 'x)';
     }
 
-    // 7. INITIALIZE CHARTS
+    // -------------------------------------------------------------
+    // 7. INITIALIZATION ON DOM LOAD
+    // -------------------------------------------------------------
     window.addEventListener('DOMContentLoaded', () => {
+        initThreeJS();
+        animateThreeJS();
+        initGSAP();
         updateSim();
 
-        // Consolidated Chart
+        // Chart.js Consolidated
         const ctxCon = document.getElementById('chartConsolidated').getContext('2d');
         const gradGold = ctxCon.createLinearGradient(0, 0, 0, 300);
         gradGold.addColorStop(0, '#faeac4');
@@ -1702,7 +1812,7 @@
             }
         });
 
-        // Unit Econ Waterfall
+        // Chart.js Unit Econ
         const ctxUnit = document.getElementById('chartUnitEcon').getContext('2d');
         new Chart(ctxUnit, {
             type: 'bar',
